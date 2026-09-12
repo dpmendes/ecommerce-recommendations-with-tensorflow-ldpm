@@ -51,7 +51,12 @@ export class WorkerController {
             }
 
             if (event.data.type === workerEvents.trainingComplete) {
-                this.#events.dispatchTrainingComplete(event.data);
+                if (event.data.error) {
+                    this.#alreadyTrained = false;
+                    console.error('Model training failed:', event.data.error);
+                } else {
+                    this.#events.dispatchTrainingComplete(event.data);
+                }
             }
 
             // Handle tfvis data from the worker for initial visualization
@@ -67,10 +72,14 @@ export class WorkerController {
                 this.#events.dispatchRecommendationsReady(event.data);
             }
         };
+        this.#worker.onerror = (error) => {
+            this.#alreadyTrained = false;
+            console.error('Recommendation worker failed:', error.message, error);
+        };
     }
 
-    triggerTrain(users) {
-        this.#worker.postMessage({ action: workerEvents.trainModel, users });
+    triggerTrain(dataset) {
+        this.#worker.postMessage({ action: workerEvents.trainModel, dataset });
     }
 
     triggerRecommend(user) {

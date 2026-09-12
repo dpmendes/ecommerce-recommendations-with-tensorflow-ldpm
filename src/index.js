@@ -10,10 +10,16 @@ import { ProductView } from './view/ProductView.js';
 import { ModelView } from './view/ModelTrainingView.js';
 import Events from './events/events.js';
 import { WorkerController } from './controller/WorkerController.js';
+import { DatasetService } from './service/DatasetService.js';
 
 // Create shared services
-const userService = new UserService();
-const productService = new ProductService();
+const datasetService = new DatasetService();
+const userService = new UserService({ datasetService });
+const productService = new ProductService({ datasetService });
+const dataset = await datasetService.getDataset().catch(error => {
+    console.error('Unable to initialize recommendation dataset:', error);
+    throw error;
+});
 
 // Create views
 const userView = new UserView();
@@ -28,13 +34,10 @@ const w = WorkerController.init({
     events: Events
 });
 
-const users = await userService.getDefaultUsers();
-w.triggerTrain(users);
-
-
 ModelController.init({
     modelView,
     userService,
+    datasetService,
     events: Events,
 });
 
@@ -59,9 +62,7 @@ const userController = UserController.init({
 });
 
 
-userController.renderUsers({
-    "id": 99,
-    "name": "Josézin da Silva",
-    "age": 30,
-    "purchases": []
+userController.renderUsers().catch(error => {
+    console.error('Unable to render CSV users:', error);
 });
+w.triggerTrain(dataset);
