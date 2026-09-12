@@ -1,0 +1,1001 @@
+﻿User_ID,Product_ID,Category,Brand,User_Age,User_Gender,User_Location,Device_Type,Session_Duration_Min,Pages_Viewed,Time_of_Day,Previous_Purchases,User_Rating,Product_Price,Discount_Applied,Graph_Similarity_Score,Federated_Cluster_ID,Local_Model_Accuracy,Global_Model_Weight,Personalization_Factor,Purchase_Probability,Recommended
+U0103,P0049,Books,BrandE,35,Female,Rural,Desktop,57.36,14,Evening,5,2,268.02,1,0.925,2,0.833,0.971,0.8,0.632,1
+U0271,P0173,Sports,BrandD,21,Male,Suburban,Mobile,15.17,3,Evening,41,2,104.62,0,0.918,5,0.845,0.713,0.599,0.692,1
+U0107,P0030,Sports,BrandD,18,Female,Urban,Tablet,20.09,5,Evening,39,4,145.91,1,0.303,4,0.836,0.384,0.683,0.604,1
+U0072,P0144,Clothing,BrandC,18,Male,Rural,Mobile,11.84,7,Night,30,3,383.75,0,0.592,1,0.735,0.76,0.394,0.624,1
+U0189,P0168,Electronics,BrandE,43,Male,Urban,Mobile,35.04,1,Afternoon,16,1,237.82,0,0.96,9,0.839,0.397,0.245,0.569,0
+U0021,P0019,Books,BrandA,62,Female,Urban,Tablet,10.14,12,Night,24,3,162.09,0,0.547,4,0.914,0.213,0.112,0.595,0
+U0103,P0018,Sports,BrandB,37,Female,Rural,Mobile,22.02,11,Evening,31,3,313.2,0,0.454,5,0.716,0.528,0.839,0.682,1
+U0122,P0001,Clothing,BrandD,40,Female,Urban,Desktop,42.12,8,Night,11,2,328.12,1,0.535,7,0.931,0.776,0.673,0.548,0
+U0215,P0078,Sports,BrandB,27,Female,Urban,Desktop,34.05,6,Night,48,2,385.85,1,0.811,2,0.605,0.44,0.306,0.464,0
+U0088,P0115,Toys,BrandA,28,Female,Urban,Desktop,23.8,2,Night,12,2,82.57,0,0.53,8,0.722,0.882,0.477,0.566,0
+U0100,P0175,Books,BrandB,58,Female,Rural,Tablet,25.79,19,Evening,18,5,372.05,0,0.805,2,0.646,0.448,0.821,0.854,1
+U0152,P0194,Books,BrandA,58,Male,Suburban,Tablet,34.16,14,Night,43,5,301.72,0,0.489,10,0.644,0.415,0.585,0.744,1
+U0131,P0113,Toys,BrandC,22,Female,Suburban,Mobile,1.35,1,Morning,47,1,33.5,0,0.327,5,0.885,0.998,0.37,0.476,0
+U0150,P0114,Home & Kitchen,BrandD,18,Female,Urban,Desktop,5.63,10,Evening,24,2,389.84,0,0.394,2,0.921,0.534,0.34,0.551,0
+U0258,P0166,Toys,BrandA,34,Other,Suburban,Desktop,52.99,16,Night,30,4,194.62,1,0.17,2,0.872,0.825,0.296,0.508,0
+U0294,P0179,Beauty,BrandB,39,Female,Suburban,Desktop,5.59,4,Morning,36,2,168.54,1,0.548,4,0.942,0.824,0.841,0.586,0
+U0192,P0063,Beauty,BrandD,51,Male,Urban,Mobile,42.7,11,Night,24,5,226.8,0,0.233,4,0.676,0.934,0.624,0.707,1
+U0277,P0132,Clothing,BrandC,62,Male,Urban,Desktop,55.28,16,Afternoon,15,2,176.36,0,0.83,8,0.649,0.176,0.738,0.663,1
+U0161,P0129,Books,BrandD,58,Female,Urban,Tablet,16.97,1,Night,37,5,172.45,0,0.479,6,0.782,0.344,0.874,0.827,1
+U0022,P0008,Home & Kitchen,BrandA,46,Female,Rural,Tablet,22.86,16,Night,42,2,405.0,0,0.789,10,0.89,0.791,0.988,0.753,1
+U0253,P0157,Home & Kitchen,BrandC,21,Female,Suburban,Mobile,34.57,19,Afternoon,48,4,66.63,0,0.959,8,0.614,0.606,0.325,0.72,1
+U0236,P0055,Sports,BrandB,22,Female,Rural,Mobile,53.02,9,Evening,22,1,485.45,0,0.865,7,0.948,0.604,0.263,0.575,0
+U0049,P0103,Sports,BrandC,28,Female,Urban,Mobile,56.57,9,Afternoon,13,4,279.69,0,0.956,10,0.811,0.25,0.516,0.797,1
+U0059,P0131,Toys,BrandC,38,Male,Suburban,Desktop,44.63,9,Evening,5,5,95.55,0,0.611,4,0.943,0.353,0.132,0.737,1
+U0170,P0032,Home & Kitchen,BrandE,52,Female,Suburban,Desktop,6.11,17,Afternoon,24,3,69.95,0,0.249,2,0.728,0.569,0.813,0.638,1
+U0188,P0010,Toys,BrandC,29,Male,Suburban,Mobile,40.48,12,Night,22,4,297.8,0,0.942,9,0.76,0.349,0.895,0.859,1
+U0271,P0110,Toys,BrandC,43,Male,Rural,Mobile,25.21,13,Night,42,2,318.33,0,0.882,2,0.863,0.289,0.717,0.712,1
+U0190,P0162,Sports,BrandD,36,Female,Urban,Mobile,28.77,8,Evening,11,1,31.25,1,0.878,1,0.877,0.179,0.341,0.479,0
+U0175,P0124,Books,BrandB,62,Female,Urban,Mobile,3.9,16,Evening,12,2,125.29,1,0.724,8,0.682,0.24,0.211,0.443,0
+U0051,P0087,Toys,BrandD,24,Male,Suburban,Tablet,12.27,18,Morning,35,2,398.75,1,0.662,10,0.925,0.792,0.444,0.526,0
+U0055,P0055,Electronics,BrandD,64,Male,Suburban,Desktop,47.64,1,Morning,38,4,29.56,0,0.113,9,0.904,0.747,0.85,0.713,1
+U0244,P0032,Books,BrandA,24,Other,Suburban,Mobile,27.78,1,Night,33,1,428.27,0,0.773,1,0.606,0.141,0.413,0.518,0
+U0131,P0178,Home & Kitchen,BrandD,43,Male,Urban,Mobile,18.8,12,Night,5,3,330.79,0,0.182,7,0.645,0.283,0.131,0.472,0
+U0135,P0135,Home & Kitchen,BrandE,57,Female,Suburban,Mobile,23.66,6,Morning,37,2,220.04,0,0.334,2,0.774,0.604,0.347,0.511,0
+U0021,P0093,Toys,BrandE,22,Female,Urban,Tablet,51.41,9,Morning,49,1,176.48,1,0.596,6,0.761,0.39,0.991,0.53,0
+U0167,P0008,Books,BrandA,38,Female,Urban,Mobile,45.19,5,Evening,39,3,14.53,0,0.507,5,0.848,0.841,0.709,0.693,1
+U0274,P0065,Sports,BrandB,31,Female,Suburban,Mobile,17.07,16,Afternoon,7,2,413.48,0,0.114,1,0.631,0.806,0.911,0.551,0
+U0089,P0057,Sports,BrandB,21,Male,Suburban,Mobile,7.93,18,Evening,7,1,75.65,0,0.842,2,0.826,0.902,0.797,0.653,1
+U0014,P0067,Beauty,BrandD,40,Female,Urban,Desktop,15.87,17,Morning,39,4,158.22,0,0.891,2,0.816,0.607,0.586,0.799,1
+U0242,P0187,Home & Kitchen,BrandD,59,Male,Urban,Desktop,55.32,18,Night,32,2,286.71,1,0.714,10,0.682,0.417,0.234,0.446,0
+U0265,P0072,Clothing,BrandD,37,Female,Urban,Desktop,35.31,1,Morning,33,2,126.77,0,0.587,10,0.79,0.645,0.414,0.578,0
+U0053,P0054,Beauty,BrandB,32,Male,Urban,Mobile,32.48,19,Night,43,1,251.08,0,0.965,6,0.678,0.18,0.625,0.614,1
+U0092,P0067,Sports,BrandC,62,Female,Suburban,Mobile,36.19,8,Night,14,2,405.62,0,0.208,1,0.651,0.109,0.884,0.569,0
+U0264,P0051,Books,BrandE,46,Male,Rural,Mobile,22.6,3,Night,35,3,237.92,1,0.764,4,0.801,0.115,0.342,0.561,0
+U0035,P0097,Sports,BrandC,25,Male,Urban,Desktop,48.62,5,Night,34,2,474.74,0,0.216,10,0.942,0.467,0.209,0.493,0
+U0206,P0092,Books,BrandC,58,Male,Suburban,Mobile,31.87,8,Afternoon,45,5,424.51,0,0.444,5,0.683,0.305,0.603,0.746,1
+U0081,P0008,Beauty,BrandB,36,Male,Rural,Mobile,7.89,19,Morning,21,3,169.85,0,0.627,2,0.724,0.242,0.259,0.602,1
+U0050,P0162,Home & Kitchen,BrandC,56,Female,Rural,Desktop,8.61,18,Evening,22,1,202.98,1,0.763,2,0.69,0.654,0.649,0.48,0
+U0002,P0035,Sports,BrandA,63,Male,Urban,Desktop,32.67,18,Night,39,3,214.55,0,0.103,7,0.693,0.996,0.337,0.507,0
+U0054,P0096,Toys,BrandD,45,Other,Rural,Mobile,56.26,1,Night,44,5,314.96,0,0.335,7,0.741,0.26,0.308,0.677,1
+U0106,P0088,Books,BrandA,63,Other,Urban,Mobile,19.19,15,Evening,21,5,146.96,1,0.584,6,0.846,0.592,0.459,0.678,1
+U0260,P0078,Home & Kitchen,BrandE,44,Female,Urban,Mobile,52.3,18,Evening,4,2,484.78,1,0.58,1,0.614,0.208,0.634,0.486,0
+U0191,P0032,Clothing,BrandD,21,Male,Urban,Desktop,46.08,7,Night,30,2,306.3,0,0.674,3,0.935,0.941,0.591,0.66,1
+U0218,P0120,Books,BrandC,32,Male,Urban,Desktop,15.62,16,Evening,12,4,202.7,1,0.373,9,0.616,0.363,0.32,0.502,0
+U0044,P0046,Beauty,BrandE,52,Female,Urban,Mobile,3.14,16,Evening,27,3,324.28,0,0.586,10,0.908,0.891,0.902,0.759,1
+U0162,P0144,Clothing,BrandD,54,Male,Urban,Mobile,7.01,15,Afternoon,19,4,200.73,1,0.271,1,0.913,0.355,0.199,0.517,0
+U0202,P0196,Clothing,BrandC,18,Male,Urban,Desktop,43.98,6,Evening,32,5,409.81,0,0.268,2,0.784,0.825,0.136,0.638,1
+U0270,P0165,Electronics,BrandA,20,Female,Rural,Desktop,12.78,9,Morning,15,2,286.08,0,0.619,8,0.648,0.288,0.642,0.602,1
+U0271,P0182,Sports,BrandD,64,Female,Rural,Mobile,22.9,7,Morning,28,2,25.78,1,0.717,7,0.798,0.364,0.211,0.465,0
+U0215,P0142,Books,BrandC,41,Female,Urban,Mobile,30.6,14,Morning,22,2,92.49,1,0.208,9,0.82,0.273,0.554,0.436,0
+U0252,P0055,Clothing,BrandA,44,Male,Rural,Mobile,43.8,11,Night,23,1,433.17,0,0.211,10,0.9,0.338,0.957,0.574,0
+U0190,P0176,Electronics,BrandE,57,Female,Rural,Mobile,7.68,16,Morning,33,5,283.64,1,0.609,4,0.793,0.851,0.729,0.726,1
+U0296,P0007,Beauty,BrandE,53,Male,Suburban,Tablet,24.98,6,Afternoon,6,2,475.42,0,0.343,4,0.744,0.675,0.656,0.569,0
+U0213,P0074,Home & Kitchen,BrandE,51,Male,Urban,Desktop,29.62,16,Morning,37,5,40.85,1,0.453,7,0.893,0.465,0.617,0.693,1
+U0208,P0007,Toys,BrandE,46,Female,Suburban,Desktop,32.91,16,Night,36,2,151.15,0,0.461,1,0.943,0.974,0.262,0.553,0
+U0237,P0161,Toys,BrandB,41,Male,Rural,Mobile,49.28,12,Afternoon,3,3,100.8,0,0.261,10,0.826,0.518,0.489,0.595,0
+U0053,P0151,Books,BrandD,41,Male,Suburban,Desktop,11.13,17,Morning,33,5,279.15,0,0.101,9,0.906,0.973,0.408,0.683,1
+U0280,P0085,Clothing,BrandD,59,Male,Urban,Mobile,48.66,5,Afternoon,41,4,194.48,0,0.868,2,0.81,0.277,0.958,0.867,1
+U0217,P0147,Toys,BrandB,21,Female,Suburban,Mobile,41.88,13,Afternoon,21,1,82.85,0,0.744,1,0.841,0.914,0.318,0.541,0
+U0252,P0112,Sports,BrandC,20,Female,Suburban,Mobile,33.8,8,Night,4,4,323.16,0,0.721,7,0.841,0.112,0.524,0.757,1
+U0188,P0125,Toys,BrandC,51,Female,Suburban,Mobile,42.27,5,Night,49,5,270.47,0,0.592,6,0.847,0.591,0.944,0.877,1
+U0041,P0147,Toys,BrandE,40,Female,Urban,Desktop,25.31,12,Afternoon,41,2,140.99,1,0.731,3,0.712,0.481,0.81,0.571,0
+U0157,P0036,Toys,BrandA,40,Male,Urban,Mobile,9.17,9,Morning,22,5,242.49,0,0.942,1,0.801,0.573,0.968,0.942,1
+U0015,P0029,Electronics,BrandC,62,Female,Rural,Mobile,40.28,3,Night,14,1,374.14,0,0.699,5,0.808,0.598,0.647,0.591,0
+U0065,P0188,Clothing,BrandA,22,Male,Rural,Mobile,31.96,3,Afternoon,30,5,106.61,0,0.339,10,0.71,0.45,0.4,0.69,1
+U0009,P0082,Sports,BrandD,48,Male,Urban,Mobile,38.72,1,Evening,8,2,149.99,0,0.614,4,0.722,0.998,0.844,0.656,1
+U0129,P0002,Clothing,BrandA,58,Female,Rural,Mobile,20.94,18,Evening,42,4,176.32,0,0.498,5,0.867,0.979,0.362,0.685,1
+U0136,P0129,Books,BrandD,23,Other,Urban,Mobile,54.51,12,Night,24,3,374.63,0,0.601,1,0.804,0.966,0.248,0.611,1
+U0063,P0047,Books,BrandB,54,Male,Suburban,Desktop,35.65,9,Morning,24,4,424.23,0,0.566,1,0.652,0.981,0.736,0.731,1
+U0139,P0197,Books,BrandB,27,Male,Suburban,Mobile,6.04,9,Evening,48,2,191.31,0,0.873,5,0.893,0.814,0.675,0.708,1
+U0081,P0148,Beauty,BrandE,57,Male,Rural,Mobile,27.54,18,Evening,20,2,151.83,0,0.687,6,0.909,0.99,0.891,0.717,1
+U0163,P0011,Toys,BrandC,24,Male,Rural,Mobile,45.63,18,Evening,8,1,445.28,0,0.27,5,0.763,0.903,0.966,0.56,0
+U0289,P0130,Beauty,BrandE,56,Other,Urban,Desktop,47.85,7,Morning,47,5,499.69,1,0.157,2,0.673,0.474,0.871,0.64,1
+U0261,P0195,Electronics,BrandD,55,Female,Rural,Mobile,30.18,4,Morning,37,5,336.83,0,0.482,9,0.932,0.806,0.154,0.714,1
+U0231,P0119,Books,BrandE,38,Female,Urban,Mobile,53.79,13,Night,21,4,495.04,1,0.114,5,0.909,0.921,0.698,0.584,0
+U0041,P0140,Sports,BrandA,37,Female,Suburban,Mobile,16.79,17,Night,42,3,331.68,0,0.386,5,0.686,0.741,0.806,0.656,1
+U0028,P0020,Clothing,BrandD,20,Male,Suburban,Mobile,25.23,2,Evening,22,3,368.06,1,0.431,10,0.633,0.481,0.984,0.59,0
+U0135,P0005,Toys,BrandB,39,Female,Suburban,Mobile,54.02,14,Morning,48,1,197.38,0,0.438,9,0.754,0.159,0.437,0.486,0
+U0201,P0037,Home & Kitchen,BrandC,64,Male,Urban,Desktop,53.88,3,Afternoon,3,2,219.32,0,0.981,3,0.837,0.829,0.253,0.634,1
+U0268,P0166,Sports,BrandD,21,Female,Rural,Desktop,41.46,5,Evening,28,1,76.35,1,0.374,5,0.661,0.957,0.868,0.441,0
+U0033,P0137,Toys,BrandD,45,Other,Urban,Mobile,51.68,14,Night,14,5,412.26,0,0.339,5,0.78,0.426,0.386,0.701,1
+U0048,P0053,Beauty,BrandA,29,Female,Urban,Desktop,6.24,3,Morning,0,2,465.87,0,0.216,2,0.749,0.237,0.638,0.541,0
+U0062,P0172,Beauty,BrandC,55,Male,Suburban,Desktop,52.03,7,Night,29,1,313.6,0,0.56,4,0.912,0.394,0.451,0.545,0
+U0216,P0099,Sports,BrandB,53,Female,Urban,Mobile,19.92,18,Night,28,4,175.11,1,0.238,2,0.75,0.624,0.462,0.53,0
+U0293,P0086,Beauty,BrandD,64,Male,Rural,Mobile,11.52,13,Morning,19,5,81.24,0,0.655,5,0.787,0.385,0.759,0.84,1
+U0099,P0108,Books,BrandD,58,Male,Urban,Mobile,15.12,10,Evening,32,3,136.25,0,0.24,10,0.934,0.65,0.425,0.6,0
+U0172,P0024,Electronics,BrandA,22,Male,Urban,Mobile,25.66,13,Morning,40,1,131.43,1,0.619,2,0.705,0.97,0.724,0.47,0
+U0214,P0081,Clothing,BrandE,30,Male,Rural,Desktop,15.82,16,Evening,43,5,308.7,0,0.844,10,0.701,0.704,0.113,0.732,1
+U0035,P0158,Electronics,BrandB,40,Female,Suburban,Desktop,19.91,9,Night,35,5,472.79,1,0.138,9,0.88,0.426,0.392,0.582,0
+U0227,P0120,Toys,BrandC,47,Female,Urban,Tablet,8.96,2,Morning,21,3,28.89,0,0.478,10,0.697,0.942,0.387,0.592,0
+U0101,P0059,Clothing,BrandD,54,Other,Suburban,Desktop,18.47,5,Afternoon,12,3,5.51,1,0.515,6,0.891,0.609,0.774,0.616,1
+U0131,P0128,Clothing,BrandD,42,Female,Suburban,Mobile,34.76,17,Evening,6,3,302.09,0,0.812,8,0.633,0.216,0.383,0.646,1
+U0257,P0114,Electronics,BrandB,44,Female,Suburban,Mobile,27.07,4,Afternoon,7,1,145.61,0,0.521,9,0.639,0.549,0.67,0.526,0
+U0005,P0115,Sports,BrandE,31,Male,Urban,Desktop,21.46,17,Evening,27,3,440.87,0,0.611,8,0.915,0.688,0.72,0.729,1
+U0218,P0014,Clothing,BrandD,64,Male,Rural,Mobile,45.04,9,Morning,44,4,166.99,0,0.812,5,0.789,0.854,0.693,0.799,1
+U0255,P0009,Electronics,BrandB,53,Female,Rural,Desktop,53.72,2,Afternoon,42,5,148.42,0,0.604,5,0.852,0.943,0.643,0.82,1
+U0283,P0040,Clothing,BrandA,56,Male,Suburban,Desktop,45.65,18,Morning,8,3,138.41,0,0.422,6,0.679,0.386,0.472,0.595,0
+U0207,P0194,Home & Kitchen,BrandE,33,Female,Urban,Desktop,20.59,11,Evening,24,5,76.7,0,0.177,1,0.658,0.24,0.436,0.654,1
+U0015,P0025,Sports,BrandC,39,Male,Rural,Desktop,44.92,13,Evening,15,2,292.86,0,0.757,8,0.892,0.166,0.608,0.671,1
+U0042,P0103,Books,BrandD,38,Male,Suburban,Mobile,9.97,8,Evening,9,2,88.27,0,0.884,2,0.726,0.765,0.157,0.573,0
+U0179,P0022,Clothing,BrandB,38,Male,Suburban,Desktop,8.69,1,Evening,10,3,215.19,0,0.973,6,0.759,0.816,0.888,0.804,1
+U0063,P0004,Home & Kitchen,BrandA,25,Male,Urban,Desktop,21.39,17,Night,30,5,233.18,0,0.934,9,0.61,0.468,0.843,0.877,1
+U0231,P0154,Books,BrandC,33,Male,Rural,Mobile,48.65,12,Evening,11,2,15.14,0,0.818,3,0.735,0.456,0.412,0.613,1
+U0241,P0186,Books,BrandB,48,Female,Suburban,Desktop,15.53,4,Afternoon,30,3,13.32,0,0.679,2,0.87,0.959,0.61,0.712,1
+U0052,P0029,Toys,BrandB,59,Male,Urban,Mobile,4.73,13,Evening,13,5,262.51,0,0.803,10,0.887,0.925,0.939,0.926,1
+U0096,P0109,Clothing,BrandC,27,Female,Urban,Tablet,8.77,9,Morning,43,3,349.54,1,0.489,5,0.845,0.31,0.344,0.516,0
+U0222,P0098,Electronics,BrandA,49,Male,Rural,Mobile,51.67,7,Night,31,5,471.36,0,0.635,9,0.842,0.803,0.768,0.849,1
+U0231,P0037,Clothing,BrandA,51,Male,Urban,Mobile,38.39,5,Afternoon,49,2,93.66,0,0.414,6,0.777,0.66,0.174,0.493,0
+U0237,P0075,Home & Kitchen,BrandE,26,Male,Rural,Mobile,15.94,5,Night,16,3,56.11,0,0.394,8,0.788,0.239,0.571,0.631,1
+U0143,P0070,Books,BrandD,34,Female,Suburban,Desktop,33.76,17,Night,34,2,30.78,1,0.781,8,0.86,0.421,0.896,0.627,1
+U0171,P0146,Clothing,BrandC,28,Male,Suburban,Mobile,32.13,9,Night,0,3,220.84,0,0.509,7,0.687,0.26,0.597,0.639,1
+U0029,P0128,Electronics,BrandC,49,Female,Urban,Mobile,39.67,6,Morning,28,1,313.46,1,0.291,5,0.681,0.366,0.655,0.385,0
+U0036,P0085,Toys,BrandC,27,Male,Urban,Mobile,14.76,19,Night,3,2,421.07,0,0.282,2,0.932,0.654,0.917,0.646,1
+U0013,P0042,Clothing,BrandA,39,Female,Rural,Tablet,52.0,16,Night,22,2,342.91,1,0.873,10,0.61,0.438,0.744,0.565,0
+U0160,P0100,Sports,BrandD,34,Male,Urban,Mobile,19.25,2,Evening,27,4,108.14,0,0.71,10,0.649,0.455,0.726,0.757,1
+U0187,P0041,Toys,BrandE,21,Female,Suburban,Mobile,41.95,10,Morning,15,2,233.58,0,0.591,5,0.8,0.586,0.628,0.624,1
+U0243,P0166,Electronics,BrandB,64,Female,Urban,Desktop,1.95,16,Afternoon,11,5,455.62,0,0.461,7,0.858,0.179,0.67,0.798,1
+U0086,P0034,Home & Kitchen,BrandB,42,Other,Urban,Mobile,22.99,5,Afternoon,20,3,166.74,1,0.488,7,0.788,0.765,0.823,0.6,0
+U0284,P0017,Books,BrandC,38,Male,Urban,Tablet,21.75,15,Afternoon,44,1,251.87,1,0.152,2,0.724,0.462,0.981,0.431,0
+U0066,P0165,Clothing,BrandD,54,Male,Suburban,Mobile,33.07,13,Morning,16,5,479.49,0,0.509,7,0.942,0.532,0.816,0.853,1
+U0170,P0153,Electronics,BrandA,55,Male,Rural,Desktop,5.29,13,Afternoon,39,5,368.68,0,0.816,6,0.846,0.977,0.737,0.88,1
+U0045,P0122,Toys,BrandD,18,Female,Urban,Mobile,47.62,13,Morning,12,5,375.13,0,0.449,7,0.891,0.41,0.222,0.712,1
+U0062,P0076,Sports,BrandD,42,Female,Urban,Mobile,13.85,15,Evening,31,5,129.91,0,0.445,8,0.614,0.683,0.835,0.779,1
+U0134,P0087,Electronics,BrandA,53,Female,Urban,Desktop,40.95,14,Evening,36,1,210.28,0,0.114,4,0.683,0.453,0.762,0.472,0
+U0284,P0117,Beauty,BrandC,34,Male,Suburban,Mobile,48.39,8,Morning,49,4,45.76,0,0.512,1,0.731,0.905,0.793,0.747,1
+U0028,P0106,Sports,BrandD,58,Male,Urban,Desktop,34.15,11,Afternoon,14,2,305.23,1,0.123,8,0.664,0.862,0.308,0.339,0
+U0108,P0086,Toys,BrandB,41,Male,Rural,Mobile,44.71,18,Morning,11,5,56.35,0,0.613,8,0.626,0.317,0.913,0.83,1
+U0044,P0027,Home & Kitchen,BrandA,19,Other,Suburban,Mobile,40.05,4,Morning,48,2,418.78,0,0.556,3,0.679,0.723,0.188,0.505,0
+U0286,P0057,Books,BrandE,57,Female,Suburban,Mobile,21.98,10,Night,14,2,408.2,0,0.856,3,0.787,0.159,0.328,0.614,1
+U0128,P0031,Toys,BrandC,32,Other,Urban,Tablet,48.72,1,Morning,33,5,269.13,1,0.624,5,0.844,0.967,0.697,0.733,1
+U0231,P0134,Home & Kitchen,BrandA,49,Male,Rural,Mobile,18.39,5,Night,5,4,74.88,1,0.391,3,0.871,0.414,0.706,0.634,1
+U0190,P0168,Clothing,BrandE,56,Female,Urban,Mobile,34.7,13,Evening,16,2,17.66,0,0.565,5,0.615,0.849,0.382,0.532,0
+U0225,P0098,Electronics,BrandE,23,Female,Urban,Mobile,44.98,1,Night,47,3,399.37,1,0.73,8,0.75,0.387,0.731,0.622,1
+U0283,P0012,Beauty,BrandD,18,Male,Suburban,Mobile,23.36,8,Morning,48,2,302.07,1,0.185,1,0.643,0.669,0.449,0.375,0
+U0121,P0053,Sports,BrandD,64,Female,Suburban,Mobile,18.86,3,Evening,19,5,356.91,0,0.659,2,0.751,0.985,0.1,0.702,1
+U0116,P0199,Sports,BrandD,40,Other,Urban,Tablet,28.1,3,Night,8,1,155.38,0,0.925,2,0.752,0.889,0.246,0.545,0
+U0233,P0138,Electronics,BrandA,56,Female,Urban,Mobile,49.26,7,Morning,4,2,257.19,1,0.369,4,0.774,0.244,0.894,0.527,0
+U0259,P0173,Beauty,BrandA,34,Female,Suburban,Desktop,55.87,4,Evening,22,4,374.85,0,0.664,9,0.912,0.593,0.3,0.715,1
+U0198,P0145,Electronics,BrandC,51,Male,Urban,Mobile,33.16,3,Night,32,3,233.97,0,0.839,2,0.882,0.414,0.202,0.665,1
+U0137,P0154,Clothing,BrandD,58,Male,Rural,Desktop,40.03,15,Morning,37,3,302.69,0,0.561,9,0.823,0.491,0.714,0.7,1
+U0165,P0190,Home & Kitchen,BrandE,46,Other,Suburban,Tablet,54.29,8,Morning,13,1,395.92,0,0.746,7,0.91,0.402,0.497,0.591,0
+U0225,P0122,Toys,BrandB,26,Male,Urban,Mobile,6.81,3,Afternoon,16,1,111.53,1,0.38,10,0.837,0.402,0.817,0.467,0
+U0234,P0046,Sports,BrandC,30,Female,Urban,Tablet,14.69,7,Afternoon,18,2,37.63,0,0.375,8,0.887,0.588,0.875,0.647,1
+U0172,P0064,Clothing,BrandA,23,Female,Urban,Mobile,42.83,18,Night,32,5,268.25,0,0.701,1,0.797,0.273,0.861,0.872,1
+U0152,P0130,Home & Kitchen,BrandC,23,Female,Suburban,Tablet,49.6,11,Night,0,4,35.75,1,0.735,5,0.784,0.584,0.382,0.62,1
+U0160,P0054,Clothing,BrandC,37,Other,Suburban,Desktop,51.56,11,Night,12,3,384.45,0,0.943,9,0.853,0.351,0.555,0.75,1
+U0096,P0107,Beauty,BrandC,20,Male,Urban,Mobile,25.49,17,Morning,45,1,361.01,0,0.302,4,0.607,0.36,0.685,0.479,0
+U0233,P0193,Sports,BrandC,34,Male,Suburban,Mobile,6.27,6,Night,26,4,441.45,1,0.521,2,0.842,0.765,0.39,0.591,0
+U0180,P0051,Toys,BrandB,29,Male,Rural,Mobile,26.83,8,Morning,5,5,321.58,0,0.325,6,0.927,0.127,0.137,0.678,1
+U0113,P0181,Electronics,BrandD,64,Male,Urban,Mobile,14.61,1,Night,5,3,38.26,0,0.172,2,0.85,0.443,0.546,0.594,0
+U0052,P0036,Electronics,BrandE,62,Male,Rural,Mobile,18.18,10,Morning,32,3,130.31,0,0.463,3,0.613,0.467,0.112,0.518,0
+U0268,P0115,Home & Kitchen,BrandC,18,Male,Urban,Mobile,46.56,19,Morning,29,5,404.93,0,0.437,8,0.732,0.537,0.956,0.825,1
+U0295,P0026,Toys,BrandC,34,Female,Urban,Mobile,5.46,3,Afternoon,45,3,87.73,1,0.343,3,0.883,0.702,0.817,0.589,0
+U0113,P0029,Books,BrandC,20,Other,Urban,Desktop,49.83,4,Evening,34,5,350.75,0,0.367,2,0.936,0.433,0.273,0.715,1
+U0101,P0149,Beauty,BrandD,43,Male,Urban,Mobile,26.23,11,Morning,22,3,391.23,0,0.424,6,0.73,0.292,0.359,0.583,0
+U0113,P0011,Home & Kitchen,BrandA,32,Male,Urban,Mobile,36.17,15,Night,9,2,168.41,0,0.99,3,0.894,0.896,0.985,0.794,1
+U0081,P0040,Books,BrandA,53,Other,Urban,Desktop,6.29,1,Afternoon,18,5,164.54,0,0.805,1,0.902,0.983,0.436,0.829,1
+U0187,P0011,Clothing,BrandB,49,Male,Rural,Mobile,20.9,9,Night,27,4,281.11,1,0.164,3,0.643,0.118,0.805,0.562,0
+U0113,P0164,Beauty,BrandA,49,Male,Rural,Mobile,6.29,11,Night,22,2,431.34,1,0.885,6,0.896,0.592,0.502,0.577,0
+U0002,P0113,Clothing,BrandC,21,Male,Suburban,Mobile,57.73,19,Morning,3,4,115.83,1,0.67,3,0.713,0.408,0.878,0.692,1
+U0130,P0187,Toys,BrandC,35,Female,Urban,Tablet,48.63,13,Morning,19,3,470.92,0,0.902,9,0.808,0.349,0.733,0.769,1
+U0220,P0039,Sports,BrandC,36,Male,Urban,Desktop,28.12,16,Evening,18,4,301.56,1,0.408,7,0.789,0.402,0.121,0.504,0
+U0054,P0054,Beauty,BrandB,60,Other,Urban,Mobile,14.19,4,Morning,41,2,496.1,0,0.518,5,0.832,0.675,0.365,0.563,0
+U0224,P0098,Books,BrandC,52,Male,Suburban,Desktop,56.07,1,Morning,26,5,49.36,1,0.907,2,0.859,0.272,0.602,0.774,1
+U0225,P0055,Sports,BrandA,57,Female,Rural,Mobile,21.33,13,Evening,33,1,67.65,1,0.345,9,0.754,0.922,0.934,0.467,0
+U0126,P0111,Electronics,BrandD,31,Male,Urban,Desktop,10.5,1,Night,3,4,414.19,0,0.924,5,0.911,0.52,0.192,0.745,1
+U0130,P0152,Books,BrandD,50,Female,Urban,Desktop,34.23,5,Evening,37,1,433.05,0,0.846,7,0.883,0.393,0.641,0.634,1
+U0053,P0150,Home & Kitchen,BrandE,31,Female,Suburban,Desktop,56.68,5,Evening,6,4,225.5,0,0.983,9,0.875,0.789,0.372,0.786,1
+U0172,P0069,Electronics,BrandA,51,Female,Urban,Mobile,1.23,14,Evening,47,4,358.47,0,0.392,4,0.76,0.115,0.9,0.75,1
+U0218,P0056,Electronics,BrandC,21,Female,Urban,Mobile,15.05,14,Afternoon,6,5,434.44,1,0.312,9,0.613,0.489,0.789,0.643,1
+U0160,P0033,Home & Kitchen,BrandD,41,Female,Suburban,Mobile,56.37,8,Night,49,3,26.35,0,0.398,1,0.772,0.42,0.433,0.601,1
+U0198,P0036,Beauty,BrandA,46,Other,Suburban,Desktop,11.09,4,Afternoon,25,2,289.11,0,0.959,6,0.914,0.404,0.25,0.645,1
+U0247,P0148,Electronics,BrandD,36,Female,Urban,Mobile,7.68,7,Afternoon,25,2,427.47,0,0.4,2,0.667,0.403,0.11,0.455,0
+U0203,P0081,Toys,BrandC,23,Female,Urban,Desktop,34.64,19,Morning,18,2,202.09,1,0.609,8,0.944,0.128,0.659,0.562,0
+U0184,P0190,Books,BrandD,50,Male,Rural,Tablet,51.85,15,Evening,8,3,154.68,0,0.463,5,0.883,0.237,0.466,0.642,1
+U0123,P0109,Sports,BrandE,57,Male,Urban,Mobile,29.15,4,Evening,19,1,398.87,0,0.457,3,0.848,0.228,0.383,0.498,0
+U0255,P0154,Electronics,BrandE,36,Male,Urban,Desktop,59.68,19,Afternoon,41,2,171.21,0,0.274,2,0.837,0.99,0.987,0.64,1
+U0294,P0194,Books,BrandD,18,Female,Urban,Desktop,41.07,9,Morning,44,1,6.57,0,0.583,8,0.805,0.12,0.52,0.542,0
+U0280,P0073,Clothing,BrandA,22,Male,Urban,Tablet,5.37,13,Morning,49,3,479.99,0,0.864,7,0.852,0.25,0.775,0.778,1
+U0098,P0040,Books,BrandA,44,Male,Urban,Tablet,59.58,14,Morning,15,3,298.1,1,0.145,9,0.748,0.977,0.26,0.411,0
+U0198,P0017,Sports,BrandA,33,Female,Rural,Desktop,25.07,14,Night,16,5,410.66,0,0.9,8,0.896,0.665,0.112,0.782,1
+U0240,P0129,Books,BrandD,23,Female,Urban,Mobile,17.96,10,Afternoon,21,2,413.52,0,0.699,4,0.844,0.506,0.476,0.624,1
+U0144,P0061,Home & Kitchen,BrandA,57,Other,Urban,Desktop,33.91,16,Night,12,5,37.87,0,0.655,2,0.87,0.171,0.699,0.845,1
+U0097,P0171,Sports,BrandC,30,Male,Suburban,Mobile,18.95,5,Morning,11,2,89.58,0,0.663,2,0.877,0.703,0.556,0.639,1
+U0201,P0104,Beauty,BrandE,52,Female,Suburban,Desktop,6.1,6,Morning,9,3,159.0,0,0.367,2,0.632,0.224,0.901,0.66,1
+U0124,P0042,Clothing,BrandC,36,Male,Rural,Tablet,1.08,2,Morning,0,3,163.75,0,0.474,6,0.619,0.704,0.491,0.597,0
+U0187,P0025,Home & Kitchen,BrandA,29,Male,Rural,Mobile,27.53,13,Evening,31,4,331.1,0,0.819,7,0.88,0.981,0.38,0.756,1
+U0259,P0039,Beauty,BrandC,33,Male,Urban,Desktop,50.37,13,Afternoon,29,4,313.45,0,0.376,6,0.691,0.579,0.924,0.738,1
+U0148,P0035,Books,BrandA,60,Male,Suburban,Mobile,34.77,19,Evening,7,3,249.82,0,0.523,2,0.804,0.293,0.466,0.639,1
+U0252,P0131,Sports,BrandD,27,Male,Urban,Mobile,59.95,18,Night,20,3,109.58,1,0.118,4,0.755,0.663,0.343,0.423,0
+U0147,P0108,Clothing,BrandC,42,Female,Rural,Mobile,17.92,19,Evening,21,1,194.08,0,0.76,3,0.608,0.562,0.188,0.471,0
+U0148,P0172,Home & Kitchen,BrandD,37,Male,Urban,Desktop,17.55,1,Afternoon,17,1,274.08,1,0.476,4,0.614,0.58,0.814,0.441,0
+U0199,P0179,Beauty,BrandD,48,Female,Rural,Tablet,10.43,8,Evening,1,5,236.65,1,0.573,5,0.889,0.53,0.843,0.761,1
+U0128,P0102,Beauty,BrandB,21,Female,Suburban,Tablet,10.68,16,Morning,47,4,68.01,0,0.203,7,0.813,0.706,0.13,0.569,0
+U0039,P0098,Clothing,BrandA,61,Male,Urban,Mobile,17.83,2,Night,43,4,326.51,1,0.993,9,0.783,0.615,0.423,0.68,1
+U0129,P0012,Toys,BrandE,40,Female,Suburban,Desktop,47.78,8,Night,8,3,41.16,0,0.372,2,0.931,0.988,0.775,0.696,1
+U0267,P0019,Books,BrandA,19,Male,Rural,Desktop,54.44,6,Morning,2,3,192.21,0,0.671,8,0.661,0.843,0.952,0.737,1
+U0151,P0101,Clothing,BrandE,39,Female,Rural,Mobile,58.53,16,Morning,25,5,356.46,0,0.623,3,0.69,0.338,0.44,0.751,1
+U0298,P0044,Beauty,BrandA,54,Male,Urban,Mobile,14.71,11,Morning,20,4,14.91,0,0.807,9,0.865,0.753,0.885,0.851,1
+U0099,P0187,Electronics,BrandD,25,Male,Suburban,Mobile,53.0,17,Afternoon,29,1,287.14,0,0.364,10,0.871,0.293,0.454,0.498,0
+U0263,P0049,Home & Kitchen,BrandC,24,Male,Urban,Tablet,20.37,19,Evening,27,2,170.59,0,0.78,4,0.742,0.804,0.262,0.577,0
+U0252,P0189,Clothing,BrandC,31,Female,Urban,Desktop,7.66,11,Night,35,5,9.37,0,0.444,3,0.933,0.233,0.103,0.696,1
+U0144,P0017,Toys,BrandB,20,Other,Urban,Desktop,52.33,8,Evening,25,2,99.24,0,0.47,10,0.928,0.526,0.397,0.579,0
+U0112,P0074,Beauty,BrandE,33,Male,Urban,Mobile,38.53,4,Morning,33,1,470.77,0,0.705,6,0.604,0.812,0.441,0.51,0
+U0060,P0057,Books,BrandE,36,Female,Rural,Desktop,10.72,11,Morning,7,1,262.97,0,0.806,10,0.66,0.352,0.951,0.643,1
+U0002,P0055,Beauty,BrandE,35,Female,Urban,Mobile,26.36,8,Evening,9,2,498.63,0,0.7,9,0.887,0.853,0.285,0.594,0
+U0254,P0047,Books,BrandD,33,Other,Rural,Mobile,17.95,9,Night,47,5,264.78,0,0.91,7,0.717,0.68,0.444,0.814,1
+U0140,P0012,Clothing,BrandE,25,Female,Urban,Desktop,44.47,2,Afternoon,42,2,274.25,0,0.357,4,0.633,0.458,0.123,0.443,0
+U0037,P0062,Books,BrandC,50,Female,Urban,Mobile,27.75,16,Evening,49,5,198.96,0,0.911,3,0.875,0.481,0.787,0.915,1
+U0160,P0080,Sports,BrandD,29,Female,Urban,Desktop,59.37,6,Morning,13,5,158.47,1,0.218,10,0.759,0.933,0.924,0.68,1
+U0009,P0083,Sports,BrandA,28,Female,Urban,Mobile,4.23,19,Morning,39,3,129.52,1,0.694,4,0.772,0.296,0.314,0.536,0
+U0233,P0008,Sports,BrandE,22,Male,Urban,Desktop,21.95,8,Afternoon,14,4,174.99,0,0.593,3,0.665,0.724,0.486,0.689,1
+U0099,P0149,Toys,BrandE,44,Male,Urban,Mobile,29.43,14,Evening,16,4,232.63,1,0.545,3,0.831,0.737,0.21,0.557,0
+U0147,P0081,Toys,BrandA,29,Male,Suburban,Mobile,30.68,16,Afternoon,17,1,100.04,0,0.38,9,0.793,0.93,0.511,0.497,0
+U0208,P0118,Electronics,BrandE,34,Female,Urban,Mobile,19.64,12,Afternoon,31,3,116.31,0,0.553,4,0.672,0.742,0.22,0.569,0
+U0131,P0198,Toys,BrandA,23,Female,Urban,Mobile,44.03,5,Night,37,4,139.41,1,0.246,9,0.719,0.626,0.571,0.547,0
+U0152,P0200,Clothing,BrandD,50,Male,Urban,Tablet,52.61,19,Night,22,5,227.38,0,0.432,10,0.809,0.912,0.761,0.8,1
+U0054,P0025,Beauty,BrandC,22,Female,Rural,Mobile,56.38,18,Morning,45,5,328.14,1,0.189,5,0.924,0.846,0.598,0.642,1
+U0120,P0089,Beauty,BrandA,45,Female,Rural,Desktop,48.5,9,Evening,22,2,428.79,0,0.615,7,0.922,0.745,0.321,0.592,0
+U0161,P0012,Electronics,BrandB,31,Male,Urban,Tablet,51.18,2,Night,34,2,147.13,0,0.186,5,0.701,0.129,0.418,0.481,0
+U0116,P0143,Toys,BrandA,22,Other,Urban,Mobile,33.48,12,Morning,38,5,95.95,0,0.244,1,0.857,0.436,0.675,0.755,1
+U0075,P0059,Books,BrandE,50,Male,Urban,Mobile,49.73,2,Evening,14,5,192.53,0,0.177,2,0.871,0.669,0.631,0.736,1
+U0113,P0154,Electronics,BrandD,58,Male,Rural,Desktop,18.91,10,Morning,23,2,447.72,0,0.443,5,0.883,0.57,0.223,0.53,0
+U0104,P0109,Books,BrandD,36,Female,Urban,Tablet,24.51,1,Night,27,4,9.88,0,0.858,6,0.8,0.387,0.86,0.844,1
+U0254,P0026,Books,BrandA,39,Female,Urban,Tablet,19.7,4,Morning,15,1,340.54,1,0.916,7,0.604,0.23,0.528,0.47,0
+U0227,P0047,Home & Kitchen,BrandC,22,Male,Urban,Mobile,28.58,12,Evening,15,2,241.19,0,0.165,2,0.867,0.598,0.246,0.476,0
+U0112,P0032,Beauty,BrandB,19,Female,Urban,Desktop,17.85,9,Evening,39,4,84.72,0,0.671,10,0.637,0.357,0.211,0.644,1
+U0099,P0010,Sports,BrandD,47,Female,Urban,Mobile,57.74,4,Morning,38,4,163.91,0,0.716,9,0.641,0.31,0.969,0.805,1
+U0153,P0016,Toys,BrandE,64,Male,Suburban,Tablet,19.46,9,Evening,5,4,116.35,1,0.58,6,0.812,0.459,0.353,0.589,0
+U0194,P0199,Books,BrandE,56,Male,Urban,Tablet,6.78,6,Morning,1,3,439.53,0,0.7,2,0.944,0.807,0.918,0.792,1
+U0163,P0145,Home & Kitchen,BrandC,21,Female,Suburban,Mobile,32.08,1,Evening,12,3,243.53,0,0.31,2,0.685,0.539,0.47,0.573,0
+U0208,P0151,Beauty,BrandD,50,Male,Urban,Mobile,4.37,10,Morning,43,4,283.73,1,0.541,3,0.826,0.295,0.447,0.603,1
+U0169,P0026,Sports,BrandA,30,Other,Urban,Mobile,7.52,14,Morning,46,5,298.88,0,0.452,1,0.706,0.205,0.731,0.778,1
+U0161,P0086,Books,BrandE,37,Female,Rural,Mobile,13.94,18,Morning,8,3,321.61,0,0.181,9,0.915,0.549,0.109,0.521,0
+U0068,P0135,Books,BrandC,24,Other,Urban,Desktop,28.4,6,Afternoon,33,2,250.3,1,0.663,10,0.808,0.815,0.404,0.495,0
+U0289,P0014,Electronics,BrandD,32,Male,Rural,Mobile,26.56,18,Evening,16,3,13.85,1,0.546,4,0.673,0.688,0.372,0.498,0
+U0277,P0079,Electronics,BrandD,40,Other,Suburban,Mobile,48.18,16,Night,26,5,170.69,0,0.348,5,0.692,0.309,0.881,0.784,1
+U0135,P0117,Beauty,BrandD,31,Male,Urban,Mobile,44.63,15,Morning,28,1,96.02,0,0.526,7,0.751,0.493,0.576,0.531,0
+U0195,P0007,Sports,BrandD,40,Male,Rural,Tablet,26.15,16,Afternoon,36,3,341.67,1,0.798,1,0.643,0.87,0.428,0.554,0
+U0128,P0137,Books,BrandD,36,Male,Urban,Desktop,20.69,8,Night,42,4,33.07,0,0.821,3,0.628,0.26,0.339,0.698,1
+U0033,P0115,Beauty,BrandE,46,Male,Rural,Mobile,19.67,13,Morning,21,4,284.08,1,0.685,3,0.838,0.579,0.631,0.671,1
+U0176,P0176,Beauty,BrandC,37,Female,Urban,Mobile,46.67,11,Night,23,4,109.26,0,0.521,2,0.743,0.421,0.237,0.64,1
+U0022,P0072,Clothing,BrandD,46,Female,Rural,Tablet,4.07,7,Afternoon,6,1,474.68,0,0.618,8,0.854,0.212,0.322,0.519,0
+U0238,P0059,Toys,BrandB,41,Male,Urban,Desktop,1.76,17,Night,33,5,171.09,0,0.447,5,0.639,0.145,0.364,0.69,1
+U0158,P0082,Electronics,BrandB,35,Female,Suburban,Mobile,47.94,18,Morning,47,2,165.98,1,0.214,1,0.813,0.6,0.647,0.455,0
+U0038,P0116,Sports,BrandC,27,Male,Suburban,Mobile,29.15,19,Night,11,5,462.08,1,0.447,2,0.755,0.119,0.436,0.628,1
+U0230,P0167,Books,BrandA,58,Female,Rural,Mobile,8.72,13,Night,22,1,211.59,0,0.577,1,0.62,0.193,0.555,0.51,0
+U0051,P0146,Beauty,BrandA,25,Male,Rural,Mobile,14.9,15,Morning,14,4,481.62,1,0.639,6,0.791,0.413,0.685,0.663,1
+U0264,P0187,Books,BrandA,43,Female,Rural,Mobile,56.02,1,Afternoon,32,5,16.96,0,0.942,9,0.629,0.139,0.961,0.906,1
+U0283,P0103,Clothing,BrandB,46,Female,Rural,Tablet,51.71,16,Afternoon,12,2,156.64,0,0.8,7,0.89,0.46,0.788,0.716,1
+U0027,P0017,Sports,BrandA,27,Female,Urban,Mobile,42.88,5,Night,22,4,334.77,1,0.237,5,0.821,0.217,0.465,0.545,0
+U0226,P0014,Beauty,BrandE,34,Male,Urban,Desktop,29.45,3,Evening,37,2,445.97,1,0.257,3,0.795,0.415,0.773,0.485,0
+U0277,P0159,Books,BrandD,19,Male,Urban,Mobile,31.7,10,Night,31,3,131.92,1,0.19,8,0.647,0.812,0.955,0.538,0
+U0286,P0152,Electronics,BrandB,23,Female,Urban,Desktop,58.54,19,Evening,44,2,465.59,1,0.764,10,0.701,0.664,0.549,0.523,0
+U0097,P0108,Toys,BrandC,22,Male,Urban,Desktop,57.98,5,Night,49,4,299.09,0,0.736,4,0.773,0.501,0.469,0.736,1
+U0284,P0188,Clothing,BrandC,45,Male,Suburban,Mobile,13.7,7,Afternoon,34,3,401.5,0,0.988,9,0.822,0.183,0.17,0.676,1
+U0147,P0045,Sports,BrandD,58,Male,Urban,Mobile,48.86,14,Night,0,4,201.62,1,0.57,5,0.664,0.657,0.903,0.667,1
+U0004,P0098,Clothing,BrandB,22,Female,Suburban,Desktop,12.64,3,Night,46,4,110.03,0,0.844,6,0.603,0.247,0.322,0.694,1
+U0035,P0131,Electronics,BrandA,35,Female,Urban,Mobile,13.6,13,Evening,44,3,456.06,0,0.619,5,0.721,0.169,0.158,0.58,0
+U0192,P0037,Sports,BrandA,43,Female,Urban,Mobile,40.89,13,Afternoon,4,2,466.9,0,0.887,10,0.769,0.698,0.583,0.668,1
+U0049,P0171,Clothing,BrandE,37,Male,Suburban,Mobile,24.9,10,Evening,12,1,251.3,0,0.749,7,0.665,0.921,0.861,0.615,1
+U0017,P0168,Home & Kitchen,BrandE,58,Male,Suburban,Tablet,55.96,2,Night,4,1,8.22,1,0.679,7,0.772,0.515,0.466,0.443,0
+U0172,P0183,Electronics,BrandA,44,Female,Suburban,Mobile,6.25,6,Morning,31,1,59.34,0,0.609,1,0.718,0.137,0.805,0.586,0
+U0220,P0108,Electronics,BrandC,29,Female,Suburban,Desktop,31.18,8,Night,20,1,288.65,1,0.751,2,0.759,0.892,0.853,0.533,0
+U0158,P0039,Electronics,BrandC,24,Male,Urban,Mobile,55.19,4,Night,23,5,16.77,0,0.478,7,0.722,0.16,0.509,0.742,1
+U0046,P0015,Home & Kitchen,BrandE,20,Female,Suburban,Desktop,54.34,12,Evening,17,1,201.47,0,0.187,8,0.82,0.881,0.632,0.488,0
+U0006,P0120,Home & Kitchen,BrandD,27,Male,Urban,Mobile,10.24,15,Morning,20,3,155.17,0,0.136,4,0.615,0.453,0.581,0.546,0
+U0099,P0004,Books,BrandA,51,Other,Urban,Desktop,22.63,8,Morning,9,1,358.6,0,0.531,6,0.66,0.429,0.945,0.587,0
+U0233,P0093,Beauty,BrandE,42,Male,Urban,Mobile,37.53,7,Evening,23,4,32.51,0,0.639,10,0.751,0.589,0.753,0.769,1
+U0037,P0153,Toys,BrandE,52,Other,Urban,Desktop,10.4,14,Afternoon,39,1,246.92,0,0.171,3,0.725,0.961,0.933,0.526,0
+U0280,P0141,Clothing,BrandA,33,Female,Urban,Desktop,58.11,19,Morning,46,2,291.66,0,0.358,7,0.737,0.909,0.298,0.499,0
+U0181,P0161,Books,BrandA,19,Female,Rural,Mobile,54.97,14,Morning,20,3,310.56,0,0.39,3,0.881,0.523,0.379,0.61,1
+U0095,P0016,Clothing,BrandC,41,Male,Rural,Mobile,10.85,13,Evening,24,3,205.55,0,0.607,7,0.91,0.726,0.164,0.616,1
+U0099,P0170,Toys,BrandD,27,Female,Urban,Mobile,8.15,1,Afternoon,22,5,155.66,0,0.351,8,0.687,0.622,0.55,0.718,1
+U0188,P0108,Beauty,BrandD,55,Male,Urban,Mobile,6.04,19,Afternoon,21,4,342.83,0,0.186,3,0.893,0.724,0.887,0.733,1
+U0116,P0126,Home & Kitchen,BrandA,39,Male,Urban,Desktop,54.66,1,Night,3,3,424.55,0,0.248,2,0.761,0.846,0.394,0.561,0
+U0191,P0194,Beauty,BrandB,43,Female,Urban,Mobile,12.42,4,Night,33,2,348.34,1,0.257,6,0.696,0.131,0.215,0.354,0
+U0253,P0055,Home & Kitchen,BrandE,60,Other,Rural,Mobile,25.56,10,Evening,5,1,466.39,0,0.858,4,0.945,0.393,0.162,0.553,0
+U0161,P0170,Toys,BrandE,56,Female,Urban,Desktop,27.48,3,Afternoon,27,3,360.05,1,0.356,8,0.889,0.963,0.503,0.53,0
+U0256,P0034,Beauty,BrandA,44,Female,Suburban,Mobile,36.34,9,Evening,30,2,383.49,1,0.743,2,0.948,0.954,0.248,0.508,0
+U0128,P0158,Books,BrandB,46,Male,Urban,Mobile,5.23,3,Night,34,1,88.11,0,0.611,4,0.659,0.11,0.411,0.496,0
+U0018,P0013,Sports,BrandC,64,Male,Rural,Mobile,14.38,6,Evening,38,5,212.67,1,0.979,2,0.65,0.281,0.838,0.793,1
+U0281,P0141,Books,BrandA,55,Male,Urban,Tablet,55.96,6,Evening,41,3,245.1,0,0.346,2,0.776,0.994,0.446,0.594,0
+U0223,P0018,Clothing,BrandA,37,Female,Suburban,Desktop,54.6,12,Morning,22,3,131.87,1,0.243,2,0.824,0.544,0.649,0.523,0
+U0054,P0160,Books,BrandE,44,Other,Urban,Desktop,47.1,1,Morning,5,2,266.63,1,0.147,1,0.66,0.616,0.552,0.392,0
+U0058,P0096,Toys,BrandA,58,Female,Suburban,Mobile,2.14,16,Morning,15,4,148.94,0,0.317,4,0.901,0.25,0.747,0.733,1
+U0174,P0123,Electronics,BrandA,37,Male,Urban,Desktop,20.29,5,Night,1,5,345.31,0,0.716,2,0.786,0.905,0.241,0.749,1
+U0280,P0039,Clothing,BrandA,61,Male,Urban,Mobile,38.05,9,Evening,23,4,237.79,0,0.177,9,0.744,0.308,0.928,0.71,1
+U0114,P0046,Beauty,BrandE,36,Female,Rural,Mobile,17.24,10,Morning,16,3,232.11,0,0.32,9,0.811,0.271,0.679,0.642,1
+U0288,P0029,Clothing,BrandC,37,Male,Rural,Mobile,54.67,13,Morning,44,4,491.9,0,0.87,7,0.822,0.305,0.344,0.747,1
+U0151,P0190,Sports,BrandC,52,Female,Rural,Mobile,38.4,15,Morning,0,1,199.26,0,0.625,6,0.615,0.928,0.211,0.45,0
+U0127,P0062,Home & Kitchen,BrandA,64,Female,Suburban,Mobile,5.24,12,Night,5,5,184.34,0,0.163,3,0.95,0.733,0.235,0.67,1
+U0155,P0185,Beauty,BrandE,19,Female,Rural,Mobile,54.63,5,Night,4,4,162.71,0,0.143,7,0.727,0.792,0.804,0.675,1
+U0273,P0016,Clothing,BrandC,47,Male,Urban,Mobile,57.51,5,Evening,44,1,447.9,1,0.155,1,0.622,0.439,0.629,0.341,0
+U0104,P0184,Beauty,BrandC,51,Male,Urban,Mobile,5.59,18,Evening,49,2,250.88,1,0.948,9,0.898,0.918,0.443,0.578,0
+U0299,P0121,Beauty,BrandC,39,Male,Urban,Desktop,32.41,12,Evening,28,4,302.01,0,0.865,4,0.948,0.81,0.4,0.783,1
+U0246,P0010,Beauty,BrandE,20,Male,Suburban,Mobile,18.9,3,Morning,11,5,94.51,0,0.86,6,0.886,0.776,0.87,0.923,1
+U0176,P0158,Home & Kitchen,BrandE,23,Male,Urban,Desktop,24.18,7,Afternoon,38,1,272.77,0,0.932,6,0.898,0.974,0.887,0.703,1
+U0039,P0153,Toys,BrandA,32,Female,Urban,Mobile,11.6,17,Night,46,4,140.95,0,0.555,3,0.819,0.43,0.623,0.739,1
+U0170,P0103,Books,BrandD,44,Female,Suburban,Desktop,35.11,19,Morning,2,2,366.67,1,0.323,4,0.923,0.65,0.572,0.484,0
+U0247,P0084,Beauty,BrandC,27,Male,Rural,Mobile,57.52,18,Morning,47,4,417.1,0,0.461,10,0.613,0.919,0.835,0.722,1
+U0026,P0133,Electronics,BrandD,26,Male,Urban,Mobile,30.68,1,Evening,0,1,358.83,0,0.747,3,0.868,0.812,0.774,0.638,1
+U0013,P0065,Toys,BrandE,50,Male,Urban,Mobile,5.89,5,Evening,26,4,366.47,1,0.888,6,0.835,0.607,0.46,0.677,1
+U0036,P0177,Sports,BrandE,49,Male,Urban,Desktop,37.58,2,Morning,47,5,258.67,1,0.492,1,0.617,0.169,0.174,0.557,0
+U0173,P0003,Home & Kitchen,BrandE,23,Female,Urban,Desktop,21.07,1,Night,23,3,357.5,0,0.582,8,0.79,0.687,0.792,0.713,1
+U0020,P0173,Clothing,BrandD,58,Male,Urban,Mobile,51.5,7,Night,43,1,214.23,0,0.939,8,0.78,0.574,0.252,0.554,0
+U0264,P0142,Home & Kitchen,BrandE,53,Male,Suburban,Mobile,26.65,11,Morning,18,1,327.49,0,0.197,9,0.842,0.266,0.115,0.391,0
+U0142,P0120,Clothing,BrandA,19,Male,Suburban,Desktop,12.38,11,Afternoon,7,1,133.22,0,0.876,6,0.627,0.894,0.859,0.632,1
+U0143,P0158,Home & Kitchen,BrandE,46,Female,Suburban,Desktop,12.28,18,Afternoon,43,1,39.53,1,0.243,1,0.882,0.409,0.62,0.409,0
+U0092,P0068,Clothing,BrandB,21,Female,Urban,Mobile,46.36,17,Night,46,4,209.67,0,0.535,3,0.649,0.449,0.902,0.757,1
+U0288,P0146,Beauty,BrandD,18,Male,Rural,Mobile,16.67,2,Evening,1,5,233.58,0,0.297,1,0.747,0.705,0.536,0.716,1
+U0215,P0190,Books,BrandB,36,Female,Urban,Mobile,46.27,7,Afternoon,29,2,131.92,1,0.643,5,0.908,0.54,0.934,0.617,1
+U0051,P0037,Clothing,BrandE,43,Female,Urban,Desktop,13.15,7,Afternoon,29,5,365.22,1,0.603,3,0.796,0.18,0.419,0.664,1
+U0153,P0153,Clothing,BrandA,42,Other,Rural,Mobile,19.98,10,Evening,48,1,41.41,1,0.442,2,0.733,0.449,0.752,0.445,0
+U0186,P0176,Electronics,BrandC,27,Male,Urban,Tablet,28.46,3,Afternoon,38,4,115.26,0,0.877,3,0.617,0.185,0.371,0.713,1
+U0063,P0193,Clothing,BrandE,32,Female,Urban,Mobile,56.65,12,Morning,44,4,375.54,0,0.694,9,0.835,0.272,0.101,0.666,1
+U0190,P0181,Electronics,BrandA,39,Other,Rural,Mobile,55.97,3,Afternoon,31,1,221.38,0,0.749,8,0.945,0.106,0.442,0.587,0
+U0125,P0073,Sports,BrandD,38,Other,Urban,Mobile,13.21,11,Evening,0,4,354.12,0,0.236,3,0.919,0.263,0.764,0.724,1
+U0150,P0143,Beauty,BrandB,39,Female,Suburban,Tablet,22.13,12,Morning,37,1,285.91,0,0.895,2,0.851,0.397,0.235,0.556,0
+U0058,P0049,Electronics,BrandB,53,Female,Urban,Desktop,9.81,4,Afternoon,12,5,475.6,0,0.25,5,0.637,0.584,0.554,0.688,1
+U0180,P0121,Books,BrandB,51,Male,Suburban,Mobile,31.09,16,Night,10,3,300.91,0,0.301,1,0.684,0.927,0.291,0.535,0
+U0170,P0088,Toys,BrandD,47,Female,Urban,Desktop,28.17,18,Morning,9,4,12.36,1,0.215,4,0.665,0.586,0.167,0.449,0
+U0271,P0196,Beauty,BrandA,42,Female,Urban,Mobile,54.14,4,Morning,47,1,179.67,0,0.496,8,0.724,0.735,0.656,0.535,0
+U0054,P0140,Electronics,BrandD,62,Female,Suburban,Mobile,55.87,6,Night,25,1,75.82,1,0.899,1,0.682,0.422,0.957,0.568,0
+U0101,P0187,Beauty,BrandB,45,Male,Urban,Mobile,23.63,15,Night,19,4,462.69,0,0.327,5,0.686,0.776,0.38,0.619,1
+U0264,P0037,Beauty,BrandE,18,Female,Urban,Mobile,30.01,1,Afternoon,16,2,56.49,1,0.436,4,0.816,0.658,0.623,0.495,0
+U0053,P0061,Beauty,BrandC,62,Female,Urban,Mobile,53.88,3,Afternoon,16,1,196.91,0,0.861,6,0.712,0.514,0.958,0.666,1
+U0060,P0171,Sports,BrandD,21,Male,Urban,Tablet,48.6,5,Evening,3,4,116.92,1,0.656,7,0.837,0.274,0.685,0.676,1
+U0108,P0124,Books,BrandD,24,Female,Urban,Mobile,1.22,17,Evening,4,1,424.13,0,0.776,9,0.932,0.373,0.706,0.643,1
+U0005,P0198,Home & Kitchen,BrandA,26,Female,Urban,Tablet,19.88,14,Morning,22,2,157.74,0,0.293,1,0.823,0.659,0.261,0.495,0
+U0103,P0039,Home & Kitchen,BrandA,53,Female,Rural,Mobile,25.88,9,Night,45,3,495.99,1,0.745,10,0.863,0.483,0.543,0.61,1
+U0196,P0184,Electronics,BrandD,36,Male,Urban,Desktop,14.55,3,Night,9,2,24.12,0,0.305,4,0.863,0.9,0.43,0.54,0
+U0262,P0063,Beauty,BrandB,18,Male,Urban,Mobile,12.77,13,Evening,45,5,68.5,0,0.989,6,0.716,0.311,0.524,0.846,1
+U0047,P0046,Electronics,BrandC,27,Other,Urban,Mobile,3.23,3,Morning,27,4,116.2,1,0.604,10,0.605,0.166,0.821,0.646,1
+U0144,P0088,Sports,BrandA,53,Male,Urban,Mobile,38.96,11,Morning,32,2,406.5,1,0.726,7,0.619,0.63,0.515,0.492,0
+U0269,P0011,Sports,BrandB,26,Female,Rural,Mobile,16.49,2,Evening,42,3,439.87,0,0.207,7,0.699,0.897,0.157,0.493,0
+U0124,P0062,Clothing,BrandE,62,Female,Urban,Desktop,4.09,15,Evening,25,1,40.37,0,0.326,8,0.841,0.428,0.915,0.576,0
+U0106,P0077,Sports,BrandA,63,Female,Rural,Mobile,14.63,13,Evening,49,4,21.07,0,0.226,10,0.917,0.683,0.59,0.687,1
+U0158,P0153,Clothing,BrandB,59,Male,Urban,Desktop,48.31,19,Afternoon,47,2,373.56,0,0.451,8,0.936,0.308,0.932,0.684,1
+U0147,P0199,Books,BrandB,49,Female,Suburban,Mobile,51.24,16,Morning,28,3,71.01,1,0.356,8,0.609,0.603,0.615,0.496,0
+U0145,P0052,Electronics,BrandC,49,Male,Suburban,Mobile,29.5,18,Morning,26,2,70.83,0,0.76,8,0.947,0.808,0.163,0.594,0
+U0120,P0004,Toys,BrandC,23,Male,Rural,Mobile,25.55,7,Morning,17,5,16.07,0,0.198,8,0.713,0.88,0.598,0.702,1
+U0275,P0059,Books,BrandE,55,Male,Suburban,Tablet,58.69,13,Evening,39,4,29.65,1,0.777,6,0.895,0.195,0.618,0.698,1
+U0092,P0072,Sports,BrandB,34,Male,Suburban,Desktop,12.83,4,Evening,9,1,135.52,0,0.141,9,0.663,0.421,0.293,0.379,0
+U0058,P0148,Books,BrandB,27,Other,Urban,Mobile,13.71,9,Evening,41,3,37.18,0,0.282,3,0.622,0.676,0.524,0.566,0
+U0229,P0093,Books,BrandC,44,Other,Urban,Mobile,18.22,10,Evening,4,2,187.6,0,0.813,6,0.732,0.131,0.513,0.632,1
+U0117,P0063,Books,BrandA,52,Male,Rural,Mobile,11.19,9,Night,9,4,417.22,0,0.768,5,0.901,0.722,0.661,0.806,1
+U0279,P0054,Sports,BrandA,38,Female,Urban,Tablet,23.38,7,Evening,49,2,166.53,0,0.529,8,0.677,0.575,0.334,0.528,0
+U0127,P0117,Toys,BrandD,42,Male,Urban,Desktop,54.74,15,Afternoon,20,4,365.28,0,0.145,4,0.654,0.36,0.624,0.625,1
+U0129,P0110,Beauty,BrandC,45,Female,Suburban,Mobile,37.31,8,Night,23,5,51.49,0,0.649,4,0.918,0.833,0.317,0.777,1
+U0058,P0074,Books,BrandD,64,Female,Urban,Mobile,25.3,19,Night,37,2,331.39,0,0.466,10,0.928,0.361,0.502,0.599,0
+U0122,P0107,Clothing,BrandC,32,Other,Rural,Mobile,56.13,11,Evening,2,5,161.79,0,0.385,10,0.604,0.992,0.21,0.64,1
+U0001,P0057,Sports,BrandE,21,Male,Suburban,Tablet,3.86,5,Morning,39,3,376.13,0,0.676,5,0.855,0.835,0.134,0.613,1
+U0239,P0169,Books,BrandB,46,Female,Suburban,Mobile,13.41,2,Evening,30,5,72.44,0,0.493,6,0.708,0.737,0.389,0.718,1
+U0290,P0003,Toys,BrandE,26,Male,Rural,Desktop,34.39,10,Morning,40,4,449.45,0,0.183,4,0.731,0.155,0.347,0.592,0
+U0096,P0120,Beauty,BrandC,44,Other,Urban,Mobile,37.32,16,Evening,36,3,125.08,0,0.924,2,0.764,0.914,0.466,0.711,1
+U0126,P0006,Sports,BrandB,43,Male,Urban,Desktop,3.33,13,Evening,1,2,179.8,0,0.801,2,0.749,0.811,0.966,0.723,1
+U0118,P0005,Home & Kitchen,BrandA,36,Female,Urban,Desktop,24.78,8,Morning,1,2,475.34,0,0.151,3,0.78,0.306,0.57,0.52,0
+U0048,P0005,Beauty,BrandA,45,Female,Urban,Desktop,39.3,9,Morning,38,4,291.35,0,0.573,2,0.804,0.453,0.598,0.735,1
+U0089,P0054,Clothing,BrandD,34,Female,Suburban,Desktop,42.19,11,Morning,48,1,186.06,1,0.175,1,0.763,0.342,0.947,0.437,0
+U0237,P0047,Books,BrandC,60,Male,Rural,Desktop,38.65,11,Morning,41,1,475.05,0,0.854,8,0.846,0.986,0.929,0.686,1
+U0272,P0177,Toys,BrandC,58,Other,Urban,Mobile,19.91,16,Afternoon,43,2,167.89,1,0.652,5,0.852,0.869,0.896,0.6,0
+U0189,P0009,Home & Kitchen,BrandA,59,Male,Urban,Mobile,6.52,10,Morning,33,4,51.96,1,0.255,10,0.754,0.937,0.188,0.479,0
+U0192,P0099,Toys,BrandE,37,Female,Rural,Mobile,26.2,12,Evening,41,1,498.44,0,0.119,1,0.65,0.81,0.671,0.448,0
+U0069,P0020,Home & Kitchen,BrandB,62,Male,Urban,Tablet,8.6,6,Evening,19,5,137.58,0,0.128,9,0.824,0.511,0.827,0.756,1
+U0278,P0122,Sports,BrandE,57,Male,Urban,Mobile,56.91,12,Afternoon,32,2,426.37,1,0.557,8,0.871,0.285,0.852,0.576,0
+U0247,P0061,Home & Kitchen,BrandE,56,Female,Urban,Desktop,29.04,10,Morning,3,5,86.94,0,0.761,4,0.823,0.287,0.62,0.841,1
+U0076,P0123,Clothing,BrandA,40,Male,Rural,Desktop,19.72,18,Evening,44,4,367.02,1,0.209,8,0.806,0.237,0.116,0.466,0
+U0154,P0163,Clothing,BrandA,64,Male,Suburban,Mobile,46.21,18,Afternoon,43,5,264.6,0,0.299,10,0.68,0.592,0.976,0.791,1
+U0144,P0178,Electronics,BrandA,49,Male,Suburban,Mobile,30.38,4,Evening,10,1,490.55,0,0.395,7,0.826,0.928,0.525,0.509,0
+U0086,P0082,Clothing,BrandD,64,Male,Rural,Mobile,19.29,9,Afternoon,41,1,278.65,0,0.296,7,0.717,0.993,0.454,0.453,0
+U0185,P0062,Beauty,BrandE,50,Female,Urban,Mobile,48.91,7,Afternoon,46,3,17.38,0,0.452,1,0.922,0.359,0.455,0.646,1
+U0285,P0145,Home & Kitchen,BrandC,63,Female,Urban,Mobile,52.16,18,Night,4,2,303.92,0,0.604,6,0.829,0.728,0.482,0.603,1
+U0220,P0003,Clothing,BrandB,22,Male,Rural,Mobile,40.71,8,Night,24,4,76.93,0,0.716,4,0.697,0.637,0.318,0.686,1
+U0069,P0160,Sports,BrandD,60,Male,Urban,Desktop,3.77,11,Morning,48,2,400.28,1,0.967,10,0.766,0.54,0.395,0.546,0
+U0047,P0013,Toys,BrandC,51,Male,Suburban,Tablet,34.41,7,Night,36,5,429.0,1,0.938,10,0.896,0.699,0.987,0.864,1
+U0094,P0120,Toys,BrandE,57,Male,Rural,Mobile,46.03,9,Afternoon,33,4,243.64,0,0.613,10,0.717,0.434,0.431,0.692,1
+U0238,P0125,Electronics,BrandA,28,Female,Suburban,Mobile,9.05,8,Evening,8,4,392.69,1,0.761,2,0.784,0.95,0.574,0.664,1
+U0204,P0089,Toys,BrandE,20,Female,Suburban,Mobile,14.49,3,Evening,5,1,76.83,1,0.956,10,0.838,0.735,0.863,0.591,0
+U0218,P0073,Home & Kitchen,BrandB,50,Male,Rural,Desktop,53.07,17,Morning,17,5,248.58,1,0.175,7,0.864,0.779,0.575,0.623,1
+U0039,P0068,Electronics,BrandD,28,Male,Rural,Desktop,2.19,2,Night,13,1,200.0,0,0.105,9,0.661,0.318,0.392,0.392,0
+U0100,P0142,Home & Kitchen,BrandD,33,Male,Urban,Mobile,45.41,15,Morning,18,1,307.6,1,0.127,5,0.798,0.252,0.571,0.359,0
+U0289,P0101,Sports,BrandB,35,Female,Urban,Mobile,28.95,14,Afternoon,13,3,27.02,0,0.607,8,0.919,0.455,0.203,0.626,1
+U0254,P0098,Electronics,BrandC,47,Other,Urban,Desktop,27.36,18,Night,39,1,377.3,0,0.787,5,0.939,0.79,0.217,0.549,0
+U0222,P0011,Books,BrandC,27,Male,Suburban,Desktop,1.42,16,Morning,16,2,44.17,1,0.43,7,0.83,0.945,0.725,0.517,0
+U0023,P0105,Beauty,BrandD,35,Male,Urban,Mobile,49.34,4,Evening,34,4,329.95,0,0.591,7,0.944,0.485,0.926,0.832,1
+U0250,P0184,Beauty,BrandD,55,Female,Suburban,Desktop,22.23,6,Evening,28,1,14.14,0,0.565,9,0.8,0.797,0.753,0.584,0
+U0010,P0067,Home & Kitchen,BrandA,36,Other,Urban,Mobile,32.91,6,Morning,41,2,416.78,1,0.185,3,0.755,0.523,0.167,0.341,0
+U0246,P0123,Toys,BrandC,53,Male,Suburban,Mobile,40.96,11,Morning,16,5,91.48,0,0.389,1,0.793,0.366,0.463,0.729,1
+U0100,P0029,Books,BrandB,30,Male,Urban,Desktop,42.46,17,Morning,42,4,260.17,1,0.117,2,0.64,0.765,0.102,0.412,0
+U0290,P0137,Electronics,BrandC,63,Male,Suburban,Desktop,57.4,3,Afternoon,7,5,134.44,1,0.2,6,0.741,0.818,0.56,0.6,0
+U0180,P0195,Books,BrandA,20,Female,Suburban,Mobile,32.35,13,Afternoon,0,2,362.71,0,0.831,10,0.76,0.283,0.274,0.593,0
+U0223,P0153,Books,BrandD,27,Male,Urban,Tablet,24.58,3,Evening,44,5,164.07,0,0.846,10,0.897,0.375,0.881,0.925,1
+U0250,P0076,Toys,BrandD,55,Male,Urban,Mobile,57.27,16,Afternoon,35,5,363.68,1,0.822,9,0.866,0.545,0.194,0.676,1
+U0147,P0170,Electronics,BrandA,18,Female,Suburban,Desktop,38.88,15,Afternoon,6,5,146.01,0,0.754,3,0.81,0.268,0.101,0.733,1
+U0096,P0009,Sports,BrandB,44,Male,Urban,Mobile,18.59,11,Night,45,1,377.47,1,0.814,10,0.722,0.936,0.506,0.468,0
+U0257,P0040,Toys,BrandD,63,Female,Urban,Desktop,8.46,18,Afternoon,4,1,20.15,1,0.704,2,0.665,0.632,0.24,0.382,0
+U0004,P0025,Books,BrandE,25,Male,Rural,Tablet,50.71,15,Night,23,1,145.24,0,0.703,1,0.722,0.209,0.764,0.598,0
+U0016,P0005,Books,BrandD,63,Male,Suburban,Mobile,22.37,5,Afternoon,27,4,251.82,0,0.701,2,0.838,0.266,0.928,0.833,1
+U0280,P0139,Sports,BrandE,59,Female,Rural,Tablet,39.97,16,Evening,42,2,27.3,1,0.563,3,0.692,0.959,0.138,0.399,0
+U0247,P0187,Books,BrandA,34,Male,Urban,Desktop,28.78,16,Morning,16,1,97.09,0,0.427,7,0.749,0.764,0.456,0.486,0
+U0258,P0124,Books,BrandA,26,Other,Urban,Desktop,12.74,17,Evening,36,5,467.6,0,0.757,2,0.735,0.761,0.997,0.898,1
+U0160,P0038,Books,BrandD,23,Female,Rural,Mobile,36.5,9,Afternoon,19,5,488.53,1,0.369,5,0.868,0.165,0.759,0.699,1
+U0152,P0072,Beauty,BrandC,60,Male,Suburban,Desktop,4.58,3,Morning,2,5,371.18,1,0.589,2,0.909,0.906,0.958,0.791,1
+U0178,P0133,Toys,BrandE,42,Female,Suburban,Desktop,25.39,13,Morning,36,5,129.84,0,0.49,7,0.845,0.499,0.248,0.717,1
+U0163,P0176,Clothing,BrandB,56,Male,Urban,Mobile,33.25,3,Morning,25,3,133.96,0,0.349,10,0.72,0.694,0.299,0.554,0
+U0033,P0090,Toys,BrandD,45,Other,Urban,Tablet,26.73,7,Night,14,4,324.67,0,0.977,8,0.752,0.964,0.239,0.734,1
+U0179,P0146,Sports,BrandB,50,Male,Urban,Mobile,45.17,6,Evening,47,2,63.21,1,0.333,8,0.65,0.19,0.372,0.391,0
+U0101,P0198,Books,BrandD,54,Female,Urban,Mobile,49.85,9,Night,7,2,474.41,1,0.378,8,0.659,0.534,0.752,0.478,0
+U0268,P0037,Toys,BrandC,26,Male,Urban,Mobile,46.5,12,Morning,12,1,116.28,1,0.245,10,0.658,0.145,0.248,0.29,0
+U0065,P0060,Beauty,BrandC,35,Male,Urban,Mobile,3.29,15,Evening,47,3,499.82,0,0.841,9,0.646,0.55,0.572,0.692,1
+U0168,P0176,Sports,BrandC,38,Female,Rural,Desktop,12.45,3,Evening,2,2,250.39,1,0.628,1,0.663,0.327,0.342,0.447,0
+U0043,P0028,Home & Kitchen,BrandC,19,Female,Urban,Mobile,32.66,10,Afternoon,0,4,386.86,1,0.652,1,0.671,0.92,0.846,0.674,1
+U0044,P0197,Toys,BrandA,60,Male,Suburban,Tablet,56.15,1,Night,8,5,6.08,0,0.839,10,0.639,0.459,0.106,0.717,1
+U0285,P0081,Home & Kitchen,BrandA,55,Male,Rural,Mobile,50.26,19,Night,30,1,444.93,0,0.409,2,0.824,0.67,0.301,0.467,0
+U0012,P0114,Books,BrandE,57,Female,Suburban,Mobile,50.71,19,Afternoon,40,4,138.65,1,0.274,6,0.947,0.874,0.645,0.613,1
+U0095,P0040,Beauty,BrandB,53,Other,Urban,Mobile,18.89,13,Night,25,2,335.63,0,0.279,1,0.908,0.985,0.187,0.495,0
+U0253,P0045,Beauty,BrandD,60,Male,Suburban,Mobile,26.34,12,Morning,16,3,404.15,0,0.759,5,0.616,0.553,0.52,0.659,1
+U0242,P0062,Toys,BrandD,54,Female,Suburban,Tablet,28.77,1,Morning,33,1,86.25,0,0.653,5,0.748,0.51,0.493,0.539,0
+U0035,P0093,Sports,BrandA,32,Male,Suburban,Desktop,10.28,19,Night,8,2,224.04,0,0.286,4,0.901,0.168,0.867,0.631,1
+U0215,P0115,Sports,BrandD,45,Female,Suburban,Desktop,2.83,16,Afternoon,12,1,249.45,0,0.231,5,0.647,0.111,0.663,0.468,0
+U0090,P0186,Beauty,BrandA,35,Male,Rural,Mobile,56.87,15,Evening,4,2,159.5,0,0.209,1,0.897,0.648,0.676,0.576,0
+U0264,P0067,Sports,BrandE,51,Male,Suburban,Mobile,15.2,16,Night,40,5,243.47,1,0.665,6,0.807,0.159,0.957,0.786,1
+U0093,P0056,Beauty,BrandB,39,Female,Urban,Mobile,15.16,11,Evening,12,3,162.19,1,0.1,7,0.926,0.442,0.984,0.582,0
+U0090,P0040,Toys,BrandE,28,Male,Suburban,Mobile,5.92,6,Afternoon,0,5,183.57,1,0.116,8,0.907,0.103,0.688,0.642,1
+U0115,P0098,Clothing,BrandC,30,Female,Urban,Mobile,55.78,11,Evening,24,2,336.32,0,0.451,2,0.837,0.654,0.57,0.592,0
+U0105,P0040,Beauty,BrandC,21,Male,Rural,Desktop,35.2,3,Afternoon,46,4,318.13,1,0.722,7,0.83,0.483,0.647,0.68,1
+U0196,P0091,Home & Kitchen,BrandC,39,Male,Urban,Mobile,40.36,15,Afternoon,3,5,119.97,1,0.726,6,0.675,0.214,0.444,0.669,1
+U0114,P0033,Sports,BrandE,24,Male,Urban,Desktop,54.78,1,Morning,35,4,449.25,0,0.487,9,0.641,0.367,0.989,0.763,1
+U0075,P0006,Beauty,BrandD,60,Female,Rural,Mobile,21.39,7,Morning,9,2,432.08,0,0.722,8,0.745,0.613,0.735,0.66,1
+U0217,P0147,Beauty,BrandB,41,Male,Suburban,Mobile,37.67,1,Afternoon,27,3,257.0,0,0.569,4,0.665,0.691,0.362,0.599,0
+U0277,P0080,Toys,BrandC,21,Female,Urban,Desktop,3.29,17,Night,5,4,219.46,1,0.979,9,0.636,0.516,0.152,0.593,0
+U0249,P0168,Sports,BrandC,45,Female,Urban,Mobile,12.02,9,Morning,26,2,191.54,0,0.246,1,0.706,0.824,0.14,0.438,0
+U0164,P0092,Clothing,BrandC,32,Female,Rural,Desktop,50.04,13,Afternoon,11,4,355.1,1,0.641,6,0.901,0.201,0.284,0.605,1
+U0192,P0097,Toys,BrandB,18,Male,Urban,Desktop,46.24,11,Evening,47,5,337.47,0,0.542,8,0.606,0.176,0.31,0.692,1
+U0227,P0059,Clothing,BrandC,20,Male,Rural,Mobile,21.69,6,Evening,2,2,102.11,0,0.275,4,0.702,0.14,0.474,0.51,0
+U0177,P0059,Toys,BrandB,31,Male,Urban,Tablet,23.23,1,Night,45,5,337.37,1,0.775,2,0.748,0.582,0.293,0.663,1
+U0099,P0048,Sports,BrandC,55,Male,Suburban,Mobile,32.48,7,Evening,32,1,129.95,0,0.348,2,0.779,0.736,0.668,0.519,0
+U0036,P0169,Electronics,BrandE,18,Male,Rural,Mobile,1.01,12,Evening,9,2,14.19,0,0.444,10,0.664,0.217,0.29,0.5,0
+U0096,P0013,Sports,BrandE,55,Female,Urban,Desktop,15.23,19,Afternoon,30,4,351.11,1,0.437,1,0.937,0.675,0.269,0.569,0
+U0152,P0107,Sports,BrandB,55,Male,Urban,Mobile,13.29,17,Evening,14,1,324.17,1,0.32,5,0.803,0.529,0.524,0.389,0
+U0151,P0045,Clothing,BrandE,38,Male,Urban,Desktop,15.78,4,Evening,6,5,208.35,0,0.488,6,0.783,0.989,0.9,0.834,1
+U0190,P0089,Clothing,BrandB,46,Male,Suburban,Desktop,48.55,3,Evening,35,5,265.21,0,0.526,4,0.603,0.746,0.521,0.73,1
+U0224,P0181,Sports,BrandE,22,Female,Suburban,Tablet,17.5,1,Evening,13,4,473.85,0,0.77,4,0.77,0.692,0.472,0.742,1
+U0037,P0170,Sports,BrandE,27,Male,Suburban,Mobile,12.3,18,Afternoon,47,1,299.62,1,0.789,5,0.893,0.613,0.62,0.52,0
+U0268,P0100,Sports,BrandB,45,Female,Urban,Mobile,30.75,15,Evening,13,3,330.65,0,0.243,5,0.677,0.998,0.331,0.53,0
+U0183,P0191,Clothing,BrandD,38,Male,Urban,Desktop,52.07,8,Night,2,4,36.64,0,0.633,9,0.723,0.982,0.418,0.695,1
+U0013,P0155,Sports,BrandE,24,Female,Urban,Mobile,15.24,1,Morning,48,5,87.17,0,0.907,8,0.607,0.584,0.292,0.761,1
+U0279,P0166,Sports,BrandC,20,Female,Urban,Mobile,5.63,14,Night,45,2,153.97,1,0.198,9,0.942,0.51,0.615,0.471,0
+U0217,P0188,Books,BrandD,62,Male,Suburban,Mobile,22.03,4,Morning,49,1,271.99,1,0.526,3,0.623,0.516,0.728,0.435,0
+U0286,P0007,Electronics,BrandB,64,Male,Rural,Mobile,45.11,5,Night,2,3,389.41,1,0.775,3,0.914,0.486,0.706,0.659,1
+U0273,P0133,Home & Kitchen,BrandD,37,Male,Suburban,Mobile,33.49,13,Morning,21,2,164.01,0,0.65,1,0.71,0.578,0.329,0.558,0
+U0062,P0045,Electronics,BrandA,36,Male,Urban,Desktop,49.19,15,Morning,18,1,181.41,1,0.191,10,0.806,0.346,0.802,0.42,0
+U0084,P0058,Books,BrandA,52,Female,Rural,Desktop,57.62,6,Morning,34,4,131.79,0,0.457,6,0.838,0.934,0.33,0.665,1
+U0217,P0031,Home & Kitchen,BrandE,21,Female,Suburban,Mobile,47.77,1,Morning,11,4,131.03,0,0.557,4,0.649,0.541,0.235,0.628,1
+U0187,P0023,Toys,BrandE,22,Female,Rural,Mobile,36.62,19,Afternoon,4,1,474.69,1,0.996,8,0.755,0.858,0.415,0.493,0
+U0019,P0170,Sports,BrandC,18,Female,Suburban,Mobile,30.11,13,Night,9,3,319.55,0,0.261,2,0.714,0.528,0.638,0.603,1
+U0177,P0138,Books,BrandD,21,Male,Urban,Desktop,3.36,6,Morning,40,1,82.17,0,0.984,2,0.62,0.746,0.228,0.526,0
+U0100,P0160,Toys,BrandA,29,Male,Urban,Mobile,59.07,15,Night,32,2,362.51,1,0.439,7,0.892,0.403,0.683,0.523,0
+U0233,P0107,Sports,BrandE,44,Female,Suburban,Desktop,23.63,16,Evening,12,2,362.4,0,0.28,5,0.616,0.662,0.877,0.575,0
+U0076,P0181,Clothing,BrandD,59,Male,Urban,Mobile,9.98,16,Morning,34,4,334.9,0,0.473,1,0.829,0.549,0.364,0.673,1
+U0265,P0158,Beauty,BrandE,40,Female,Urban,Desktop,40.34,10,Night,31,1,71.69,0,0.653,7,0.71,0.43,0.505,0.534,0
+U0284,P0039,Books,BrandE,42,Male,Suburban,Mobile,17.77,9,Afternoon,10,4,206.96,0,0.292,7,0.667,0.893,0.305,0.593,0
+U0206,P0159,Clothing,BrandA,38,Male,Suburban,Desktop,35.56,9,Night,47,3,57.84,1,0.362,10,0.833,0.201,0.425,0.504,0
+U0223,P0082,Books,BrandA,41,Other,Suburban,Mobile,35.62,17,Morning,37,2,409.23,0,0.869,6,0.801,0.538,0.12,0.578,0
+U0052,P0100,Books,BrandE,42,Male,Urban,Desktop,27.3,17,Evening,23,5,329.31,1,0.999,4,0.71,0.275,0.958,0.833,1
+U0144,P0002,Clothing,BrandB,62,Other,Urban,Mobile,50.33,17,Night,34,5,256.07,0,0.386,8,0.78,0.875,0.474,0.728,1
+U0069,P0077,Home & Kitchen,BrandE,63,Other,Suburban,Desktop,16.63,12,Evening,18,1,174.79,0,0.234,2,0.686,0.328,0.81,0.506,0
+U0099,P0012,Electronics,BrandE,49,Female,Rural,Desktop,27.47,13,Afternoon,5,1,96.2,0,0.814,2,0.902,0.67,0.228,0.549,0
+U0025,P0039,Sports,BrandC,49,Female,Suburban,Mobile,32.72,12,Night,39,5,57.69,1,0.64,2,0.71,0.249,0.831,0.736,1
+U0053,P0194,Books,BrandC,22,Female,Rural,Desktop,40.15,14,Night,44,1,484.77,0,0.19,3,0.686,0.464,0.874,0.51,0
+U0151,P0013,Sports,BrandC,53,Female,Suburban,Mobile,47.25,10,Afternoon,43,2,103.83,1,0.952,6,0.863,0.909,0.744,0.632,1
+U0144,P0046,Beauty,BrandB,63,Male,Suburban,Mobile,24.29,19,Afternoon,41,3,34.64,0,0.17,1,0.606,0.249,0.913,0.618,1
+U0057,P0155,Clothing,BrandB,59,Female,Urban,Mobile,39.12,2,Afternoon,34,3,481.03,1,0.663,2,0.694,0.697,0.25,0.501,0
+U0039,P0113,Sports,BrandE,59,Female,Suburban,Mobile,9.89,4,Morning,3,4,276.73,1,0.482,10,0.731,0.284,0.529,0.588,0
+U0109,P0017,Clothing,BrandC,56,Male,Suburban,Desktop,56.03,19,Morning,32,2,399.35,1,0.601,2,0.909,0.474,0.658,0.554,0
+U0181,P0104,Sports,BrandB,33,Male,Suburban,Desktop,23.6,7,Night,12,1,26.66,1,0.292,1,0.933,0.587,0.637,0.432,0
+U0042,P0098,Electronics,BrandA,50,Male,Urban,Mobile,44.04,15,Night,35,1,285.64,0,0.719,3,0.851,0.62,0.875,0.649,1
+U0186,P0188,Electronics,BrandE,38,Female,Suburban,Mobile,2.2,15,Night,42,4,202.11,1,0.964,10,0.772,0.642,0.294,0.646,1
+U0223,P0192,Electronics,BrandD,26,Female,Urban,Desktop,13.11,6,Evening,18,4,387.12,0,0.513,7,0.824,0.676,0.258,0.659,1
+U0122,P0088,Electronics,BrandE,23,Male,Suburban,Tablet,29.74,3,Afternoon,42,1,24.02,0,0.571,1,0.745,0.345,0.328,0.489,0
+U0133,P0109,Electronics,BrandD,62,Other,Urban,Mobile,52.82,6,Night,11,1,203.84,0,0.316,7,0.705,0.461,0.902,0.545,0
+U0163,P0163,Electronics,BrandC,52,Female,Rural,Tablet,32.11,16,Afternoon,10,2,400.54,0,0.903,5,0.933,0.134,0.947,0.777,1
+U0215,P0070,Clothing,BrandD,56,Female,Urban,Mobile,55.86,2,Morning,5,4,263.74,0,0.974,9,0.64,0.792,0.613,0.785,1
+U0221,P0158,Books,BrandC,39,Female,Urban,Mobile,29.54,7,Afternoon,11,2,277.27,0,0.808,2,0.721,0.853,0.551,0.636,1
+U0235,P0199,Sports,BrandA,58,Female,Urban,Desktop,29.94,11,Evening,26,1,53.1,0,0.588,1,0.915,0.279,0.645,0.59,0
+U0146,P0074,Electronics,BrandD,22,Male,Suburban,Mobile,8.07,7,Evening,40,5,70.5,0,0.961,9,0.853,0.281,0.655,0.894,1
+U0239,P0063,Clothing,BrandE,59,Female,Urban,Mobile,48.36,4,Afternoon,24,5,340.11,0,0.238,8,0.61,0.138,0.253,0.62,1
+U0076,P0156,Clothing,BrandC,40,Male,Urban,Mobile,15.57,7,Evening,41,1,339.15,1,0.531,10,0.608,0.973,0.718,0.431,0
+U0009,P0060,Clothing,BrandE,34,Female,Suburban,Desktop,54.08,4,Evening,2,4,489.66,1,0.584,6,0.781,0.826,0.507,0.614,1
+U0074,P0079,Books,BrandB,29,Other,Urban,Desktop,54.74,12,Morning,2,5,357.42,1,0.543,5,0.769,0.425,0.566,0.676,1
+U0253,P0037,Sports,BrandC,40,Male,Rural,Mobile,56.66,5,Night,19,4,249.16,0,0.822,8,0.755,0.534,0.127,0.681,1
+U0230,P0022,Books,BrandD,33,Male,Rural,Mobile,31.69,19,Evening,27,5,429.38,0,0.703,8,0.706,0.363,0.788,0.839,1
+U0007,P0196,Home & Kitchen,BrandC,20,Female,Suburban,Mobile,40.95,5,Night,22,4,56.71,1,0.214,5,0.945,0.638,0.852,0.642,1
+U0174,P0148,Toys,BrandE,47,Male,Urban,Mobile,46.93,19,Afternoon,47,5,227.4,1,0.412,7,0.695,0.746,0.657,0.653,1
+U0141,P0096,Clothing,BrandA,39,Female,Suburban,Mobile,8.73,3,Afternoon,2,4,147.12,1,0.405,1,0.772,0.503,0.774,0.63,1
+U0168,P0068,Home & Kitchen,BrandC,26,Male,Urban,Desktop,36.46,11,Evening,41,2,56.8,0,0.609,4,0.742,0.886,0.57,0.604,1
+U0170,P0192,Beauty,BrandD,46,Male,Urban,Mobile,3.02,7,Afternoon,23,4,382.93,0,0.362,2,0.66,0.565,0.657,0.676,1
+U0283,P0017,Electronics,BrandB,64,Other,Urban,Mobile,30.36,17,Morning,42,2,257.84,1,0.206,10,0.671,0.23,0.455,0.386,0
+U0122,P0012,Toys,BrandA,54,Female,Rural,Mobile,10.14,9,Evening,39,2,280.6,0,0.688,3,0.921,0.66,0.813,0.704,1
+U0194,P0150,Electronics,BrandB,40,Female,Urban,Mobile,11.79,9,Evening,5,1,208.57,0,0.866,1,0.9,0.516,0.521,0.617,1
+U0005,P0145,Books,BrandC,30,Male,Suburban,Tablet,22.54,10,Evening,19,2,232.87,1,0.938,2,0.67,0.942,0.712,0.584,0
+U0029,P0138,Toys,BrandE,49,Female,Suburban,Mobile,26.51,13,Afternoon,10,3,62.43,1,0.975,1,0.906,0.453,0.659,0.688,1
+U0165,P0118,Sports,BrandE,63,Female,Urban,Mobile,37.77,15,Afternoon,31,2,338.09,0,0.803,8,0.673,0.463,0.732,0.662,1
+U0136,P0193,Home & Kitchen,BrandD,64,Female,Urban,Mobile,5.39,5,Evening,26,4,219.06,0,0.226,4,0.819,0.686,0.807,0.71,1
+U0145,P0022,Sports,BrandE,40,Female,Rural,Mobile,30.72,3,Night,20,2,409.3,1,0.868,3,0.628,0.574,0.561,0.531,0
+U0217,P0120,Books,BrandA,62,Female,Suburban,Mobile,11.77,8,Afternoon,43,4,102.16,0,0.46,1,0.908,0.437,0.832,0.78,1
+U0132,P0050,Electronics,BrandE,34,Male,Suburban,Mobile,34.86,10,Afternoon,47,4,106.5,1,0.757,2,0.618,0.991,0.548,0.625,1
+U0292,P0014,Toys,BrandD,57,Male,Urban,Mobile,38.61,13,Evening,49,3,324.65,1,0.578,3,0.794,0.372,0.961,0.647,1
+U0070,P0192,Sports,BrandC,38,Female,Urban,Mobile,33.85,3,Night,12,2,423.77,1,0.846,3,0.873,0.35,0.777,0.619,1
+U0252,P0175,Sports,BrandC,19,Male,Urban,Mobile,44.56,8,Evening,21,2,238.74,1,0.483,6,0.641,0.878,0.254,0.396,0
+U0275,P0029,Electronics,BrandE,54,Female,Urban,Mobile,20.8,9,Afternoon,34,5,364.84,0,0.156,10,0.742,0.103,0.847,0.749,1
+U0182,P0164,Toys,BrandB,23,Male,Urban,Tablet,46.14,12,Evening,46,5,499.67,0,0.601,8,0.615,0.281,0.596,0.762,1
+U0167,P0180,Home & Kitchen,BrandC,61,Female,Rural,Mobile,26.53,11,Evening,21,1,495.18,0,0.254,6,0.839,0.631,0.986,0.576,0
+U0091,P0125,Electronics,BrandE,35,Female,Urban,Mobile,29.57,2,Evening,27,4,373.45,0,0.969,2,0.708,0.246,0.747,0.825,1
+U0202,P0007,Sports,BrandD,47,Male,Urban,Mobile,39.24,18,Night,20,3,371.1,0,0.574,2,0.796,0.987,0.176,0.589,0
+U0019,P0029,Home & Kitchen,BrandE,39,Male,Suburban,Mobile,2.08,9,Evening,45,5,127.57,0,0.598,7,0.926,0.518,0.455,0.796,1
+U0039,P0139,Home & Kitchen,BrandC,50,Male,Suburban,Desktop,39.59,2,Afternoon,17,2,417.6,1,0.917,1,0.707,0.638,0.566,0.558,0
+U0126,P0033,Electronics,BrandD,47,Female,Urban,Mobile,37.5,2,Evening,30,1,205.53,0,0.662,1,0.617,0.244,0.855,0.587,0
+U0173,P0134,Sports,BrandE,34,Female,Suburban,Desktop,19.28,3,Night,45,3,481.19,0,0.372,7,0.836,0.36,0.756,0.673,1
+U0141,P0111,Books,BrandA,60,Male,Urban,Mobile,6.06,16,Morning,36,2,45.31,0,0.366,9,0.875,0.653,0.432,0.555,0
+U0242,P0079,Sports,BrandD,49,Female,Urban,Mobile,6.37,19,Night,20,2,220.74,0,0.551,5,0.935,0.595,0.688,0.655,1
+U0220,P0160,Clothing,BrandA,59,Male,Urban,Desktop,55.47,4,Evening,13,4,280.14,0,0.88,1,0.655,0.806,0.619,0.771,1
+U0126,P0179,Toys,BrandB,31,Female,Rural,Mobile,41.67,18,Morning,24,4,205.55,0,0.815,5,0.737,0.342,0.213,0.693,1
+U0058,P0058,Beauty,BrandD,27,Other,Urban,Mobile,8.5,18,Evening,26,5,109.24,0,0.966,1,0.895,0.688,0.311,0.834,1
+U0148,P0026,Books,BrandA,64,Male,Urban,Mobile,22.05,10,Night,39,5,298.53,1,0.165,10,0.882,0.362,0.407,0.591,0
+U0001,P0174,Home & Kitchen,BrandC,53,Female,Urban,Desktop,35.96,11,Morning,22,2,379.18,1,0.341,9,0.819,0.628,0.276,0.407,0
+U0190,P0029,Books,BrandC,51,Male,Rural,Mobile,50.3,17,Morning,30,2,324.2,1,0.172,4,0.694,0.645,0.235,0.34,0
+U0191,P0004,Toys,BrandB,26,Male,Urban,Desktop,3.58,16,Evening,46,5,121.05,0,0.776,9,0.699,0.21,0.152,0.725,1
+U0117,P0099,Home & Kitchen,BrandD,59,Male,Urban,Mobile,14.96,13,Evening,28,5,367.15,0,0.227,2,0.643,0.594,0.886,0.751,1
+U0134,P0141,Toys,BrandD,45,Male,Urban,Desktop,53.5,2,Night,46,2,132.16,0,0.19,7,0.923,0.111,0.36,0.515,0
+U0058,P0039,Home & Kitchen,BrandD,28,Female,Urban,Mobile,1.54,2,Evening,29,3,91.73,0,0.606,2,0.661,0.551,0.361,0.606,1
+U0044,P0015,Books,BrandB,31,Male,Suburban,Desktop,12.88,14,Morning,25,2,346.88,0,0.47,4,0.801,0.728,0.286,0.531,0
+U0173,P0119,Home & Kitchen,BrandD,56,Female,Suburban,Mobile,57.58,4,Afternoon,19,3,422.18,0,0.744,6,0.805,0.166,0.528,0.695,1
+U0160,P0029,Home & Kitchen,BrandC,64,Male,Urban,Tablet,37.19,17,Afternoon,37,3,243.36,1,0.538,2,0.729,0.945,0.563,0.546,0
+U0173,P0157,Clothing,BrandA,36,Male,Urban,Mobile,16.44,13,Night,18,2,268.04,0,0.483,2,0.723,0.513,0.287,0.519,0
+U0149,P0075,Sports,BrandC,32,Female,Urban,Mobile,4.95,4,Evening,26,1,154.86,0,0.483,2,0.834,0.945,0.648,0.553,0
+U0080,P0116,Sports,BrandC,45,Other,Urban,Mobile,2.66,3,Night,24,5,249.84,0,0.885,3,0.736,0.197,0.751,0.874,1
+U0213,P0032,Beauty,BrandA,41,Male,Urban,Mobile,15.44,12,Afternoon,39,4,70.33,0,0.456,5,0.689,0.955,0.436,0.656,1
+U0203,P0130,Beauty,BrandC,25,Female,Suburban,Mobile,53.01,8,Afternoon,37,2,478.14,1,0.4,9,0.74,0.198,0.627,0.473,0
+U0252,P0175,Clothing,BrandB,60,Female,Rural,Tablet,25.54,2,Evening,22,3,401.18,0,0.405,6,0.883,0.515,0.552,0.648,1
+U0229,P0084,Beauty,BrandA,26,Female,Rural,Tablet,43.5,6,Morning,28,2,335.65,0,0.277,9,0.938,0.944,0.276,0.518,0
+U0164,P0022,Toys,BrandC,64,Female,Rural,Mobile,55.18,10,Evening,14,5,271.41,0,0.875,10,0.823,0.309,0.757,0.891,1
+U0227,P0027,Books,BrandE,50,Male,Suburban,Tablet,25.07,12,Afternoon,2,3,397.12,0,0.232,5,0.874,0.131,0.821,0.665,1
+U0147,P0195,Electronics,BrandC,50,Male,Suburban,Mobile,12.29,10,Morning,9,4,249.9,0,0.918,6,0.786,0.814,0.684,0.818,1
+U0020,P0081,Toys,BrandB,36,Female,Urban,Mobile,31.51,10,Night,14,4,153.49,1,0.355,10,0.819,0.636,0.392,0.553,0
+U0047,P0126,Electronics,BrandD,20,Male,Suburban,Desktop,54.58,3,Afternoon,15,4,84.39,1,0.909,8,0.946,0.563,0.934,0.798,1
+U0233,P0184,Electronics,BrandC,27,Other,Urban,Desktop,48.46,10,Night,16,1,325.55,1,0.812,3,0.753,0.131,0.51,0.475,0
+U0014,P0092,Clothing,BrandD,57,Male,Urban,Tablet,4.88,9,Morning,18,3,465.07,0,0.624,2,0.623,0.688,0.339,0.597,0
+U0143,P0021,Toys,BrandE,64,Male,Suburban,Mobile,41.86,19,Night,10,3,81.04,0,0.703,3,0.935,0.254,0.467,0.701,1
+U0001,P0047,Clothing,BrandC,59,Female,Urban,Desktop,34.74,14,Afternoon,47,1,94.11,0,0.393,9,0.878,0.938,0.723,0.559,0
+U0054,P0101,Home & Kitchen,BrandA,18,Male,Urban,Mobile,54.54,2,Evening,4,3,219.63,1,0.617,6,0.739,0.717,0.861,0.623,1
+U0259,P0187,Electronics,BrandD,46,Female,Rural,Mobile,8.23,5,Night,4,1,404.42,1,0.363,10,0.944,0.736,0.421,0.406,0
+U0144,P0084,Books,BrandE,51,Female,Urban,Mobile,32.51,8,Afternoon,13,2,150.49,1,0.462,4,0.721,0.309,0.309,0.418,0
+U0012,P0006,Beauty,BrandA,30,Other,Urban,Tablet,52.89,7,Afternoon,49,5,130.69,0,0.788,10,0.73,0.893,0.664,0.836,1
+U0224,P0147,Books,BrandA,18,Female,Rural,Desktop,25.19,6,Morning,25,4,311.88,0,0.32,3,0.813,0.584,0.929,0.752,1
+U0272,P0185,Beauty,BrandA,51,Female,Suburban,Desktop,29.44,11,Afternoon,7,1,270.13,0,0.855,2,0.696,0.871,0.265,0.523,0
+U0156,P0197,Electronics,BrandA,46,Female,Suburban,Mobile,5.16,12,Evening,4,1,34.81,0,0.438,4,0.845,0.344,0.823,0.581,0
+U0008,P0131,Electronics,BrandC,64,Other,Urban,Mobile,17.41,18,Evening,6,1,45.34,0,0.579,9,0.653,0.78,0.529,0.512,0
+U0122,P0001,Electronics,BrandC,30,Male,Urban,Mobile,20.15,19,Night,15,2,323.29,0,0.948,4,0.638,0.617,0.82,0.701,1
+U0164,P0058,Clothing,BrandC,46,Male,Rural,Mobile,56.76,10,Night,13,1,235.24,1,0.713,5,0.787,0.144,0.555,0.471,0
+U0090,P0124,Toys,BrandE,56,Male,Suburban,Mobile,17.68,14,Night,36,5,485.63,0,0.681,8,0.794,0.465,0.44,0.783,1
+U0136,P0166,Beauty,BrandE,41,Male,Suburban,Desktop,28.19,3,Night,40,5,340.87,0,0.74,2,0.637,0.266,0.727,0.821,1
+U0186,P0015,Toys,BrandE,43,Female,Urban,Mobile,40.61,18,Evening,3,4,9.99,0,0.926,3,0.937,0.423,0.911,0.895,1
+U0178,P0162,Clothing,BrandB,34,Female,Urban,Mobile,10.57,15,Morning,35,2,243.1,0,0.324,6,0.801,0.445,0.388,0.523,0
+U0028,P0189,Clothing,BrandE,24,Female,Rural,Mobile,29.7,6,Night,47,5,210.15,1,0.652,7,0.653,0.527,0.515,0.664,1
+U0220,P0163,Sports,BrandC,30,Male,Urban,Mobile,44.57,10,Morning,16,3,57.82,0,0.46,4,0.709,0.64,0.306,0.575,0
+U0041,P0064,Books,BrandC,22,Female,Suburban,Mobile,52.14,12,Afternoon,46,3,461.99,0,0.111,1,0.88,0.614,0.265,0.531,0
+U0228,P0025,Books,BrandB,43,Male,Urban,Tablet,37.95,7,Afternoon,35,3,403.48,1,0.213,7,0.783,0.135,0.8,0.539,0
+U0192,P0024,Home & Kitchen,BrandB,20,Female,Suburban,Desktop,40.47,17,Night,5,1,118.89,0,0.392,9,0.666,0.776,0.281,0.428,0
+U0145,P0012,Clothing,BrandE,24,Female,Rural,Desktop,8.45,1,Afternoon,15,1,131.71,0,0.608,1,0.636,0.954,0.814,0.572,0
+U0201,P0018,Beauty,BrandD,56,Male,Suburban,Mobile,56.8,18,Morning,28,3,20.85,1,0.893,1,0.751,0.414,0.486,0.606,1
+U0212,P0015,Sports,BrandB,18,Male,Urban,Mobile,8.82,15,Morning,35,4,151.88,1,0.812,1,0.718,0.262,0.996,0.745,1
+U0220,P0027,Sports,BrandA,34,Male,Suburban,Mobile,46.71,19,Afternoon,37,4,294.39,0,0.598,10,0.83,0.586,0.278,0.681,1
+U0240,P0072,Toys,BrandC,60,Female,Suburban,Desktop,16.62,1,Night,36,1,213.32,0,0.166,7,0.924,0.734,0.184,0.415,0
+U0046,P0060,Books,BrandA,42,Other,Urban,Desktop,56.08,5,Morning,47,3,484.78,0,0.357,9,0.687,0.711,0.168,0.522,0
+U0035,P0174,Clothing,BrandC,20,Female,Rural,Mobile,43.48,15,Morning,47,4,32.76,1,0.43,3,0.899,0.651,0.852,0.676,1
+U0253,P0145,Home & Kitchen,BrandC,32,Male,Suburban,Mobile,45.48,3,Evening,9,1,297.76,0,0.66,8,0.922,0.232,0.494,0.575,0
+U0082,P0093,Clothing,BrandB,46,Male,Rural,Mobile,13.92,1,Night,40,3,429.86,1,0.158,9,0.916,0.853,0.103,0.415,0
+U0256,P0053,Toys,BrandB,60,Female,Suburban,Desktop,27.14,8,Evening,35,2,242.97,1,0.577,3,0.933,0.483,0.887,0.599,0
+U0197,P0008,Electronics,BrandA,49,Female,Urban,Tablet,37.45,12,Afternoon,28,3,6.47,1,0.911,3,0.895,0.299,0.889,0.719,1
+U0010,P0079,Clothing,BrandC,43,Male,Urban,Mobile,46.43,19,Afternoon,13,3,125.19,0,0.735,1,0.808,0.178,0.826,0.754,1
+U0286,P0027,Toys,BrandA,33,Male,Urban,Mobile,7.13,12,Evening,3,5,165.27,0,0.817,2,0.743,0.475,0.323,0.777,1
+U0242,P0174,Electronics,BrandD,42,Female,Rural,Mobile,57.78,13,Night,43,5,483.17,0,0.714,7,0.772,0.656,0.435,0.784,1
+U0251,P0050,Electronics,BrandA,45,Male,Suburban,Mobile,53.52,1,Morning,41,2,456.33,1,0.286,3,0.905,0.699,0.77,0.512,0
+U0005,P0199,Home & Kitchen,BrandE,26,Male,Suburban,Mobile,16.95,19,Afternoon,35,2,474.84,0,0.199,7,0.705,0.966,0.54,0.509,0
+U0119,P0131,Beauty,BrandA,18,Male,Urban,Mobile,49.54,6,Night,49,3,413.75,0,0.847,5,0.656,0.238,0.238,0.628,1
+U0289,P0093,Books,BrandE,46,Female,Urban,Desktop,31.58,8,Night,44,4,179.07,0,0.726,10,0.649,0.987,0.319,0.679,1
+U0065,P0192,Clothing,BrandE,39,Female,Suburban,Desktop,28.25,4,Afternoon,12,2,453.41,0,0.618,8,0.889,0.689,0.975,0.716,1
+U0146,P0172,Electronics,BrandE,33,Other,Urban,Mobile,19.55,5,Afternoon,45,3,490.93,0,0.27,5,0.867,0.509,0.236,0.555,0
+U0224,P0181,Clothing,BrandD,58,Female,Urban,Desktop,35.28,7,Night,17,1,178.29,0,0.643,3,0.774,0.899,0.753,0.594,0
+U0239,P0024,Beauty,BrandA,61,Female,Suburban,Mobile,44.06,4,Morning,32,5,133.98,0,0.128,9,0.696,0.725,0.53,0.671,1
+U0177,P0060,Books,BrandA,58,Male,Urban,Mobile,25.25,4,Evening,20,4,275.72,0,0.207,7,0.837,0.414,0.774,0.704,1
+U0267,P0122,Beauty,BrandD,24,Female,Urban,Mobile,38.12,15,Afternoon,15,3,97.64,0,0.381,5,0.613,0.896,0.695,0.618,1
+U0282,P0131,Books,BrandC,31,Male,Urban,Mobile,42.26,5,Evening,14,1,21.15,1,0.499,7,0.799,0.7,0.495,0.419,0
+U0063,P0148,Sports,BrandB,46,Female,Urban,Mobile,42.96,9,Night,4,5,473.19,1,0.209,10,0.739,0.729,0.419,0.573,0
+U0217,P0046,Books,BrandA,36,Male,Rural,Mobile,4.07,2,Evening,5,1,463.24,0,0.208,9,0.942,0.907,0.779,0.546,0
+U0283,P0015,Home & Kitchen,BrandB,36,Male,Urban,Mobile,51.73,7,Morning,37,3,85.51,0,0.753,5,0.778,0.504,0.391,0.664,1
+U0177,P0153,Beauty,BrandD,19,Male,Urban,Tablet,28.04,17,Night,2,2,206.83,1,0.613,7,0.793,0.691,0.809,0.563,0
+U0098,P0199,Electronics,BrandC,58,Male,Urban,Mobile,16.48,16,Morning,47,5,416.36,0,0.58,9,0.849,0.77,0.712,0.828,1
+U0105,P0017,Sports,BrandC,62,Male,Suburban,Mobile,15.26,17,Night,11,1,332.2,0,0.507,1,0.77,0.509,0.62,0.539,0
+U0099,P0126,Home & Kitchen,BrandC,32,Male,Urban,Mobile,29.5,2,Morning,35,2,200.42,0,0.979,4,0.679,0.175,0.432,0.638,1
+U0006,P0084,Clothing,BrandD,20,Other,Suburban,Desktop,53.32,11,Night,32,4,373.36,0,0.145,1,0.788,0.794,0.285,0.584,0
+U0197,P0009,Beauty,BrandE,28,Male,Urban,Mobile,23.32,2,Morning,35,3,449.04,0,0.263,8,0.93,0.143,0.739,0.666,1
+U0133,P0166,Toys,BrandE,63,Female,Urban,Desktop,45.23,1,Night,32,3,463.45,1,0.683,3,0.743,0.746,0.182,0.502,0
+U0259,P0176,Toys,BrandB,47,Female,Urban,Mobile,6.71,2,Morning,30,5,192.53,1,0.223,2,0.838,0.92,0.973,0.707,1
+U0023,P0188,Electronics,BrandE,57,Other,Rural,Mobile,29.09,9,Night,20,1,90.91,0,0.63,4,0.942,0.412,0.981,0.671,1
+U0053,P0063,Books,BrandE,35,Female,Rural,Mobile,59.51,2,Morning,26,4,456.86,0,0.611,3,0.89,0.192,0.217,0.684,1
+U0165,P0117,Electronics,BrandC,19,Female,Urban,Mobile,46.46,15,Afternoon,26,5,50.81,0,0.974,5,0.831,0.31,0.194,0.8,1
+U0202,P0130,Toys,BrandC,49,Male,Suburban,Mobile,13.42,10,Evening,7,5,362.24,0,0.895,8,0.858,0.606,0.471,0.845,1
+U0083,P0088,Clothing,BrandB,25,Male,Rural,Mobile,30.59,15,Night,36,1,74.55,0,0.951,10,0.928,0.948,0.967,0.729,1
+U0145,P0072,Sports,BrandA,39,Male,Urban,Mobile,14.78,10,Morning,31,4,197.75,0,0.202,8,0.936,0.561,0.46,0.66,1
+U0085,P0139,Sports,BrandB,23,Female,Rural,Mobile,25.16,17,Afternoon,25,1,208.72,1,0.881,7,0.939,0.201,0.427,0.509,0
+U0078,P0064,Beauty,BrandB,29,Female,Urban,Mobile,47.02,9,Night,1,3,83.59,0,0.216,8,0.819,0.665,0.733,0.634,1
+U0001,P0072,Sports,BrandD,64,Male,Rural,Tablet,46.5,18,Night,11,2,461.73,1,0.67,5,0.735,0.76,0.261,0.453,0
+U0051,P0021,Beauty,BrandD,57,Male,Suburban,Mobile,14.46,4,Night,21,3,6.32,0,0.748,10,0.647,0.454,0.427,0.644,1
+U0173,P0018,Beauty,BrandB,53,Female,Rural,Desktop,55.41,9,Evening,16,3,447.44,0,0.245,10,0.735,0.749,0.362,0.548,0
+U0205,P0064,Beauty,BrandB,32,Male,Suburban,Desktop,35.96,16,Morning,6,5,442.5,0,0.669,6,0.93,0.392,0.641,0.848,1
+U0260,P0082,Toys,BrandB,45,Female,Urban,Mobile,23.42,4,Morning,42,3,161.9,0,0.147,8,0.911,0.81,0.246,0.541,0
+U0288,P0110,Toys,BrandE,62,Female,Rural,Mobile,30.61,16,Night,3,4,353.62,1,0.364,1,0.783,0.407,0.594,0.588,0
+U0034,P0095,Books,BrandD,35,Female,Urban,Mobile,36.7,19,Night,36,3,130.14,0,0.929,6,0.788,0.33,0.872,0.798,1
+U0095,P0166,Home & Kitchen,BrandB,19,Female,Urban,Desktop,34.03,1,Night,37,4,380.59,0,0.255,6,0.708,0.891,0.563,0.645,1
+U0072,P0032,Beauty,BrandC,30,Female,Suburban,Desktop,29.7,6,Afternoon,31,1,282.75,0,0.159,5,0.759,0.594,0.715,0.487,0
+U0039,P0011,Beauty,BrandC,62,Female,Suburban,Desktop,30.79,10,Night,10,5,153.61,0,0.499,4,0.85,0.357,0.168,0.703,1
+U0154,P0045,Home & Kitchen,BrandE,32,Female,Rural,Tablet,11.41,16,Evening,0,4,203.12,0,0.866,1,0.741,0.942,0.504,0.762,1
+U0250,P0033,Electronics,BrandE,37,Female,Urban,Desktop,48.95,4,Morning,24,3,346.49,0,0.169,10,0.666,0.722,0.185,0.484,0
+U0162,P0102,Beauty,BrandA,46,Male,Suburban,Mobile,32.96,13,Evening,41,5,453.52,1,0.42,8,0.789,0.299,0.64,0.67,1
+U0118,P0169,Books,BrandA,59,Male,Suburban,Mobile,8.73,16,Night,23,5,69.71,1,0.91,6,0.679,0.653,0.353,0.688,1
+U0259,P0136,Sports,BrandA,46,Male,Urban,Desktop,46.2,6,Afternoon,42,4,287.83,0,0.206,3,0.941,0.883,0.359,0.641,1
+U0268,P0011,Sports,BrandE,20,Male,Urban,Mobile,56.01,11,Night,16,4,130.6,0,0.38,3,0.737,0.727,0.169,0.597,0
+U0054,P0179,Clothing,BrandE,36,Female,Urban,Mobile,56.89,3,Night,7,2,401.68,0,0.801,6,0.918,0.32,0.379,0.64,1
+U0236,P0088,Clothing,BrandE,20,Female,Urban,Desktop,22.77,10,Night,44,2,39.77,0,0.589,7,0.679,0.684,0.556,0.585,0
+U0222,P0041,Sports,BrandC,31,Male,Rural,Mobile,9.0,1,Night,26,5,346.03,1,0.849,8,0.666,0.657,0.626,0.728,1
+U0251,P0145,Sports,BrandE,57,Male,Suburban,Tablet,31.59,11,Night,17,2,91.6,1,0.2,5,0.816,0.839,0.16,0.355,0
+U0112,P0076,Toys,BrandC,21,Other,Suburban,Desktop,7.64,12,Morning,26,3,300.21,0,0.928,10,0.873,0.26,0.686,0.777,1
+U0255,P0121,Books,BrandA,28,Male,Rural,Mobile,56.11,14,Evening,21,1,418.67,0,0.941,6,0.798,0.73,0.54,0.616,1
+U0207,P0046,Home & Kitchen,BrandA,48,Female,Urban,Tablet,11.83,8,Afternoon,15,5,378.76,1,0.24,1,0.68,0.125,0.583,0.601,1
+U0229,P0160,Clothing,BrandA,60,Female,Rural,Mobile,15.91,11,Night,1,1,377.71,1,0.13,6,0.613,0.727,0.85,0.379,0
+U0066,P0080,Toys,BrandB,49,Female,Urban,Mobile,24.99,4,Afternoon,4,2,261.33,0,0.991,9,0.816,0.964,0.408,0.663,1
+U0075,P0054,Toys,BrandB,44,Male,Rural,Mobile,23.61,7,Morning,17,4,445.92,0,0.534,10,0.646,0.257,0.257,0.627,1
+U0103,P0086,Home & Kitchen,BrandD,47,Male,Urban,Mobile,47.89,10,Evening,2,5,296.11,0,0.615,4,0.72,0.38,0.597,0.786,1
+U0192,P0092,Toys,BrandD,60,Male,Rural,Mobile,27.92,19,Night,26,2,459.17,1,0.654,10,0.837,0.625,0.951,0.608,1
+U0252,P0148,Books,BrandD,19,Female,Urban,Mobile,11.08,4,Morning,16,3,275.53,0,0.811,1,0.634,0.759,0.566,0.682,1
+U0226,P0161,Sports,BrandB,26,Female,Urban,Mobile,16.77,2,Morning,15,5,255.45,1,0.831,9,0.645,0.41,0.849,0.765,1
+U0294,P0168,Beauty,BrandB,45,Male,Suburban,Mobile,31.04,18,Evening,5,5,115.06,0,0.275,4,0.622,0.698,0.781,0.736,1
+U0098,P0160,Home & Kitchen,BrandD,48,Female,Urban,Desktop,9.7,14,Night,6,4,274.67,0,0.313,2,0.949,0.909,0.566,0.706,1
+U0286,P0097,Sports,BrandD,51,Female,Suburban,Desktop,37.09,16,Evening,49,5,74.59,0,0.889,1,0.735,0.754,0.683,0.861,1
+U0249,P0002,Sports,BrandE,32,Male,Urban,Mobile,34.38,11,Evening,13,4,435.5,1,0.838,3,0.917,0.74,0.466,0.684,1
+U0166,P0033,Electronics,BrandD,42,Female,Suburban,Mobile,43.17,10,Afternoon,37,2,339.57,0,0.656,7,0.703,0.444,0.578,0.607,1
+U0030,P0158,Home & Kitchen,BrandE,53,Female,Urban,Mobile,56.32,17,Afternoon,39,3,496.85,1,0.995,10,0.864,0.92,0.557,0.663,1
+U0247,P0161,Toys,BrandC,25,Male,Urban,Mobile,54.82,14,Evening,14,3,50.59,0,0.762,2,0.677,0.35,0.738,0.715,1
+U0106,P0077,Beauty,BrandB,26,Male,Urban,Desktop,56.82,4,Afternoon,46,5,124.13,1,0.294,9,0.774,0.285,0.469,0.607,1
+U0051,P0116,Home & Kitchen,BrandD,54,Female,Urban,Desktop,15.44,19,Morning,46,5,439.19,1,0.862,2,0.889,0.428,0.19,0.688,1
+U0081,P0154,Toys,BrandB,62,Female,Urban,Mobile,8.76,2,Evening,47,2,200.65,0,0.473,5,0.886,0.685,0.81,0.654,1
+U0133,P0150,Sports,BrandB,56,Female,Urban,Mobile,18.83,7,Night,32,4,235.82,1,0.133,8,0.878,0.876,0.716,0.585,0
+U0285,P0103,Beauty,BrandB,49,Female,Urban,Mobile,53.81,9,Night,42,3,431.02,0,0.389,10,0.888,0.219,0.955,0.726,1
+U0138,P0194,Toys,BrandC,34,Female,Urban,Desktop,58.35,19,Morning,26,4,263.3,0,0.787,8,0.674,0.832,0.486,0.729,1
+U0184,P0166,Books,BrandA,52,Male,Suburban,Mobile,51.7,16,Night,28,2,100.77,0,0.964,3,0.769,0.832,0.17,0.601,1
+U0273,P0103,Toys,BrandD,54,Female,Rural,Tablet,7.49,16,Night,36,3,446.55,1,0.349,2,0.77,0.628,0.209,0.446,0
+U0069,P0090,Electronics,BrandA,36,Female,Urban,Desktop,56.9,18,Evening,4,3,20.38,1,0.322,9,0.912,0.785,0.796,0.586,0
+U0034,P0174,Sports,BrandA,61,Male,Suburban,Mobile,25.98,11,Morning,28,1,448.22,0,0.607,3,0.704,0.264,0.161,0.454,0
+U0262,P0122,Toys,BrandA,46,Female,Suburban,Mobile,1.55,7,Evening,31,2,30.01,1,0.831,8,0.926,0.253,0.917,0.655,1
+U0053,P0143,Clothing,BrandB,24,Female,Urban,Tablet,27.1,9,Morning,5,2,334.6,0,0.772,2,0.758,0.877,0.353,0.597,0
+U0205,P0106,Clothing,BrandE,45,Male,Suburban,Mobile,3.72,4,Evening,1,1,40.48,1,0.604,3,0.834,0.548,0.909,0.529,0
+U0126,P0119,Electronics,BrandB,26,Other,Urban,Mobile,33.09,13,Evening,5,4,354.58,0,0.668,1,0.694,0.321,0.796,0.772,1
+U0235,P0172,Books,BrandB,45,Male,Suburban,Mobile,20.97,4,Afternoon,45,1,21.82,0,0.318,6,0.744,0.72,0.884,0.549,0
+U0043,P0049,Sports,BrandA,23,Male,Urban,Desktop,28.93,19,Night,42,2,422.02,0,0.489,7,0.848,0.903,0.293,0.546,0
+U0240,P0104,Home & Kitchen,BrandB,46,Male,Suburban,Desktop,37.18,2,Morning,3,4,235.64,0,0.33,4,0.779,0.669,0.636,0.689,1
+U0111,P0061,Electronics,BrandA,34,Female,Suburban,Desktop,52.26,9,Night,28,3,51.26,0,0.896,1,0.926,0.413,0.184,0.681,1
+U0249,P0195,Books,BrandE,33,Female,Urban,Desktop,40.05,12,Afternoon,24,1,354.88,0,0.201,3,0.858,0.535,0.282,0.428,0
+U0151,P0123,Home & Kitchen,BrandD,40,Male,Urban,Desktop,26.61,2,Morning,8,4,247.2,0,0.712,9,0.798,0.777,0.379,0.718,1
+U0183,P0134,Clothing,BrandA,48,Female,Rural,Tablet,49.35,6,Afternoon,2,4,99.52,1,0.334,5,0.91,0.161,0.767,0.642,1
+U0095,P0009,Clothing,BrandE,20,Male,Urban,Mobile,54.43,5,Night,25,4,12.76,0,0.528,6,0.833,0.295,0.122,0.637,1
+U0008,P0006,Home & Kitchen,BrandD,38,Female,Suburban,Mobile,8.07,5,Evening,47,1,211.91,1,0.369,4,0.827,0.516,0.913,0.482,0
+U0184,P0073,Electronics,BrandC,43,Female,Rural,Desktop,32.38,5,Afternoon,42,3,47.39,0,0.391,1,0.686,0.644,0.164,0.528,0
+U0281,P0103,Clothing,BrandA,53,Male,Suburban,Desktop,17.79,4,Afternoon,26,4,51.61,0,0.334,5,0.738,0.405,0.439,0.642,1
+U0195,P0160,Sports,BrandA,59,Other,Suburban,Desktop,3.78,9,Evening,35,1,137.33,0,0.778,5,0.839,0.369,0.173,0.518,0
+U0195,P0041,Beauty,BrandC,54,Male,Suburban,Mobile,40.44,10,Night,31,2,317.08,1,0.429,5,0.912,0.137,0.792,0.547,0
+U0155,P0114,Toys,BrandC,39,Male,Rural,Desktop,51.9,16,Afternoon,0,1,267.31,1,0.754,6,0.71,0.129,0.227,0.398,0
+U0093,P0008,Home & Kitchen,BrandA,59,Female,Urban,Desktop,10.61,10,Night,15,1,39.15,0,0.51,2,0.675,0.351,0.896,0.576,0
+U0160,P0072,Home & Kitchen,BrandC,29,Other,Urban,Mobile,48.93,10,Evening,47,1,484.37,0,0.593,1,0.808,0.577,0.577,0.556,0
+U0061,P0178,Clothing,BrandB,59,Male,Urban,Mobile,51.35,19,Morning,10,4,444.15,0,0.589,2,0.624,0.601,0.954,0.773,1
+U0122,P0092,Electronics,BrandD,30,Male,Rural,Mobile,54.95,10,Afternoon,25,1,133.32,0,0.978,10,0.85,0.545,0.361,0.598,0
+U0051,P0062,Sports,BrandD,28,Male,Suburban,Mobile,16.65,6,Night,39,2,65.56,1,0.43,6,0.846,0.469,0.509,0.477,0
+U0277,P0084,Electronics,BrandD,33,Female,Urban,Mobile,54.33,17,Evening,0,4,471.49,0,0.287,5,0.724,0.327,0.725,0.687,1
+U0005,P0062,Books,BrandB,25,Male,Rural,Mobile,19.92,5,Evening,25,2,233.27,0,0.921,5,0.912,0.461,0.849,0.756,1
+U0092,P0111,Books,BrandC,57,Female,Urban,Mobile,33.59,6,Afternoon,27,5,159.03,1,0.257,6,0.776,0.225,0.479,0.602,1
+U0170,P0127,Beauty,BrandE,57,Other,Urban,Desktop,3.98,15,Morning,8,1,247.73,1,0.851,10,0.826,0.204,0.903,0.576,0
+U0022,P0007,Clothing,BrandC,62,Female,Suburban,Desktop,3.59,19,Afternoon,43,4,387.51,0,0.235,7,0.673,0.37,0.206,0.563,0
+U0001,P0084,Clothing,BrandA,19,Male,Urban,Desktop,43.5,18,Night,21,4,88.35,0,0.693,9,0.746,0.996,0.738,0.775,1
+U0133,P0132,Clothing,BrandD,47,Male,Rural,Mobile,27.22,4,Evening,7,1,384.91,0,0.235,7,0.902,0.394,0.413,0.47,0
+U0233,P0134,Beauty,BrandC,47,Male,Urban,Mobile,16.12,8,Morning,48,3,375.98,0,0.931,2,0.675,0.943,0.191,0.639,1
+U0012,P0058,Books,BrandE,29,Female,Rural,Desktop,12.23,16,Night,41,3,271.98,0,0.609,6,0.737,0.453,0.448,0.639,1
+U0046,P0022,Electronics,BrandA,27,Male,Suburban,Mobile,40.53,19,Afternoon,26,2,433.59,1,0.396,9,0.711,0.495,0.892,0.52,0
+U0034,P0154,Beauty,BrandB,61,Male,Urban,Tablet,1.02,3,Evening,38,1,70.41,1,0.226,7,0.653,0.817,0.982,0.432,0
+U0078,P0127,Beauty,BrandB,28,Female,Rural,Desktop,48.55,10,Afternoon,18,1,299.76,0,0.434,2,0.701,0.184,0.454,0.478,0
+U0218,P0003,Electronics,BrandE,32,Male,Suburban,Mobile,5.68,2,Morning,24,5,227.42,0,0.735,3,0.681,0.264,0.898,0.863,1
+U0073,P0127,Clothing,BrandA,33,Female,Urban,Tablet,12.3,4,Morning,37,3,214.03,0,0.446,8,0.923,0.976,0.559,0.666,1
+U0282,P0041,Sports,BrandD,34,Male,Urban,Mobile,23.79,6,Morning,20,3,130.02,0,0.321,9,0.859,0.555,0.745,0.665,1
+U0249,P0188,Electronics,BrandC,43,Female,Rural,Mobile,29.61,11,Morning,23,1,189.28,0,0.62,4,0.711,0.14,0.141,0.454,0
+U0047,P0106,Books,BrandA,19,Other,Urban,Desktop,21.94,14,Morning,23,2,58.53,0,0.476,9,0.867,0.143,0.602,0.609,1
+U0121,P0014,Home & Kitchen,BrandB,29,Female,Urban,Mobile,19.92,16,Afternoon,18,1,129.54,0,0.249,2,0.608,0.917,0.163,0.364,0
+U0214,P0012,Home & Kitchen,BrandE,43,Other,Urban,Tablet,57.87,19,Morning,49,2,139.62,0,0.239,5,0.784,0.886,0.342,0.493,0
+U0239,P0087,Toys,BrandE,40,Male,Urban,Mobile,38.85,2,Morning,46,3,361.73,0,0.737,2,0.688,0.513,0.61,0.687,1
+U0056,P0012,Toys,BrandC,35,Female,Suburban,Mobile,2.38,17,Evening,1,5,29.03,0,0.977,1,0.64,0.247,0.826,0.889,1
+U0107,P0141,Beauty,BrandE,49,Female,Urban,Mobile,26.38,9,Morning,13,4,327.34,0,0.31,5,0.909,0.847,0.605,0.705,1
+U0048,P0025,Home & Kitchen,BrandE,55,Female,Urban,Desktop,52.63,17,Evening,31,3,114.6,0,0.796,2,0.67,0.392,0.943,0.762,1
+U0061,P0045,Sports,BrandA,64,Male,Urban,Mobile,18.79,15,Evening,41,2,45.52,0,0.179,7,0.888,0.477,0.829,0.599,0
+U0026,P0122,Clothing,BrandD,20,Male,Urban,Mobile,6.58,7,Evening,31,1,153.9,0,0.443,8,0.745,0.714,0.241,0.446,0
+U0292,P0147,Books,BrandC,55,Male,Rural,Desktop,45.74,19,Afternoon,27,3,116.11,0,0.556,2,0.605,0.418,0.45,0.602,1
+U0257,P0055,Toys,BrandA,20,Male,Urban,Mobile,36.75,3,Afternoon,47,5,278.26,1,0.342,7,0.856,0.666,0.702,0.68,1
+U0008,P0100,Sports,BrandD,47,Male,Rural,Desktop,34.65,1,Night,38,2,181.9,0,0.577,4,0.809,0.897,0.945,0.686,1
+U0113,P0173,Books,BrandA,18,Female,Urban,Mobile,4.16,4,Night,39,1,483.17,0,0.894,1,0.72,0.818,0.989,0.681,1
+U0253,P0136,Books,BrandA,47,Male,Urban,Desktop,9.29,18,Evening,41,4,481.96,0,0.95,3,0.699,0.443,0.787,0.827,1
+U0180,P0119,Clothing,BrandE,62,Male,Rural,Desktop,37.73,8,Afternoon,46,2,224.64,0,0.191,1,0.626,0.359,0.616,0.507,0
+U0207,P0053,Beauty,BrandD,49,Female,Urban,Mobile,13.26,19,Morning,39,1,398.57,1,0.345,5,0.929,0.357,0.781,0.471,0
+U0127,P0183,Home & Kitchen,BrandC,45,Female,Suburban,Mobile,30.74,6,Night,12,4,11.57,1,0.981,8,0.773,0.414,0.346,0.66,1
+U0056,P0032,Clothing,BrandC,38,Female,Rural,Desktop,33.15,1,Afternoon,11,1,276.17,0,0.343,1,0.63,0.544,0.355,0.426,0
+U0214,P0051,Sports,BrandD,63,Female,Urban,Mobile,17.73,8,Morning,7,4,372.93,0,0.723,9,0.904,0.475,0.689,0.803,1
+U0014,P0044,Beauty,BrandE,30,Male,Urban,Tablet,56.96,1,Morning,14,4,112.39,0,0.328,3,0.698,0.22,0.885,0.722,1
+U0028,P0082,Sports,BrandB,44,Female,Suburban,Mobile,50.71,19,Afternoon,25,4,35.28,0,0.421,5,0.671,0.247,0.973,0.753,1
+U0078,P0198,Beauty,BrandA,53,Female,Urban,Mobile,43.62,11,Night,11,1,82.18,0,0.272,9,0.698,0.409,0.407,0.435,0
+U0216,P0146,Toys,BrandE,24,Male,Urban,Mobile,5.6,15,Afternoon,42,4,223.71,0,0.871,5,0.798,0.606,0.817,0.837,1
+U0154,P0150,Sports,BrandD,39,Female,Urban,Tablet,7.26,11,Night,45,2,255.65,0,0.894,9,0.626,0.633,0.866,0.697,1
+U0014,P0037,Clothing,BrandA,27,Other,Urban,Mobile,30.07,19,Evening,26,5,193.54,0,0.367,10,0.769,0.538,0.661,0.759,1
+U0187,P0096,Beauty,BrandC,56,Male,Suburban,Desktop,10.48,10,Afternoon,17,5,222.79,1,0.841,8,0.914,0.765,0.413,0.734,1
+U0007,P0056,Beauty,BrandB,32,Male,Urban,Desktop,58.72,12,Afternoon,44,4,237.77,0,0.422,7,0.666,0.764,0.657,0.689,1
+U0003,P0105,Books,BrandC,32,Male,Urban,Mobile,10.35,1,Night,35,5,385.87,0,0.189,1,0.716,0.485,0.626,0.706,1
+U0111,P0059,Books,BrandD,21,Male,Suburban,Mobile,29.76,7,Night,48,5,57.09,0,0.782,4,0.739,0.212,0.646,0.833,1
+U0238,P0131,Electronics,BrandA,49,Male,Urban,Desktop,22.48,17,Afternoon,26,4,385.63,0,0.637,9,0.805,0.577,0.657,0.76,1
+U0239,P0156,Sports,BrandD,40,Female,Urban,Mobile,38.72,10,Morning,8,4,345.87,1,0.347,10,0.922,0.443,0.862,0.666,1
+U0274,P0035,Books,BrandA,23,Male,Suburban,Desktop,8.61,6,Morning,38,2,372.12,0,0.328,8,0.738,0.224,0.253,0.484,0
+U0294,P0189,Electronics,BrandE,41,Other,Urban,Mobile,26.39,17,Morning,0,3,368.56,1,0.978,4,0.624,0.984,0.431,0.587,0
+U0227,P0093,Toys,BrandB,37,Female,Suburban,Mobile,17.21,18,Evening,6,1,237.94,0,0.876,1,0.722,0.433,0.627,0.605,1
+U0015,P0182,Toys,BrandE,54,Female,Rural,Desktop,53.38,5,Evening,25,4,109.64,1,0.829,10,0.667,0.663,0.355,0.61,1
+U0192,P0191,Books,BrandE,37,Female,Urban,Mobile,3.39,18,Night,6,4,270.63,1,0.215,4,0.828,0.541,0.98,0.645,1
+U0119,P0097,Sports,BrandD,29,Male,Suburban,Mobile,54.91,17,Evening,6,5,479.2,0,0.78,3,0.61,0.229,0.337,0.745,1
+U0028,P0135,Beauty,BrandB,50,Female,Urban,Mobile,50.15,16,Morning,7,2,296.32,0,0.293,6,0.702,0.15,0.523,0.524,0
+U0202,P0076,Home & Kitchen,BrandA,45,Female,Urban,Mobile,18.56,8,Afternoon,15,5,10.47,1,0.98,5,0.791,0.663,0.89,0.832,1
+U0039,P0049,Sports,BrandA,25,Female,Rural,Mobile,47.57,13,Evening,2,4,34.56,0,0.147,5,0.697,0.322,0.172,0.543,0
+U0273,P0094,Clothing,BrandC,18,Female,Rural,Desktop,2.84,16,Evening,44,4,496.47,0,0.417,2,0.793,0.319,0.839,0.75,1
+U0231,P0159,Toys,BrandA,54,Male,Urban,Mobile,58.05,11,Morning,9,5,40.61,0,0.486,3,0.64,0.961,0.614,0.748,1
+U0086,P0186,Books,BrandD,39,Other,Suburban,Mobile,32.07,6,Evening,49,4,27.79,0,0.842,6,0.93,0.516,0.129,0.72,1
+U0126,P0189,Books,BrandE,23,Male,Rural,Desktop,18.89,3,Night,6,3,179.75,0,0.79,2,0.702,0.126,0.913,0.761,1
+U0300,P0024,Beauty,BrandE,38,Female,Rural,Mobile,22.39,1,Afternoon,20,1,484.81,0,0.437,4,0.923,0.406,0.135,0.459,0
+U0025,P0148,Clothing,BrandE,49,Other,Suburban,Mobile,4.92,18,Morning,36,1,162.74,0,0.609,2,0.714,0.626,0.564,0.537,0
+U0145,P0037,Beauty,BrandB,52,Male,Urban,Tablet,59.37,5,Night,30,1,207.89,0,0.852,9,0.874,0.396,0.144,0.534,0
+U0013,P0004,Clothing,BrandA,32,Female,Urban,Desktop,3.32,13,Morning,22,3,318.87,1,0.116,3,0.686,0.124,0.164,0.373,0
+U0212,P0108,Home & Kitchen,BrandD,22,Male,Rural,Mobile,39.64,10,Night,26,4,16.94,0,0.822,10,0.834,0.5,0.898,0.851,1
+U0025,P0126,Toys,BrandB,63,Male,Urban,Desktop,27.12,5,Afternoon,21,5,449.39,1,0.952,10,0.713,0.195,0.789,0.791,1
+U0068,P0020,Books,BrandC,23,Female,Suburban,Mobile,56.99,14,Afternoon,38,2,262.12,1,0.129,6,0.778,0.657,0.277,0.357,0
+U0067,P0188,Books,BrandD,42,Female,Urban,Desktop,15.51,17,Night,26,4,236.07,1,0.141,1,0.836,0.658,0.658,0.567,0
+U0233,P0152,Home & Kitchen,BrandD,63,Other,Urban,Mobile,32.39,1,Night,48,3,431.06,1,0.41,10,0.806,0.134,0.815,0.586,0
+U0109,P0050,Electronics,BrandD,57,Female,Urban,Mobile,29.46,2,Night,3,3,476.77,1,0.179,3,0.802,0.362,0.901,0.556,0
+U0146,P0177,Toys,BrandE,46,Female,Rural,Mobile,42.47,7,Night,23,1,214.6,1,0.531,8,0.623,0.472,0.521,0.395,0
+U0111,P0179,Beauty,BrandD,24,Female,Urban,Mobile,5.01,10,Night,22,4,90.36,0,0.756,5,0.687,0.595,0.908,0.81,1
+U0228,P0096,Home & Kitchen,BrandA,57,Other,Suburban,Mobile,12.43,7,Night,47,1,408.78,0,0.61,8,0.8,0.366,0.557,0.553,0
+U0111,P0105,Beauty,BrandD,30,Male,Urban,Tablet,13.66,16,Afternoon,18,2,204.61,1,0.277,2,0.606,0.359,0.719,0.44,0
+U0034,P0164,Sports,BrandE,55,Other,Urban,Mobile,44.55,5,Night,41,1,468.1,0,0.689,7,0.688,0.985,0.981,0.632,1
+U0111,P0117,Books,BrandD,35,Male,Urban,Mobile,12.16,12,Evening,2,2,475.2,1,0.716,9,0.68,0.138,0.312,0.462,0
+U0264,P0098,Beauty,BrandC,19,Female,Suburban,Mobile,34.84,17,Afternoon,26,3,61.84,1,0.939,7,0.687,0.99,0.252,0.556,0
+U0236,P0066,Clothing,BrandC,25,Male,Urban,Mobile,13.7,16,Morning,2,1,478.49,0,0.232,3,0.787,0.143,0.408,0.445,0
+U0083,P0079,Beauty,BrandE,28,Male,Urban,Desktop,51.84,16,Afternoon,27,1,187.29,1,0.723,7,0.804,0.36,0.248,0.415,0
+U0042,P0162,Sports,BrandA,50,Male,Urban,Mobile,56.59,19,Morning,16,5,324.89,0,0.92,8,0.918,0.544,0.356,0.839,1
+U0101,P0164,Toys,BrandA,55,Female,Urban,Mobile,31.59,15,Morning,30,3,22.2,0,0.551,1,0.735,0.229,0.769,0.691,1
+U0006,P0006,Books,BrandB,44,Male,Rural,Mobile,21.79,12,Evening,9,5,445.0,0,0.426,3,0.924,0.221,0.53,0.776,1
+U0180,P0039,Home & Kitchen,BrandE,37,Male,Rural,Desktop,14.81,10,Night,48,2,322.59,0,0.254,5,0.828,0.331,0.438,0.524,0
+U0282,P0170,Sports,BrandD,29,Female,Urban,Mobile,3.94,2,Night,21,2,323.56,0,0.88,6,0.919,0.976,0.432,0.666,1
+U0226,P0115,Books,BrandE,60,Other,Suburban,Mobile,16.84,7,Afternoon,29,3,451.58,0,0.455,3,0.892,0.442,0.275,0.604,1
+U0229,P0186,Beauty,BrandB,48,Male,Rural,Mobile,39.6,13,Night,48,2,256.63,0,0.932,4,0.841,0.609,0.503,0.675,1
+U0289,P0125,Toys,BrandE,44,Male,Urban,Mobile,32.48,3,Evening,20,3,208.21,1,0.863,5,0.725,0.734,0.662,0.63,1
+U0150,P0012,Electronics,BrandE,49,Male,Rural,Mobile,56.7,15,Afternoon,35,2,433.73,0,0.439,3,0.684,0.768,0.225,0.49,0
+U0277,P0131,Toys,BrandB,27,Male,Rural,Desktop,24.38,1,Afternoon,22,4,372.5,0,0.617,4,0.678,0.719,0.976,0.794,1
+U0198,P0018,Electronics,BrandA,20,Female,Urban,Desktop,41.94,3,Afternoon,37,1,474.74,0,0.124,5,0.933,0.403,0.499,0.471,0
+U0070,P0040,Clothing,BrandD,62,Female,Urban,Desktop,29.87,10,Night,11,4,470.36,1,0.337,2,0.936,0.201,0.953,0.685,1
+U0112,P0021,Toys,BrandB,44,Female,Rural,Mobile,31.24,15,Night,24,3,194.25,1,0.739,10,0.854,0.354,0.221,0.543,0
+U0004,P0143,Books,BrandC,52,Male,Suburban,Mobile,16.8,6,Night,19,3,226.26,0,0.71,9,0.909,0.289,0.79,0.762,1
+U0095,P0099,Electronics,BrandA,48,Female,Urban,Mobile,27.84,15,Afternoon,48,4,131.71,0,0.418,10,0.922,0.223,0.656,0.739,1
+U0152,P0026,Home & Kitchen,BrandC,32,Female,Urban,Tablet,28.78,7,Afternoon,48,1,332.02,1,0.828,8,0.779,0.122,0.838,0.549,0
+U0137,P0008,Books,BrandA,33,Female,Urban,Mobile,42.69,5,Morning,41,1,185.45,0,0.312,6,0.82,0.942,0.641,0.515,0
+U0247,P0100,Home & Kitchen,BrandD,30,Female,Suburban,Desktop,56.5,4,Morning,6,5,394.12,0,0.515,10,0.747,0.929,0.967,0.846,1
+U0243,P0087,Toys,BrandD,52,Female,Suburban,Mobile,20.43,18,Night,28,2,65.17,0,0.525,3,0.746,0.145,0.664,0.607,1
+U0031,P0042,Home & Kitchen,BrandE,28,Female,Rural,Mobile,3.49,3,Afternoon,47,5,62.62,0,0.407,2,0.613,0.256,0.806,0.765,1
+U0040,P0172,Electronics,BrandC,38,Male,Urban,Mobile,30.28,17,Night,28,1,106.21,1,0.959,7,0.752,0.226,0.89,0.58,0
+U0229,P0014,Books,BrandA,28,Other,Suburban,Mobile,33.12,18,Night,12,4,46.72,0,0.727,8,0.836,0.353,0.743,0.801,1
+U0036,P0078,Beauty,BrandD,47,Female,Suburban,Tablet,10.94,18,Morning,2,2,311.92,0,0.585,10,0.748,0.284,0.572,0.601,1
+U0223,P0002,Sports,BrandB,52,Female,Urban,Tablet,45.87,2,Evening,1,4,77.94,0,0.559,1,0.905,0.951,0.346,0.702,1
+U0006,P0119,Electronics,BrandD,39,Male,Urban,Mobile,59.11,13,Night,15,5,84.18,1,0.243,6,0.716,0.176,0.869,0.666,1
+U0220,P0037,Electronics,BrandB,55,Female,Rural,Mobile,56.8,15,Evening,29,3,12.04,1,0.435,7,0.646,0.291,0.533,0.503,0
+U0075,P0069,Beauty,BrandA,48,Female,Rural,Tablet,12.63,5,Evening,37,4,392.13,1,0.705,9,0.884,0.173,0.659,0.69,1
+U0004,P0166,Books,BrandD,31,Male,Urban,Desktop,52.65,3,Afternoon,5,5,407.09,0,0.932,3,0.836,0.982,0.171,0.788,1
+U0134,P0041,Books,BrandD,41,Male,Suburban,Mobile,42.57,5,Afternoon,44,5,85.2,0,0.835,2,0.685,0.927,0.548,0.814,1
+U0118,P0062,Toys,BrandA,49,Female,Urban,Mobile,27.78,5,Night,6,5,371.06,1,0.37,5,0.788,0.745,0.728,0.677,1
+U0094,P0060,Home & Kitchen,BrandD,53,Female,Suburban,Mobile,32.9,5,Morning,4,3,219.6,0,0.491,10,0.741,0.483,0.626,0.652,1
+U0062,P0125,Toys,BrandB,49,Female,Suburban,Mobile,51.13,3,Morning,6,3,123.6,1,0.175,1,0.929,0.271,0.504,0.502,0
+U0194,P0111,Beauty,BrandD,32,Male,Suburban,Mobile,29.33,3,Night,33,3,312.59,0,0.192,6,0.813,0.299,0.301,0.541,0
+U0203,P0014,Toys,BrandC,60,Female,Rural,Mobile,23.02,18,Night,31,2,93.35,0,0.523,9,0.655,0.499,0.379,0.531,0
+U0026,P0084,Beauty,BrandE,52,Male,Suburban,Mobile,30.1,4,Morning,48,3,379.66,0,0.577,10,0.776,0.791,0.731,0.697,1
+U0173,P0130,Books,BrandB,20,Male,Urban,Mobile,35.17,1,Evening,12,3,28.57,1,0.338,9,0.902,0.338,0.302,0.488,0
+U0300,P0070,Home & Kitchen,BrandC,33,Male,Suburban,Mobile,12.16,16,Night,29,3,479.77,1,0.679,7,0.835,0.38,0.66,0.615,1
+U0133,P0145,Toys,BrandA,22,Male,Urban,Desktop,54.15,8,Evening,24,4,40.58,0,0.733,7,0.895,0.64,0.631,0.792,1
+U0118,P0123,Electronics,BrandB,38,Male,Urban,Desktop,40.78,17,Night,20,3,291.83,0,0.369,8,0.688,0.314,0.973,0.686,1
+U0275,P0089,Clothing,BrandE,27,Male,Urban,Mobile,38.36,8,Night,20,2,451.59,1,0.783,10,0.911,0.626,0.155,0.49,0
+U0212,P0028,Sports,BrandE,36,Male,Urban,Tablet,6.87,7,Evening,27,5,10.89,0,0.285,2,0.864,0.448,0.197,0.669,1
+U0225,P0066,Electronics,BrandA,42,Male,Suburban,Tablet,36.65,8,Evening,47,4,251.76,1,0.59,6,0.855,0.131,0.555,0.64,1
+U0020,P0163,Books,BrandA,21,Female,Urban,Mobile,8.14,12,Morning,19,1,178.25,0,0.824,5,0.721,0.462,0.574,0.584,0
+U0113,P0005,Sports,BrandB,46,Female,Suburban,Mobile,5.64,16,Night,33,3,292.26,0,0.583,5,0.911,0.928,0.136,0.606,1
+U0140,P0193,Clothing,BrandD,36,Male,Suburban,Desktop,32.11,12,Afternoon,4,5,116.6,0,0.917,3,0.823,0.364,0.843,0.917,1
+U0047,P0168,Clothing,BrandA,60,Female,Urban,Desktop,24.76,19,Afternoon,17,5,37.13,0,0.153,3,0.898,0.391,0.545,0.719,1
+U0001,P0184,Home & Kitchen,BrandD,19,Male,Rural,Tablet,35.74,10,Night,38,4,314.84,0,0.629,6,0.726,0.159,0.412,0.693,1
+U0090,P0164,Sports,BrandC,27,Female,Urban,Desktop,6.26,7,Night,42,1,211.34,0,0.606,10,0.651,0.654,0.387,0.489,0
+U0142,P0045,Home & Kitchen,BrandE,60,Male,Urban,Desktop,26.43,12,Night,10,2,313.13,0,0.694,10,0.716,0.864,0.875,0.677,1
+U0038,P0151,Electronics,BrandD,42,Male,Suburban,Mobile,11.31,5,Evening,16,5,109.22,0,0.85,7,0.759,0.418,0.277,0.777,1
+U0293,P0047,Beauty,BrandE,37,Female,Urban,Mobile,59.24,16,Afternoon,47,5,172.68,0,0.753,1,0.787,0.316,0.244,0.757,1
+U0139,P0031,Beauty,BrandD,36,Female,Urban,Mobile,34.11,9,Afternoon,44,5,283.03,1,0.811,3,0.779,0.961,0.292,0.676,1
+U0259,P0139,Beauty,BrandC,40,Female,Suburban,Mobile,41.56,7,Afternoon,21,5,298.59,0,0.36,1,0.791,0.771,0.663,0.763,1
+U0161,P0010,Sports,BrandA,41,Female,Suburban,Desktop,20.2,14,Night,36,4,189.3,0,0.449,10,0.895,0.61,0.83,0.775,1
+U0178,P0195,Beauty,BrandC,28,Other,Urban,Mobile,6.59,11,Evening,19,1,143.63,0,0.664,3,0.66,0.375,0.398,0.504,0
+U0010,P0118,Electronics,BrandA,63,Male,Rural,Desktop,58.58,7,Night,47,5,140.48,0,0.598,5,0.711,0.299,0.256,0.713,1
+U0261,P0014,Home & Kitchen,BrandA,51,Male,Suburban,Mobile,17.89,10,Morning,47,2,91.48,1,0.965,9,0.911,0.744,0.288,0.553,0
+U0138,P0080,Sports,BrandE,45,Male,Rural,Mobile,26.0,9,Morning,47,2,166.08,0,0.268,3,0.796,0.57,0.657,0.564,0
+U0172,P0093,Home & Kitchen,BrandC,22,Male,Urban,Mobile,39.34,4,Afternoon,45,3,103.72,1,0.416,10,0.804,0.569,0.321,0.488,0
+U0013,P0010,Sports,BrandD,22,Female,Suburban,Mobile,2.46,16,Night,5,5,318.74,0,0.615,10,0.767,0.166,0.89,0.854,1
+U0168,P0076,Home & Kitchen,BrandC,38,Female,Rural,Desktop,48.81,10,Morning,33,5,286.69,0,0.881,9,0.792,0.561,0.194,0.773,1
+U0130,P0094,Clothing,BrandE,29,Male,Suburban,Desktop,32.66,19,Morning,13,5,194.38,0,0.936,1,0.669,0.84,0.129,0.747,1
+U0084,P0105,Home & Kitchen,BrandA,21,Other,Suburban,Tablet,17.41,17,Night,47,5,166.29,1,0.402,6,0.791,0.952,0.18,0.575,0
+U0101,P0001,Beauty,BrandE,59,Female,Urban,Mobile,4.63,9,Evening,22,5,122.62,1,0.16,9,0.949,0.196,0.861,0.694,1
+U0273,P0133,Clothing,BrandB,37,Male,Urban,Mobile,10.59,13,Night,19,2,270.05,0,0.479,5,0.798,0.668,0.686,0.613,1
+U0265,P0020,Home & Kitchen,BrandB,55,Male,Urban,Mobile,53.81,1,Night,12,1,459.86,1,0.455,10,0.616,0.612,0.962,0.467,0
+U0038,P0008,Sports,BrandD,42,Male,Urban,Mobile,41.48,2,Evening,46,1,344.42,0,0.988,2,0.879,0.901,0.403,0.614,1
+U0094,P0171,Sports,BrandE,31,Male,Rural,Desktop,15.74,13,Afternoon,43,3,373.49,1,0.488,5,0.739,0.776,0.291,0.484,0
+U0095,P0001,Sports,BrandD,28,Male,Urban,Desktop,4.87,9,Afternoon,40,2,418.02,0,0.375,1,0.654,0.969,0.606,0.547,0
+U0069,P0057,Books,BrandD,49,Female,Rural,Desktop,41.75,7,Afternoon,31,5,179.06,0,0.429,9,0.902,0.964,0.584,0.783,1
+U0236,P0064,Electronics,BrandB,28,Male,Rural,Mobile,34.77,16,Evening,25,1,36.12,0,0.457,10,0.669,0.303,0.632,0.512,0
+U0137,P0118,Sports,BrandD,35,Male,Urban,Desktop,24.87,19,Morning,49,4,313.17,1,0.839,10,0.922,0.753,0.413,0.675,1
+U0076,P0028,Clothing,BrandB,44,Other,Urban,Mobile,22.45,7,Evening,13,4,98.39,1,0.173,9,0.755,0.577,0.105,0.447,0
+U0035,P0121,Sports,BrandA,35,Female,Rural,Desktop,13.79,6,Night,35,4,286.68,1,0.385,6,0.86,0.293,0.132,0.515,0
+U0001,P0107,Books,BrandE,40,Other,Rural,Mobile,40.51,18,Evening,7,5,371.06,1,0.97,9,0.791,0.275,0.697,0.792,1
+U0296,P0165,Beauty,BrandD,28,Male,Urban,Mobile,58.27,19,Morning,39,5,392.9,0,0.238,3,0.69,0.173,0.571,0.7,1
+U0060,P0175,Clothing,BrandB,38,Male,Urban,Mobile,11.37,11,Morning,21,3,154.41,1,0.768,4,0.835,0.816,0.839,0.668,1
+U0267,P0165,Books,BrandC,61,Female,Suburban,Tablet,36.23,12,Night,21,3,258.65,1,0.421,6,0.935,0.392,0.37,0.525,0
+U0229,P0049,Beauty,BrandD,22,Male,Suburban,Mobile,26.03,10,Afternoon,15,3,312.38,0,0.624,4,0.869,0.871,0.834,0.745,1
+U0270,P0120,Toys,BrandA,40,Male,Urban,Mobile,27.35,13,Morning,26,4,410.64,0,0.19,1,0.811,0.647,0.483,0.637,1
+U0286,P0044,Toys,BrandA,58,Female,Suburban,Desktop,15.99,12,Morning,9,5,381.89,0,0.376,7,0.947,0.706,0.187,0.702,1
+U0291,P0056,Clothing,BrandC,42,Female,Urban,Mobile,49.68,10,Morning,24,4,494.05,1,0.551,5,0.693,0.363,0.98,0.685,1
+U0213,P0156,Home & Kitchen,BrandB,58,Male,Urban,Mobile,29.63,18,Night,30,3,9.0,1,0.309,8,0.622,0.512,0.561,0.478,0
+U0165,P0111,Electronics,BrandD,27,Female,Urban,Mobile,33.06,4,Morning,20,5,221.56,1,0.588,9,0.611,0.471,0.667,0.673,1
+U0005,P0134,Electronics,BrandB,39,Male,Urban,Mobile,18.98,5,Afternoon,26,2,131.74,1,0.298,5,0.849,0.312,0.704,0.49,0
+U0078,P0108,Books,BrandA,36,Male,Urban,Tablet,11.73,5,Night,16,1,64.35,1,0.685,8,0.891,0.849,0.426,0.46,0
+U0062,P0189,Beauty,BrandB,18,Male,Urban,Desktop,6.07,12,Afternoon,32,1,456.2,1,0.914,1,0.822,0.66,0.773,0.562,0
+U0132,P0148,Electronics,BrandA,24,Male,Urban,Mobile,43.13,3,Morning,30,3,498.99,1,0.177,1,0.917,0.134,0.883,0.575,0
+U0089,P0114,Beauty,BrandB,21,Male,Urban,Tablet,12.58,8,Morning,49,4,94.4,0,0.295,7,0.844,0.838,0.448,0.657,1
+U0237,P0078,Beauty,BrandC,18,Other,Urban,Mobile,41.71,2,Afternoon,41,2,24.02,0,0.86,6,0.73,0.195,0.691,0.676,1
+U0042,P0130,Books,BrandE,32,Female,Rural,Mobile,24.03,18,Night,25,5,141.15,0,0.668,5,0.663,0.463,0.781,0.822,1
+U0089,P0037,Books,BrandC,57,Female,Urban,Mobile,25.53,9,Night,20,4,418.26,1,0.171,5,0.924,0.614,0.271,0.513,0
+U0296,P0020,Books,BrandC,29,Male,Urban,Mobile,28.68,13,Afternoon,35,3,150.48,0,0.538,9,0.636,0.107,0.399,0.595,0
+U0295,P0026,Electronics,BrandE,39,Male,Suburban,Mobile,22.69,7,Morning,0,4,33.17,0,0.289,1,0.79,0.688,0.198,0.595,0
+U0104,P0029,Toys,BrandE,39,Male,Rural,Tablet,6.94,10,Evening,3,3,30.98,0,0.279,8,0.71,0.694,0.642,0.606,1
+U0014,P0001,Books,BrandD,64,Male,Urban,Desktop,19.27,9,Afternoon,3,1,216.57,0,0.947,2,0.695,0.687,0.821,0.653,1
+U0288,P0119,Electronics,BrandD,34,Male,Suburban,Mobile,40.16,15,Afternoon,25,1,466.25,0,0.785,7,0.826,0.247,0.65,0.612,1
+U0179,P0035,Books,BrandC,46,Female,Suburban,Mobile,40.28,5,Afternoon,3,4,146.53,0,0.727,6,0.681,0.33,0.262,0.674,1
+U0125,P0198,Sports,BrandC,63,Female,Suburban,Desktop,17.89,12,Morning,48,2,216.44,0,0.315,10,0.921,0.323,0.592,0.586,0
+U0023,P0059,Beauty,BrandA,31,Female,Urban,Tablet,28.15,1,Night,8,5,55.46,0,0.207,2,0.742,0.964,0.851,0.76,1
+U0063,P0069,Books,BrandA,37,Female,Suburban,Desktop,12.41,12,Morning,29,3,249.32,0,0.884,3,0.837,0.161,0.372,0.699,1
+U0143,P0161,Clothing,BrandD,50,Other,Urban,Mobile,13.41,6,Afternoon,44,5,349.79,0,0.105,4,0.855,0.486,0.849,0.762,1
+U0153,P0179,Beauty,BrandD,60,Male,Suburban,Desktop,2.36,19,Morning,3,1,139.22,0,0.449,7,0.839,0.884,0.806,0.579,0
+U0145,P0012,Beauty,BrandA,32,Male,Suburban,Mobile,53.91,19,Morning,4,2,151.87,0,0.35,8,0.916,0.793,0.12,0.497,0
+U0225,P0020,Books,BrandA,29,Male,Urban,Mobile,13.43,16,Afternoon,44,2,421.78,0,0.613,2,0.681,0.84,0.316,0.542,0
+U0104,P0181,Toys,BrandB,57,Female,Rural,Mobile,14.42,19,Morning,22,5,10.13,0,0.325,8,0.63,0.975,0.589,0.709,1
+U0104,P0043,Home & Kitchen,BrandB,37,Other,Urban,Mobile,17.5,3,Evening,15,1,320.05,1,0.38,9,0.619,0.449,0.746,0.409,0
+U0039,P0126,Toys,BrandA,47,Male,Rural,Mobile,8.52,10,Morning,21,5,199.97,0,0.865,7,0.907,0.379,0.892,0.933,1
+U0198,P0050,Books,BrandB,55,Female,Urban,Mobile,38.72,18,Morning,36,4,152.7,0,0.643,1,0.941,0.128,0.677,0.792,1
+U0134,P0029,Beauty,BrandE,20,Female,Urban,Mobile,5.43,13,Night,7,2,330.51,0,0.231,6,0.706,0.235,0.442,0.496,0
+U0067,P0185,Clothing,BrandD,45,Male,Urban,Desktop,8.92,18,Night,47,2,418.16,0,0.754,8,0.843,0.606,0.266,0.593,0
+U0179,P0039,Beauty,BrandD,43,Male,Rural,Mobile,39.04,3,Afternoon,32,4,281.4,0,0.287,5,0.603,0.242,0.784,0.675,1
+U0042,P0184,Toys,BrandA,47,Male,Urban,Mobile,21.04,3,Afternoon,37,1,20.39,0,0.49,2,0.666,0.763,0.286,0.448,0
+U0015,P0171,Clothing,BrandC,30,Other,Urban,Mobile,42.77,12,Night,42,2,233.39,0,0.682,5,0.841,0.134,0.726,0.67,1
+U0111,P0178,Electronics,BrandA,30,Male,Urban,Tablet,33.89,7,Evening,15,3,234.07,0,0.345,8,0.623,0.334,0.263,0.526,0
+U0157,P0151,Sports,BrandB,19,Female,Suburban,Mobile,16.11,8,Morning,4,3,274.18,0,0.446,2,0.764,0.726,0.182,0.558,0
+U0289,P0172,Beauty,BrandC,54,Male,Suburban,Mobile,39.4,9,Evening,15,1,337.12,1,0.761,1,0.832,0.33,0.326,0.444,0
+U0231,P0038,Books,BrandB,55,Female,Urban,Mobile,7.86,14,Evening,6,4,14.56,0,0.944,4,0.868,0.756,0.356,0.774,1
+U0157,P0084,Electronics,BrandE,19,Male,Urban,Desktop,32.65,5,Night,0,5,253.5,1,0.576,4,0.759,0.996,0.682,0.703,1
+U0038,P0151,Sports,BrandB,53,Female,Urban,Tablet,26.79,19,Afternoon,8,1,296.21,0,0.109,9,0.821,0.817,0.245,0.395,0
+U0097,P0128,Books,BrandE,43,Female,Urban,Mobile,16.8,16,Morning,17,5,174.96,0,0.405,3,0.789,0.408,0.937,0.826,1
+U0289,P0126,Home & Kitchen,BrandE,28,Female,Urban,Mobile,36.64,12,Afternoon,44,1,335.84,0,0.459,4,0.618,0.911,0.599,0.495,0
+U0254,P0045,Books,BrandB,25,Female,Suburban,Tablet,52.41,4,Evening,46,3,117.95,1,0.405,3,0.86,0.146,0.542,0.541,0
+U0196,P0052,Clothing,BrandB,61,Male,Urban,Mobile,59.94,8,Evening,2,4,162.1,0,0.493,2,0.66,0.753,0.491,0.669,1
+U0086,P0080,Clothing,BrandE,57,Female,Urban,Desktop,36.86,7,Afternoon,23,3,481.56,0,0.669,4,0.611,0.121,0.61,0.658,1
+U0010,P0178,Home & Kitchen,BrandC,60,Male,Urban,Mobile,24.88,15,Afternoon,27,4,177.29,0,0.209,8,0.758,0.257,0.12,0.557,0
+U0005,P0124,Electronics,BrandE,39,Male,Rural,Mobile,14.29,6,Night,9,5,176.52,0,0.345,1,0.903,0.989,0.991,0.848,1
+U0123,P0119,Sports,BrandD,37,Female,Rural,Mobile,16.17,5,Afternoon,8,1,299.86,1,0.557,8,0.653,0.425,0.602,0.422,0
+U0118,P0008,Books,BrandE,25,Male,Rural,Mobile,29.29,14,Afternoon,12,2,485.63,0,0.384,8,0.605,0.838,0.132,0.444,0
+U0294,P0085,Clothing,BrandC,46,Female,Urban,Desktop,22.67,13,Night,47,2,491.62,0,0.992,3,0.638,0.438,0.631,0.672,1
+U0159,P0129,Electronics,BrandD,57,Other,Urban,Tablet,54.92,10,Afternoon,34,4,291.93,0,0.488,10,0.727,0.856,0.493,0.682,1
+U0228,P0008,Home & Kitchen,BrandA,43,Male,Urban,Mobile,22.73,18,Evening,22,4,5.54,0,0.883,10,0.803,0.969,0.122,0.702,1
+U0216,P0157,Toys,BrandA,47,Female,Urban,Desktop,23.03,4,Afternoon,46,3,450.82,0,0.907,6,0.668,0.492,0.932,0.781,1
+U0184,P0096,Beauty,BrandC,34,Male,Suburban,Mobile,23.63,8,Morning,16,2,287.27,0,0.852,4,0.881,0.603,0.11,0.589,0
+U0015,P0102,Toys,BrandE,37,Male,Suburban,Mobile,50.36,11,Evening,45,3,186.17,0,0.142,1,0.864,0.666,0.62,0.605,1
+U0157,P0005,Toys,BrandB,33,Male,Rural,Mobile,39.4,17,Night,6,5,415.45,1,0.953,1,0.844,0.941,0.966,0.853,1
+U0136,P0086,Clothing,BrandC,63,Other,Rural,Tablet,37.24,18,Evening,15,2,202.92,0,0.216,5,0.771,0.331,0.314,0.48,0
+U0261,P0175,Home & Kitchen,BrandD,60,Female,Urban,Desktop,20.71,11,Night,39,5,21.85,1,0.131,8,0.728,0.65,0.329,0.538,0
+U0157,P0034,Books,BrandD,24,Other,Suburban,Desktop,49.26,16,Morning,35,1,411.43,0,0.473,1,0.731,0.392,0.1,0.421,0
+U0047,P0193,Toys,BrandA,33,Other,Urban,Desktop,3.26,12,Morning,19,3,275.2,0,0.275,2,0.776,0.295,0.16,0.522,0
+U0173,P0055,Toys,BrandD,62,Male,Urban,Desktop,52.38,13,Evening,23,4,172.38,0,0.266,7,0.627,0.176,0.14,0.547,0
+U0130,P0119,Sports,BrandC,64,Male,Suburban,Tablet,31.25,16,Afternoon,46,2,129.19,1,0.359,8,0.839,0.659,0.84,0.528,0
+U0095,P0171,Clothing,BrandD,44,Female,Urban,Desktop,24.5,1,Evening,4,3,298.93,0,0.324,3,0.723,0.894,0.853,0.66,1
+U0115,P0158,Clothing,BrandC,40,Female,Urban,Tablet,30.33,16,Evening,44,4,107.98,0,0.716,8,0.679,0.416,0.754,0.77,1
+U0243,P0114,Books,BrandB,41,Male,Urban,Mobile,40.38,15,Morning,5,1,165.31,0,0.268,1,0.697,0.597,0.417,0.436,0
+U0292,P0145,Beauty,BrandA,26,Male,Suburban,Mobile,1.75,6,Night,27,2,320.08,1,0.589,9,0.663,0.678,0.839,0.538,0
+U0282,P0026,Electronics,BrandD,52,Female,Suburban,Mobile,52.42,12,Evening,4,5,441.36,0,0.988,2,0.916,0.473,0.586,0.898,1
+U0299,P0136,Sports,BrandC,37,Female,Urban,Mobile,27.36,8,Afternoon,48,1,268.78,0,0.489,2,0.659,0.913,0.374,0.464,0
+U0283,P0047,Clothing,BrandE,54,Male,Rural,Mobile,21.24,7,Morning,38,4,380.76,0,0.678,4,0.909,0.426,0.494,0.756,1
+U0069,P0113,Sports,BrandA,59,Female,Urban,Mobile,9.16,2,Evening,37,2,382.71,1,0.972,10,0.8,0.213,0.159,0.506,0
+U0148,P0076,Clothing,BrandB,34,Female,Urban,Desktop,26.93,12,Evening,1,2,333.86,1,0.224,3,0.904,0.23,0.95,0.536,0
+U0011,P0072,Sports,BrandC,64,Female,Suburban,Mobile,30.28,14,Afternoon,42,1,126.69,0,0.477,4,0.766,0.902,0.657,0.54,0
+U0254,P0089,Home & Kitchen,BrandB,48,Male,Suburban,Mobile,24.82,16,Evening,38,2,434.06,0,0.865,6,0.925,0.989,0.758,0.73,1
+U0038,P0046,Toys,BrandB,25,Female,Rural,Mobile,41.04,11,Evening,20,4,220.96,1,0.939,7,0.674,0.36,0.709,0.704,1
+U0134,P0196,Clothing,BrandD,32,Male,Urban,Tablet,25.83,9,Evening,39,1,26.88,1,0.641,5,0.794,0.229,0.701,0.487,0
+U0200,P0033,Sports,BrandD,48,Male,Suburban,Mobile,57.72,10,Evening,36,5,126.08,0,0.229,2,0.644,0.534,0.116,0.598,0
+U0023,P0001,Electronics,BrandC,47,Female,Suburban,Mobile,36.36,17,Afternoon,17,1,383.95,1,0.911,3,0.757,0.739,0.573,0.508,0
+U0218,P0147,Home & Kitchen,BrandE,63,Female,Rural,Desktop,48.64,12,Evening,47,1,39.22,0,0.257,10,0.799,0.651,0.84,0.539,0
+U0141,P0031,Home & Kitchen,BrandC,37,Male,Urban,Desktop,7.45,6,Evening,45,5,77.95,0,0.418,3,0.812,0.956,0.14,0.674,1
+U0104,P0142,Electronics,BrandE,56,Female,Suburban,Mobile,24.44,19,Evening,11,4,348.64,1,0.438,5,0.728,0.836,0.961,0.665,1
+U0210,P0053,Sports,BrandB,29,Female,Suburban,Mobile,20.87,11,Morning,16,3,446.84,0,0.503,5,0.627,0.882,0.482,0.602,1
+U0111,P0048,Books,BrandA,34,Female,Urban,Mobile,34.6,9,Afternoon,36,3,318.7,1,0.811,4,0.829,0.588,0.361,0.58,0
+U0104,P0069,Electronics,BrandC,59,Female,Urban,Tablet,51.81,6,Morning,45,5,115.03,0,0.822,8,0.771,0.395,0.579,0.834,1
+U0171,P0105,Sports,BrandC,47,Female,Urban,Mobile,5.62,16,Morning,37,4,31.44,0,0.748,6,0.648,0.732,0.821,0.783,1
+U0133,P0090,Electronics,BrandE,46,Female,Suburban,Mobile,5.28,16,Afternoon,14,2,309.49,1,0.12,6,0.928,0.495,0.527,0.435,0
+U0293,P0190,Electronics,BrandB,36,Male,Rural,Mobile,51.17,6,Morning,6,5,28.46,0,0.608,1,0.934,0.359,0.681,0.845,1
+U0127,P0194,Clothing,BrandB,63,Male,Suburban,Mobile,13.56,5,Morning,13,3,308.3,0,0.773,6,0.9,0.237,0.55,0.725,1
+U0106,P0192,Sports,BrandE,28,Male,Suburban,Desktop,40.46,4,Morning,49,4,116.66,1,0.5,3,0.895,0.575,0.668,0.653,1
+U0092,P0198,Books,BrandB,51,Female,Suburban,Mobile,33.03,2,Afternoon,0,1,452.8,0,0.95,6,0.635,0.635,0.224,0.522,0
+U0287,P0063,Toys,BrandD,24,Female,Urban,Mobile,50.14,6,Evening,37,4,240.17,0,0.841,10,0.948,0.612,0.135,0.725,1
+U0051,P0073,Clothing,BrandA,61,Male,Urban,Mobile,8.38,9,Night,2,4,115.85,1,0.674,6,0.74,0.205,0.223,0.567,0
+U0029,P0161,Electronics,BrandC,51,Male,Urban,Mobile,8.66,17,Night,36,3,427.31,0,0.156,2,0.657,0.613,0.357,0.514,0
+U0296,P0169,Toys,BrandA,37,Female,Urban,Mobile,33.85,14,Afternoon,43,3,130.75,1,0.687,1,0.884,0.252,0.328,0.56,0
+U0297,P0089,Beauty,BrandC,55,Male,Urban,Desktop,56.84,7,Night,30,2,156.77,1,0.92,3,0.679,0.697,0.654,0.571,0
+U0214,P0176,Toys,BrandD,41,Female,Suburban,Desktop,25.48,19,Afternoon,42,2,417.97,0,0.442,5,0.784,0.486,0.51,0.567,0
+U0267,P0013,Electronics,BrandB,27,Male,Urban,Tablet,20.29,1,Afternoon,12,5,157.85,0,0.854,4,0.645,0.864,0.135,0.727,1
+U0257,P0073,Electronics,BrandE,49,Female,Urban,Desktop,36.79,15,Night,47,1,208.03,1,0.382,7,0.766,0.8,0.131,0.316,0
+U0101,P0077,Sports,BrandD,32,Other,Urban,Desktop,55.9,18,Morning,17,2,177.09,0,0.613,4,0.795,0.752,0.182,0.538,0
+U0110,P0159,Sports,BrandA,54,Male,Urban,Mobile,50.38,3,Evening,16,3,62.62,0,0.684,8,0.756,0.731,0.418,0.652,1
+U0182,P0068,Clothing,BrandE,37,Female,Rural,Desktop,59.73,18,Night,16,4,24.25,0,0.71,7,0.624,0.604,0.106,0.628,1
+U0001,P0098,Books,BrandB,20,Male,Rural,Desktop,2.33,2,Night,10,5,363.65,0,0.894,10,0.77,0.155,0.545,0.842,1
+U0055,P0125,Clothing,BrandD,54,Female,Suburban,Desktop,7.66,10,Night,19,2,324.34,0,0.311,9,0.764,0.69,0.425,0.52,0
+U0149,P0102,Home & Kitchen,BrandE,57,Female,Urban,Mobile,36.96,11,Night,9,4,144.77,1,0.336,1,0.692,0.52,0.6,0.566,0
+U0137,P0132,Electronics,BrandD,25,Male,Suburban,Mobile,49.41,3,Afternoon,28,4,151.32,1,0.734,5,0.923,0.523,0.749,0.721,1
+U0202,P0102,Toys,BrandD,57,Female,Rural,Desktop,17.83,7,Afternoon,47,2,472.78,0,0.259,4,0.746,0.441,0.326,0.486,0
+U0117,P0019,Beauty,BrandB,61,Female,Suburban,Desktop,15.11,8,Evening,33,1,493.9,0,0.518,6,0.902,0.936,0.241,0.492,0
+U0154,P0198,Electronics,BrandC,40,Male,Urban,Tablet,47.43,19,Evening,16,1,239.35,0,0.118,1,0.638,0.325,0.35,0.381,0
+U0291,P0082,Electronics,BrandE,57,Male,Suburban,Mobile,4.33,18,Night,41,5,402.21,0,0.227,6,0.712,0.385,0.102,0.608,1
+U0063,P0141,Clothing,BrandB,28,Female,Rural,Mobile,22.79,13,Night,12,1,369.66,1,0.711,1,0.662,0.967,0.208,0.376,0
+U0244,P0023,Beauty,BrandD,63,Female,Suburban,Mobile,30.84,13,Night,43,5,152.17,1,0.773,1,0.743,0.829,0.776,0.758,1
+U0025,P0083,Beauty,BrandB,25,Female,Suburban,Desktop,34.06,19,Evening,46,3,33.99,1,0.204,8,0.639,0.113,0.301,0.409,0
+U0090,P0109,Beauty,BrandC,46,Female,Urban,Mobile,43.99,12,Night,38,2,75.57,0,0.305,2,0.754,0.915,0.995,0.631,1
+U0075,P0075,Clothing,BrandE,47,Female,Suburban,Mobile,21.94,17,Morning,26,4,419.96,0,0.189,10,0.724,0.304,0.251,0.573,0
+U0294,P0129,Electronics,BrandC,27,Male,Urban,Tablet,37.15,12,Evening,25,5,366.95,0,0.49,6,0.678,0.735,0.81,0.796,1
+U0210,P0088,Clothing,BrandA,56,Female,Suburban,Mobile,35.54,13,Morning,27,1,333.85,0,0.214,6,0.825,0.598,0.735,0.515,0
+U0017,P0054,Sports,BrandE,45,Other,Urban,Desktop,33.31,12,Night,12,5,69.67,0,0.494,6,0.933,0.583,0.39,0.763,1
+U0128,P0199,Sports,BrandC,53,Female,Urban,Mobile,38.79,19,Afternoon,11,5,321.77,1,0.759,8,0.672,0.746,0.398,0.666,1
+U0251,P0089,Clothing,BrandD,30,Male,Urban,Desktop,16.31,14,Morning,43,1,387.22,1,0.715,4,0.849,0.286,0.607,0.494,0
+U0179,P0143,Beauty,BrandE,49,Male,Suburban,Mobile,5.99,7,Evening,27,1,431.0,1,0.352,3,0.86,0.243,0.867,0.476,0
+U0182,P0065,Electronics,BrandE,53,Male,Urban,Tablet,8.04,13,Morning,1,2,11.55,1,0.706,6,0.774,0.687,0.448,0.506,0
+U0152,P0076,Clothing,BrandB,54,Male,Suburban,Tablet,14.25,6,Evening,36,4,343.82,0,0.935,4,0.914,0.362,0.155,0.741,1
+U0025,P0199,Clothing,BrandD,43,Male,Suburban,Mobile,30.51,19,Night,33,2,14.45,0,0.413,2,0.938,0.977,0.437,0.578,0
+U0180,P0143,Clothing,BrandA,39,Female,Urban,Mobile,50.59,19,Morning,22,2,354.9,0,0.396,6,0.727,0.506,0.287,0.502,0
+U0198,P0149,Home & Kitchen,BrandC,21,Female,Urban,Mobile,42.38,4,Afternoon,44,1,319.63,0,0.614,10,0.828,0.2,0.945,0.637,1
+U0161,P0147,Sports,BrandB,48,Male,Urban,Desktop,47.55,19,Morning,28,1,78.43,0,0.321,5,0.832,0.717,0.728,0.536,0
+U0177,P0060,Toys,BrandC,35,Female,Rural,Desktop,21.71,9,Afternoon,34,4,384.23,1,0.686,9,0.741,0.376,0.146,0.555,0
+U0285,P0093,Beauty,BrandA,55,Male,Suburban,Mobile,24.87,16,Evening,10,5,38.83,0,0.849,6,0.711,0.234,0.364,0.785,1
+U0063,P0161,Books,BrandA,41,Male,Urban,Desktop,24.23,4,Night,47,2,414.07,0,0.513,3,0.927,0.481,0.145,0.537,0
+U0150,P0049,Toys,BrandE,40,Male,Urban,Mobile,12.32,6,Night,32,4,134.65,0,0.712,5,0.876,0.968,0.847,0.827,1
+U0154,P0035,Beauty,BrandA,39,Female,Suburban,Desktop,4.61,8,Afternoon,10,2,345.98,0,0.687,10,0.64,0.47,0.916,0.669,1
+U0156,P0172,Books,BrandC,19,Male,Rural,Tablet,35.86,16,Evening,8,5,462.23,0,0.135,8,0.642,0.413,0.201,0.596,0
+U0049,P0102,Home & Kitchen,BrandD,48,Male,Rural,Mobile,59.36,5,Night,13,2,173.21,0,0.265,9,0.923,0.5,0.496,0.557,0
+U0084,P0011,Clothing,BrandD,28,Male,Suburban,Mobile,10.84,10,Evening,8,3,253.93,0,0.904,8,0.628,0.111,0.939,0.774,1
+U0177,P0099,Home & Kitchen,BrandE,45,Female,Urban,Mobile,3.75,13,Afternoon,38,4,234.24,1,0.945,3,0.841,0.22,0.231,0.643,1
+U0148,P0200,Home & Kitchen,BrandC,63,Male,Urban,Mobile,46.99,14,Afternoon,47,1,83.02,0,0.802,9,0.679,0.865,0.363,0.529,0
+U0118,P0110,Toys,BrandC,49,Female,Urban,Mobile,15.9,7,Morning,2,2,297.2,0,0.929,3,0.612,0.98,0.374,0.603,1
+U0063,P0074,Electronics,BrandA,22,Female,Urban,Mobile,49.95,6,Night,28,4,372.79,0,0.376,8,0.621,0.242,0.127,0.565,0
+U0189,P0194,Toys,BrandC,55,Female,Urban,Mobile,42.53,7,Night,18,4,458.85,1,0.323,10,0.731,0.582,0.133,0.477,0
+U0049,P0174,Sports,BrandB,27,Other,Urban,Mobile,56.79,5,Morning,35,2,426.15,0,0.446,9,0.627,0.97,0.958,0.626,1
+U0257,P0009,Books,BrandA,57,Male,Urban,Mobile,25.13,18,Afternoon,31,1,257.46,1,0.15,7,0.809,0.241,0.614,0.375,0
+U0224,P0003,Clothing,BrandB,63,Male,Rural,Mobile,40.06,12,Afternoon,6,1,360.91,1,0.829,4,0.827,0.268,0.376,0.466,0
+U0141,P0085,Toys,BrandE,41,Female,Suburban,Mobile,28.43,6,Afternoon,27,2,401.39,1,0.986,10,0.731,0.934,0.441,0.552,0
+U0215,P0026,Books,BrandD,52,Female,Rural,Desktop,38.2,1,Afternoon,43,4,249.28,0,0.842,9,0.86,0.735,0.743,0.829,1
+U0211,P0072,Beauty,BrandE,61,Female,Suburban,Desktop,27.53,4,Evening,17,1,62.14,0,0.599,3,0.772,0.237,0.43,0.52,0
+U0032,P0048,Books,BrandD,40,Female,Urban,Mobile,12.13,19,Night,4,2,221.78,0,0.366,3,0.751,0.454,0.305,0.504,0
+U0158,P0194,Beauty,BrandE,34,Female,Suburban,Mobile,30.97,12,Night,22,2,422.03,0,0.278,2,0.742,0.151,0.192,0.462,0
+U0285,P0198,Toys,BrandC,18,Other,Urban,Desktop,32.19,15,Afternoon,21,2,300.34,0,0.428,10,0.751,0.489,0.756,0.607,1
