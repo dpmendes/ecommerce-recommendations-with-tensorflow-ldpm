@@ -12,7 +12,13 @@ export class UserView extends View {
 
     constructor() {
         super();
-        this.init();
+        this.#ready = this.init();
+    }
+
+    #ready;
+
+    async whenReady() {
+        await this.#ready;
     }
 
     async init() {
@@ -84,7 +90,7 @@ export class UserView extends View {
 
     attachUserSelectListener() {
         this.#userSelect.addEventListener('change', (event) => {
-            const userId = event.target.value ? Number(event.target.value) : null;
+            const userId = event.target.value || null;
 
             if (userId) {
                 if (this.#onUserSelect) {
@@ -130,6 +136,6 @@ export class UserView extends View {
     }
 
     getSelectedUserId() {
-        return this.#userSelect.value ? Number(this.#userSelect.value) : null;
+        return this.#userSelect.value || null;
     }
 }

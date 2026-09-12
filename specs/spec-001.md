@@ -31,7 +31,7 @@ Add `src/service/DatasetService.js` as the shared CSV boundary.
 It must:
 
 1. Fetch and cache the CSV once.
-2. Parse quoted CSV values correctly using a real CSV parser, such as Papa Parse loaded consistently with the static application.
+2. Parse quoted CSV values correctly using the local JavaScript CSV parser.
 3. Validate required columns and reject malformed rows with a useful error.
 4. Convert numeric columns to numbers and trim categorical values.
 5. Preserve normalized interaction rows for model training.
@@ -41,93 +41,37 @@ It must:
 
 Use 80% of the normalized interaction rows for training and hold out 20% for testing. This is the recommended balance for the available dataset: it leaves enough examples for the TensorFlow.js model to learn while reserving a meaningful independent sample for evaluation.
 
-- Create the split in JavaScript with a deterministic seeded shuffle so results are reproducible.
-- Stratify by `Recommended` where possible so both partitions contain positive and negative examples in similar proportions.
-- Fit normalization ranges and categorical encodings from the training partition, then reuse that context for the test partition and recommendation inference to prevent test-data leakage.
-- Use the 20% test partition only for evaluation after training; do not use its labels to update model weights.
-- Report test loss, accuracy, precision, recall, F1, and ROC-AUC where the browser TensorFlow.js APIs support them.
-- Keep all rows available for the final recommendation candidate catalog, but ensure held-out labels are not used as input features or training signals.
 
 ### Catalog normalization
 
 Group rows by `Product_ID` and expose one product per ID. Since the source repeats IDs with varying metadata:
 
-- Use the mode for categorical values such as `Category` and `Brand`.
-- Use the mean for numeric values such as `Product_Price`.
-- Use a stable display name derived from `Product_ID`, for example `Product P0049`.
-- Expose the original `Product_ID` as the stable product `id`.
-- Do not invent a `color` field; the CSV has no product color column.
-- Retain useful aggregate metadata, including recommendation and probability summaries where appropriate.
 
 ### User normalization
 
 Group rows by `User_ID` and preserve IDs as strings.
 
-- Derive a stable display name from the ID because the CSV has no user-name column.
-- Use a representative or rounded mean `User_Age`.
-- Use the mode for gender, location, and device fields.
-- Map each user’s positive `Recommended` rows to deduplicated catalog products for the existing `purchases` UI.
-- Preserve runtime changes in session storage under a versioned key so old numeric-ID JSON data cannot be mixed with the new schema.
 
 ## Application Changes
 
 ### Services and startup
 
-- Refactor `ProductService` to consume the normalized catalog instead of fetching `products.json`.
-- Refactor `UserService` to consume grouped CSV users instead of fetching `users.json`.
-- Keep existing service responsibilities and make all ID comparisons string-safe.
-- Update `src/index.js` so the dataset is loaded once and passed to the services and worker controller.
-- Remove the synthetic demo user unless it is needed for a dedicated empty-history test.
-- Ensure the initial product and user renders wait for dataset normalization.
 
 ### Training worker
 
 Refactor `src/workers/modelTrainingWorker.js` around explicit CSV interaction data.
 
-- Expand the training payload to include normalized users, products, and interaction rows.
-- Train one example per CSV interaction rather than generating every product pair from JSON purchase history.
-- Use `Recommended` as the binary label.
-- Never include `Recommended` as an input feature.
-- Encode numeric features such as age, session duration, pages viewed, previous purchases, rating, price, discount, graph similarity, federated cluster, local model accuracy, global model weight, and personalization factor.
-- Encode categorical features such as category, brand, gender, location, device, and time of day.
-- Keep the feature encoding context identical between training and inference.
-- Use aggregated catalog products as recommendation candidates.
-- Return stable product IDs, display metadata, model scores, and optional clearly named dataset reference scores.
-- Preserve worker progress, training-log, completion, and recommendation message contracts used by the controllers.
 
 ### Controllers and views
 
-- Update `WorkerController` and `ModelTrainingController` for the expanded training payload.
-- Remove numeric coercion from user selection in `UserView` and related controllers.
-- Update product and purchase templates to display `brand` or other available CSV metadata instead of `color`.
-- Keep Buy Now and purchase-removal behavior intact.
-- Use product-ID lookup instead of embedding oversized objects in HTML data attributes if normalized metadata becomes too large.
 
 ## Files
 
 ### New
 
-- `src/service/DatasetService.js`
-- `specs/spec-001.md`
 
 ### Expected implementation updates
 
-- `src/service/ProductService.js`
-- `src/service/UserService.js`
-- `src/index.js`
-- `src/controller/ModelTrainingController.js`
-- `src/controller/WorkerController.js`
-- `src/controller/UserController.js`
-- `src/controller/ProductController.js`
-- `src/workers/modelTrainingWorker.js`
-- `src/view/ProductView.js`
-- `src/view/UserView.js`
-- `src/view/ModelTrainingView.js`
-- `src/view/templates/product-card.html`
-- `src/view/templates/past-purchase.html`
-- `index.html`
-- `package.json`
-- `README.md`
 
 All files listed above, including the new data layer and validation checks, must be implemented in JavaScript or Markdown. No Python files or Python-based workflow are part of this specification.
 

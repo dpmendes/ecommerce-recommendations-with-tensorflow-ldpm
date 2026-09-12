@@ -11,7 +11,9 @@ export class ProductController {
         this.#productView = productView;
         this.#productService = productService;
         this.#events = events;
-        this.init();
+        this.init().catch(error => {
+            console.error('Unable to render CSV products:', error);
+        });
     }
 
     static init(deps) {
@@ -21,6 +23,7 @@ export class ProductController {
     async init() {
         this.setupCallbacks();
         this.setupEventListeners();
+        await this.#productView.whenReady();
         const products = await this.#productService.getProducts();
         this.#productView.render(products, true);
     }

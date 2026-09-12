@@ -1,370 +1,213 @@
 import 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js';
 import { workerEvents } from '../events/constants.js';
-let _globalCtx = {};
-let _model = null
 
-const WEIGHTS = {
-    category: 0.4,
-    color: 0.3,
-    price: 0.2,
-    age: 0.1,
+let model = null;
+let context = null;
+
+const numericFields = [
+    'User_Age', 'Session_Duration_Min', 'Pages_Viewed', 'Previous_Purchases',
+    'User_Rating', 'Product_Price', 'Discount_Applied', 'Graph_Similarity_Score',
+    'Federated_Cluster_ID', 'Local_Model_Accuracy', 'Global_Model_Weight',
+    'Personalization_Factor'
+];
+
+const categoricalFields = [
+    'Category', 'Brand', 'User_Gender', 'User_Location', 'Device_Type', 'Time_of_Day'
+];
+
+const userFieldMap = {
+    User_Age: 'age', User_Gender: 'gender', User_Location: 'location',
+    Device_Type: 'device', Time_of_Day: 'timeOfDay',
+    Session_Duration_Min: 'Session_Duration_Min', Pages_Viewed: 'Pages_Viewed',
+    Previous_Purchases: 'Previous_Purchases', User_Rating: 'User_Rating'
 };
 
-
-// 🔢 Normalize continuous values (price, age) to 0–1 range
-// Why? Keeps all features balanced so no one dominates training
-// Formula: (val - min) / (max - min)
-// Example: price=129.99, minPrice=39.99, maxPrice=199.99 → 0.56
-const normalize = (value, min, max) => (value - min) / ((max - min) || 1)
-
-function makeContext(products, users) {
-    const ages = users.map(u => u.age)
-    const prices = products.map(p => p.price)
-
-    const minAge = Math.min(...ages)
-    const maxAge = Math.max(...ages)
-
-    const minPrice = Math.min(...prices)
-    const maxPrice = Math.max(...prices)
-
-    const colors = [...new Set(products.map(p => p.color))]
-    const categories = [...new Set(products.map(p => p.category))]
-
-    const colorsIndex = Object.fromEntries(
-        colors.map((color, index) => {
-            return [color, index]
-        }))
-    const categoriesIndex = Object.fromEntries(
-        categories.map((category, index) => {
-            return [category, index]
-        }))
-
-    // Computar a média de idade dos comprados por produto
-    // (ajuda a personalizar)
-    const midAge = (minAge + maxAge) / 2
-    const ageSums = {}
-    const ageCounts = {}
-
-    users.forEach(user => {
-        user.purchases.forEach(p => {
-            ageSums[p.name] = (ageSums[p.name] || 0) + user.age
-            ageCounts[p.name] = (ageCounts[p.name] || 0) + 1
-        })
-    })
-
-    const productAvgAgeNorm = Object.fromEntries(
-        products.map(product => {
-            const avg = ageCounts[product.name] ?
-                ageSums[product.name] / ageCounts[product.name] :
-                midAge
-
-            return [product.name, normalize(avg, minAge, maxAge)]
-        })
-    )
-
-    return {
-        products,
-        users,
-        colorsIndex,
-        categoriesIndex,
-        productAvgAgeNorm,
-        minAge,
-        maxAge,
-        minPrice,
-        maxPrice,
-        numCategories: categories.length,
-        numColors: colors.length,
-        // price + age + colors + categories
-        dimentions: 2 + categories.length + colors.length
-    }
-}
-
-const oneHotWeighted = (index, length, weight) =>
-    tf.oneHot(index, length).cast('float32').mul(weight)
-
-function encodeProduct(product, context) {
-    // normalizando dados para ficar de 0 a 1 e
-    // aplicar o peso na recomendação
-    const price = tf.tensor1d([
-        normalize(
-            product.price,
-            context.minPrice,
-            context.maxPrice
-        ) * WEIGHTS.price
-    ])
-
-    const age = tf.tensor1d([
-        (
-            context.productAvgAgeNorm[product.name] ?? 0.5
-        ) * WEIGHTS.age
-    ])
-
-    const category = oneHotWeighted(
-        context.categoriesIndex[product.category],
-        context.numCategories,
-        WEIGHTS.category
-    )
-
-    const color = oneHotWeighted(
-        context.colorsIndex[product.color],
-        context.numColors,
-        WEIGHTS.color
-    )
-
-    return tf.concat1d(
-        [price, age, category, color]
-    )
-}
-
-function encodeUser(user, context) {
-    if (user.purchases.length) {
-        return tf.stack(
-            user.purchases.map(
-                product => encodeProduct(product, context)
-            )
-        )
-            .mean(0)
-            .reshape([
-                1,
-                context.dimentions
-            ])
-    }
-
-    return tf.concat1d(
-        [
-            tf.zeros([1]), // preço é ignorado,
-            tf.tensor1d([
-                normalize(user.age, context.minAge, context.maxAge)
-                * WEIGHTS.age
-            ]),
-            tf.zeros([context.numCategories]), // categoria ignorada,
-            tf.zeros([context.numColors]), // color ignorada,
-
-        ]
-    ).reshape([1, context.dimentions])
-}
-
-function createTrainingData(context) {
-    const inputs = []
-    const labels = []
-    context.users
-        .filter(u => u.purchases.length)
-        .forEach(user => {
-            const userVector = encodeUser(user, context).dataSync()
-            context.products.forEach(product => {
-                const productVector = encodeProduct(product, context).dataSync()
-
-                const label = user.purchases.some(
-                    purchase => purchase.name === product.name ?
-                        1 :
-                        0
-                )
-                // combinar user + product
-                inputs.push([...userVector, ...productVector])
-                labels.push(label)
-
-            })
-        })
-
-    return {
-        xs: tf.tensor2d(inputs),
-        ys: tf.tensor2d(labels, [labels.length, 1]),
-        inputDimention: context.dimentions * 2
-        // tamanho = userVector + productVector
-    }
-}
-
-// ====================================================================
-// 📌 Exemplo de como um usuário é ANTES da codificação
-// ====================================================================
-/*
-const exampleUser = {
-    id: 201,
-    name: 'Rafael Souza',
-    age: 27,
-    purchases: [
-        { id: 8, name: 'Boné Estiloso', category: 'acessórios', price: 39.99, color: 'preto' },
-        { id: 9, name: 'Mochila Executiva', category: 'acessórios', price: 159.99, color: 'cinza' }
-    ]
+const productFieldMap = {
+    Category: 'category', Brand: 'brand', Product_Price: 'price',
+    Graph_Similarity_Score: 'graphSimilarityScore', Federated_Cluster_ID: 'federatedClusterId',
+    Local_Model_Accuracy: 'localModelAccuracy', Global_Model_Weight: 'globalModelWeight',
+    Personalization_Factor: 'personalizationFactor'
 };
-*/
 
-// ====================================================================
-// 📌 Após a codificação, o modelo NÃO vê nomes ou palavras.
-// Ele vê um VETOR NUMÉRICO (todos normalizados entre 0–1).
-// Exemplo: [preço_normalizado, idade_normalizada, cat_one_hot..., cor_one_hot...]
-//
-// Suponha categorias = ['acessórios', 'eletrônicos', 'vestuário']
-// Suponha cores      = ['preto', 'cinza', 'azul']
-//
-// Para Rafael (idade 27, categoria: acessórios, cores: preto/cinza),
-// o vetor poderia ficar assim:
-//
-// [
-//   0.45,            // peso do preço normalizado
-//   0.60,            // idade normalizada
-//   1, 0, 0,         // one-hot de categoria (acessórios = ativo)
-//   1, 0, 0          // one-hot de cores (preto e cinza ativos, azul inativo)
-// ]
-//
-// São esses números que vão para a rede neural.
-// ====================================================================
+const normalize = (value, range) => (value - range.min) / ((range.max - range.min) || 1);
 
+function seededShuffle(items) {
+    const shuffled = [...items];
+    let seed = 1701;
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        seed = (seed * 9301 + 49297) % 233280;
+        const swapIndex = Math.floor((seed / 233280) * (index + 1));
+        [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+    }
+    return shuffled;
+}
 
+function splitInteractions(interactions) {
+    const groups = new Map();
+    interactions.forEach(row => {
+        if (!groups.has(row.Recommended)) groups.set(row.Recommended, []);
+        groups.get(row.Recommended).push(row);
+    });
 
-// ====================================================================
-// 🧠 Configuração e treinamento da rede neural
-// ====================================================================
-async function configureNeuralNetAndTrain(trainData) {
+    const train = [];
+    const test = [];
+    groups.forEach(rows => {
+        const shuffled = seededShuffle(rows);
+        const testSize = Math.max(1, Math.floor(shuffled.length * 0.2));
+        test.push(...shuffled.slice(0, testSize));
+        train.push(...shuffled.slice(testSize));
+    });
+    return { train: seededShuffle(train), test: seededShuffle(test) };
+}
 
-    const model = tf.sequential()
-    // Camada de entrada
-    // - inputShape: Número de features por exemplo de treino (trainData.inputDim)
-    //   Exemplo: Se o vetor produto + usuário = 20 números, então inputDim = 20
-    // - units: 128 neurônios (muitos "olhos" para detectar padrões)
-    // - activation: 'relu' (mantém apenas sinais positivos, ajuda a aprender padrões não-lineares)
-    model.add(
-        tf.layers.dense({
-            inputShape: [trainData.inputDimention],
-            units: 128,
-            activation: 'relu'
-        })
-    )
-    // Camada oculta 1
-    // - 64 neurônios (menos que a primeira camada: começa a comprimir informação)
-    // - activation: 'relu' (ainda extraindo combinações relevantes de features)
-    model.add(
-        tf.layers.dense({
-            units: 64,
-            activation: 'relu'
-        })
-    )
+function createContext(trainRows) {
+    const numericRanges = Object.fromEntries(numericFields.map(field => {
+        const values = trainRows.map(row => row[field]);
+        return [field, { min: Math.min(...values), max: Math.max(...values) }];
+    }));
+    const categories = Object.fromEntries(categoricalFields.map(field => [
+        field, [...new Set(trainRows.map(row => row[field]))].sort()
+    ]));
+    return { numericRanges, categories };
+}
 
-    // Camada oculta 2
-    // - 32 neurônios (mais estreita de novo, destilando as informações mais importantes)
-    //   Exemplo: De muitos sinais, mantém apenas os padrões mais fortes
-    // - activation: 'relu'
-    model.add(
-        tf.layers.dense({
-            units: 32,
-            activation: 'relu'
-        })
-    )
-    // Camada de saída
-    // - 1 neurônio porque vamos retornar apenas uma pontuação de recomendação
-    // - activation: 'sigmoid' comprime o resultado para o intervalo 0–1
-    //   Exemplo: 0.9 = recomendação forte, 0.1 = recomendação fraca
-    model.add(
-        tf.layers.dense({ units: 1, activation: 'sigmoid' })
-    )
+function getFieldValue(source, field) {
+    if (field in source) return source[field];
+    if (userFieldMap[field] in source) return source[userFieldMap[field]];
+    if (productFieldMap[field] in source) return source[productFieldMap[field]];
+    return 0;
+}
 
-    model.compile({
-        optimizer: tf.train.adam(0.01),
-        loss: 'binaryCrossentropy',
-        metrics: ['accuracy']
-    })
+function encode(source) {
+    const numeric = numericFields.map(field => normalize(
+        Number(getFieldValue(source, field)) || 0,
+        context.numericRanges[field]
+    ));
 
-    await model.fit(trainData.xs, trainData.ys, {
-        epochs: 100,
+    const categorical = categoricalFields.flatMap(field => {
+        const value = getFieldValue(source, field);
+        return context.categories[field].map(item => item === value ? 1 : 0);
+    });
+    return [...numeric, ...categorical];
+}
+
+function buildCandidate(user, product) {
+    return {
+        User_Age: user.age, User_Gender: user.gender, User_Location: user.location,
+        Device_Type: user.device, Time_of_Day: user.timeOfDay,
+        Session_Duration_Min: user.Session_Duration_Min, Pages_Viewed: user.Pages_Viewed,
+        Previous_Purchases: user.Previous_Purchases, User_Rating: user.User_Rating,
+        Category: product.category, Brand: product.brand, Product_Price: product.price,
+        Discount_Applied: 0, Graph_Similarity_Score: product.graphSimilarityScore,
+        Federated_Cluster_ID: product.federatedClusterId,
+        Local_Model_Accuracy: product.localModelAccuracy,
+        Global_Model_Weight: product.globalModelWeight,
+        Personalization_Factor: product.personalizationFactor
+    };
+}
+
+function createTrainingTensors(rows) {
+    return {
+        xs: tf.tensor2d(rows.map(encode)),
+        ys: tf.tensor2d(rows.map(row => [row.Recommended]))
+    };
+}
+
+function calculateMetrics(labels, scores) {
+    const predictions = scores.map(score => score >= 0.5 ? 1 : 0);
+    let truePositive = 0;
+    let trueNegative = 0;
+    let falsePositive = 0;
+    let falseNegative = 0;
+    labels.forEach((label, index) => {
+        if (label === 1 && predictions[index] === 1) truePositive += 1;
+        if (label === 0 && predictions[index] === 0) trueNegative += 1;
+        if (label === 0 && predictions[index] === 1) falsePositive += 1;
+        if (label === 1 && predictions[index] === 0) falseNegative += 1;
+    });
+    const precision = truePositive / (truePositive + falsePositive || 1);
+    const recall = truePositive / (truePositive + falseNegative || 1);
+    const f1 = 2 * precision * recall / (precision + recall || 1);
+    const accuracy = (truePositive + trueNegative) / (labels.length || 1);
+    const positives = labels.filter(label => label === 1).length;
+    const negatives = labels.length - positives;
+    const rankedIndices = scores.map((score, index) => index)
+        .sort((first, second) => scores[second] - scores[first]);
+    let positiveRankSum = 0;
+    rankedIndices.forEach((index, rank) => {
+        if (labels[index] === 1) positiveRankSum += rank + 1;
+    });
+    const rocAuc = positives && negatives
+        ? 1 - (positiveRankSum - positives * (positives + 1) / 2) / (positives * negatives)
+        : null;
+    return { accuracy, precision, recall, f1, rocAuc };
+}
+
+async function trainModel(dataset) {
+    const { train, test } = splitInteractions(dataset.interactions);
+    context = { ...createContext(train), products: dataset.products };
+    const trainTensors = createTrainingTensors(train);
+    const testTensors = createTrainingTensors(test);
+
+    model = tf.sequential();
+    model.add(tf.layers.dense({ inputShape: [trainTensors.xs.shape[1]], units: 64, activation: 'relu' }));
+    model.add(tf.layers.dense({ units: 32, activation: 'relu' }));
+    model.add(tf.layers.dense({ units: 1, activation: 'sigmoid' }));
+    model.compile({ optimizer: tf.train.adam(0.005), loss: 'binaryCrossentropy', metrics: ['accuracy'] });
+
+    postMessage({ type: workerEvents.progressUpdate, progress: { progress: 1 } });
+    await model.fit(trainTensors.xs, trainTensors.ys, {
+        epochs: 40,
         batchSize: 32,
         shuffle: true,
         callbacks: {
-            onEpochEnd: (epoch, logs) => {
-                postMessage({
-                    type: workerEvents.trainingLog,
-                    epoch: epoch,
-                    loss: logs.loss,
-                    accuracy: logs.acc
-                });
-            }
+            onEpochEnd: (epoch, logs) => postMessage({
+                type: workerEvents.trainingLog,
+                epoch,
+                loss: logs.loss,
+                accuracy: logs.acc ?? logs.accuracy
+            })
         }
-    })
-
-    return model
-}
-async function trainModel({ users }) {
-    console.log('Training model with users:', users);
-    postMessage({ type: workerEvents.progressUpdate, progress: { progress: 1 } });
-    const products = await (await fetch('/data/products.json')).json()
-
-    const context = makeContext(products, users)
-    context.productVectors = products.map(product => {
-        return {
-            name: product.name,
-            meta: { ...product },
-            vector: encodeProduct(product, context).dataSync()
-        }
-    })
-
-    _globalCtx = context
-
-    const trainData = createTrainingData(context)
-    _model = await configureNeuralNetAndTrain(trainData)
-
-    postMessage({ type: workerEvents.progressUpdate, progress: { progress: 100 } });
-    postMessage({ type: workerEvents.trainingComplete });
-}
-function recommend({ user }) {
-    if (!_model) return;
-    const context = _globalCtx
-    // 1️⃣ Converta o usuário fornecido no vetor de features codificadas
-    //    (preço ignorado, idade normalizada, categorias ignoradas)
-    //    Isso transforma as informações do usuário no mesmo formato numérico
-    //    que foi usado para treinar o modelo.
-
-    const userVector = encodeUser(user, context).dataSync()
-
-    // Em aplicações reais:
-    //  Armazene todos os vetores de produtos em um banco de dados vetorial (como Postgres, Neo4j ou Pinecone)
-    //  Consulta: Encontre os 200 produtos mais próximos do vetor do usuário
-    //  Execute _model.predict() apenas nesses produtos
-
-    // 2️⃣ Crie pares de entrada: para cada produto, concatene o vetor do usuário
-    //    com o vetor codificado do produto.
-    //    Por quê? O modelo prevê o "score de compatibilidade" para cada par (usuário, produto).
-
-
-    const inputs = context.productVectors.map(({ vector }) => {
-        return [...userVector, ...vector]
-    })
-
-    // 3️⃣ Converta todos esses pares (usuário, produto) em um único Tensor.
-    //    Formato: [numProdutos, inputDim]
-    const inputTensor = tf.tensor2d(inputs)
-
-    // 4️⃣ Rode a rede neural treinada em todos os pares (usuário, produto) de uma vez.
-    //    O resultado é uma pontuação para cada produto entre 0 e 1.
-    //    Quanto maior, maior a probabilidade do usuário querer aquele produto.
-    const predictions = _model.predict(inputTensor)
-
-    // 5️⃣ Extraia as pontuações para um array JS normal.
-    const scores = predictions.dataSync()
-    const recommendations = context.productVectors.map((item, index) => {
-        return {
-            ...item.meta,
-            name: item.name,
-            score: scores[index] // previsão do modelo para este produto
-        }
-    })
-
-    const sortedItems = recommendations
-        .sort((a, b) => b.score - a.score)
-
-    // 8️⃣ Envie a lista ordenada de produtos recomendados
-    //    para a thread principal (a UI pode exibi-los agora).
-    postMessage({
-        type: workerEvents.recommend,
-        user,
-        recommendations: sortedItems
     });
 
+    const testScores = model.predict(testTensors.xs).dataSync();
+    const metrics = calculateMetrics(test.map(row => row.Recommended), [...testScores]);
+    console.log('CSV test metrics:', metrics);
+    trainTensors.xs.dispose();
+    trainTensors.ys.dispose();
+    testTensors.xs.dispose();
+    testTensors.ys.dispose();
+    postMessage({ type: workerEvents.progressUpdate, progress: { progress: 100 } });
+    postMessage({ type: workerEvents.trainingComplete, metrics });
 }
-const handlers = {
-    [workerEvents.trainModel]: trainModel,
-    [workerEvents.recommend]: recommend,
-};
 
-self.onmessage = e => {
-    const { action, ...data } = e.data;
-    if (handlers[action]) handlers[action](data);
+function recommend(user) {
+    if (!model || !context) return;
+    const purchasedIds = new Set((user.purchases || []).map(purchase => String(purchase.id)));
+    const purchasedCategories = new Set((user.purchases || []).map(purchase => purchase.category));
+    const purchasedBrands = new Set((user.purchases || []).map(purchase => purchase.brand));
+    const candidates = context.products.filter(product => !purchasedIds.has(String(product.id)));
+    const recommendationCandidates = candidates.length ? candidates : context.products;
+    const inputs = recommendationCandidates.map(product => encode(buildCandidate(user, product)));
+    const inputTensor = tf.tensor2d(inputs);
+    const scores = model.predict(inputTensor).dataSync();
+    inputTensor.dispose();
+    const recommendations = recommendationCandidates.map((product, index) => ({
+        ...product,
+        score: scores[index]
+            + (purchasedCategories.has(product.category) ? 0.05 : 0)
+            + (purchasedBrands.has(product.brand) ? 0.05 : 0)
+    })).sort((first, second) => second.score - first.score);
+    postMessage({ type: workerEvents.recommend, user, recommendations });
+}
+
+self.onmessage = event => {
+    const { action, dataset, user } = event.data;
+    if (action === workerEvents.trainModel) {
+        trainModel(dataset).catch(error => {
+            console.error('Recommendation model training failed:', error);
+            postMessage({ type: workerEvents.trainingComplete, error: error.message });
+        });
+    }
+    if (action === workerEvents.recommend) recommend(user);
 };

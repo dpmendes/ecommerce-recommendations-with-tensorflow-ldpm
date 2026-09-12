@@ -11,7 +11,13 @@ export class ProductView extends View {
 
     constructor() {
         super();
-        this.init();
+        this.#ready = this.init();
+    }
+
+    #ready;
+
+    async whenReady() {
+        await this.#ready;
     }
 
     async init() {
@@ -35,7 +41,7 @@ export class ProductView extends View {
                 name: product.name,
                 category: product.category,
                 price: product.price,
-                color: product.color,
+                brand: product.brand,
                 product: JSON.stringify(product)
             });
         }).join('');

@@ -1,16 +1,19 @@
 export class ModelController {
     #modelView;
     #userService;
+    #datasetService;
     #events;
     #currentUser = null;
     #alreadyTrained = false;
     constructor({
         modelView,
         userService,
+        datasetService,
         events,
     }) {
         this.#modelView = modelView;
         this.#userService = userService;
+        this.#datasetService = datasetService;
         this.#events = events;
 
         this.init();
@@ -34,10 +37,12 @@ export class ModelController {
             this.#modelView.enableRecommendButton();
         });
 
-        this.#events.onTrainingComplete(() => {
+        this.#events.onTrainingComplete(({ metrics } = {}) => {
             this.#alreadyTrained = true;
             if (!this.#currentUser) return
             this.#modelView.enableRecommendButton();
+            this.#events.dispatchRecommend(this.#currentUser);
+            if (metrics) console.log('Model test metrics:', metrics);
         })
 
         this.#events.onUsersUpdated(
@@ -55,9 +60,8 @@ export class ModelController {
 
 
     async handleTrainModel() {
-        const users = await this.#userService.getUsers();
-
-        this.#events.dispatchTrainModel(users);
+        const dataset = await this.#datasetService.getDataset();
+        this.#events.dispatchTrainModel(dataset);
     }
 
     handleTrainingProgressUpdate(progress) {
