@@ -18,5 +18,8 @@
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^3.0.4"
+    },
+    "dependencies": {
+        "chromadb": "^3.5.0"
     }
 }

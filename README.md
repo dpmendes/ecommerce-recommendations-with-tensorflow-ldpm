@@ -11,6 +11,7 @@ A browser-based e-commerce recommendation application using JavaScript, TensorFl
 - `src/service/` - Contains the CSV data normalization and application services
 - `src/workers/` - Contains the TensorFlow.js training worker
 - `data/` - Contains the CSV interaction dataset
+- `data/chroma_data` - Contains the vectorized representation of the CSV data
 
 ## Setup and Run
 
