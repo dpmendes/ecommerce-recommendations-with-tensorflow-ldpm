@@ -11,15 +11,23 @@ import { ModelView } from './view/ModelTrainingView.js';
 import Events from './events/events.js';
 import { WorkerController } from './controller/WorkerController.js';
 import { DatasetService } from './service/DatasetService.js';
+import { VectorService } from './service/VectorService.js';
 
 // Create shared services
 const datasetService = new DatasetService();
+const vectorService = new VectorService({ datasetService });
 const userService = new UserService({ datasetService });
 const productService = new ProductService({ datasetService });
 const dataset = await datasetService.getDataset().catch(error => {
     console.error('Unable to initialize recommendation dataset:', error);
     throw error;
 });
+
+try {
+    await vectorService.initialize();
+} catch (error) {
+    console.warn('Vector index initialization failed; continuing with the existing recommendation flow.', error);
+}
 
 // Create views
 const userView = new UserView();
