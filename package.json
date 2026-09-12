@@ -6,7 +6,9 @@
     "type": "module",
     "scripts": {
         "start": "browser-sync -w . --server --files 'index.html, data/*.csv, src/**/*.js, src/**/*.html, style.css' --port 3000",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "vectorize": "node scripts/vectorize.mjs",
+        "clear-vectors": "node scripts/clear-vectors.mjs"
     },
     "keywords": [
         "ecommerce",
