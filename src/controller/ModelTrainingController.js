@@ -2,6 +2,7 @@ export class ModelController {
     #modelView;
     #userService;
     #datasetService;
+    #vectorService;
     #events;
     #currentUser = null;
     #alreadyTrained = false;
@@ -9,11 +10,13 @@ export class ModelController {
         modelView,
         userService,
         datasetService,
+        vectorService,
         events,
     }) {
         this.#modelView = modelView;
         this.#userService = userService;
         this.#datasetService = datasetService;
+        this.#vectorService = vectorService;
         this.#events = events;
 
         this.init();
@@ -41,7 +44,7 @@ export class ModelController {
             this.#alreadyTrained = true;
             if (!this.#currentUser) return
             this.#modelView.enableRecommendButton();
-            this.#events.dispatchRecommend(this.#currentUser);
+            this.dispatchRecommendation(this.#currentUser);
             if (metrics) console.log('Model test metrics:', metrics);
         })
 
@@ -70,7 +73,17 @@ export class ModelController {
     async handleRunRecommendation() {
         const currentUser = this.#currentUser;
         const updatedUser = await this.#userService.getUserById(currentUser.id);
-        this.#events.dispatchRecommend(updatedUser);
+        await this.dispatchRecommendation(updatedUser);
+    }
+
+    async dispatchRecommendation(user) {
+        let candidateProducts = null;
+        try {
+            candidateProducts = await this.#vectorService?.getCandidateProductsForUser(user);
+        } catch (error) {
+            console.warn('Unable to retrieve Chroma recommendation candidates; using the full catalog.', error);
+        }
+        this.#events.dispatchRecommend({ user, candidateProducts });
     }
 
     async refreshUsersPurchaseData({ users }) {

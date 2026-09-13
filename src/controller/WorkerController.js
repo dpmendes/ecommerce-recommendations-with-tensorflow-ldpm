@@ -82,7 +82,11 @@ export class WorkerController {
         this.#worker.postMessage({ action: workerEvents.trainModel, dataset });
     }
 
-    triggerRecommend(user) {
-        this.#worker.postMessage({ action: workerEvents.recommend, user });
+    triggerRecommend({ user, candidateProducts } = {}) {
+        this.#worker.postMessage({
+            action: workerEvents.recommend,
+            user,
+            candidateProducts
+        });
     }
 }

@@ -46,6 +46,7 @@ ModelController.init({
     modelView,
     userService,
     datasetService,
+    vectorService,
     events: Events,
 });
 

@@ -186,7 +186,8 @@ function recommend(user) {
     const purchasedIds = new Set((user.purchases || []).map(purchase => String(purchase.id)));
     const purchasedCategories = new Set((user.purchases || []).map(purchase => purchase.category));
     const purchasedBrands = new Set((user.purchases || []).map(purchase => purchase.brand));
-    const candidates = context.products.filter(product => !purchasedIds.has(String(product.id)));
+    const candidates = (user.candidateProducts || context.products)
+        .filter(product => !purchasedIds.has(String(product.id)));
     const recommendationCandidates = candidates.length ? candidates : context.products;
     const inputs = recommendationCandidates.map(product => encode(buildCandidate(user, product)));
     const inputTensor = tf.tensor2d(inputs);
@@ -202,12 +203,12 @@ function recommend(user) {
 }
 
 self.onmessage = event => {
-    const { action, dataset, user } = event.data;
+    const { action, dataset, user, candidateProducts } = event.data;
     if (action === workerEvents.trainModel) {
         trainModel(dataset).catch(error => {
             console.error('Recommendation model training failed:', error);
             postMessage({ type: workerEvents.trainingComplete, error: error.message });
         });
     }
-    if (action === workerEvents.recommend) recommend(user);
+    if (action === workerEvents.recommend) recommend({ ...user, candidateProducts });
 };

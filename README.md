@@ -20,6 +20,11 @@ A browser-based e-commerce recommendation application using JavaScript, TensorFl
 npm install
 ```
 
+2. Start ChromaDB:
+```
+chroma run --path ./data/chroma_data --port 8000
+```
+
 2. Start the application:
 ```
 npm start
