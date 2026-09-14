@@ -70,13 +70,17 @@ export class VectorService {
 
         const { products } = await this.#datasetService.getDataset();
         const purchasedIds = new Set((user?.purchases || []).map(purchase => String(purchase.id)));
+        const productVectors = new Map(
+            products.map(product => [String(product.id), this.#toProductVector(product)])
+        );
+        const queryEmbedding = this.#toUserPreferenceVector(user, products, productVectors);
         const response = await fetch(
             `${this.#baseUrl}/api/v2/tenants/default_tenant/databases/default_database/collections/${this.#collectionId}/query`,
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    query_embeddings: [this.#toUserVector(user)],
+                    query_embeddings: [queryEmbedding],
                     n_results: Math.min(100, products.length),
                     include: ['metadatas']
                 })
@@ -120,18 +124,31 @@ export class VectorService {
         return { ...dataset, interactions };
     }
 
-    #toUserVector(user = {}) {
-        const values = [
-            Number(user.age || 0),
-            Number(user.Session_Duration_Min || 0),
-            Number(user.Pages_Viewed || 0),
-            Number(user.Previous_Purchases || 0),
-            Number(user.User_Rating || 0),
-            Number(user.purchases?.length || 0),
-            Number(user.Session_Duration_Min || 0) + Number(user.Pages_Viewed || 0),
-            Number(user.User_Rating || 0) + Number(user.purchases?.length || 0)
-        ];
+    #toProductVector(product = {}) {
+        return [
+            product.price,
+            product.graphSimilarityScore,
+            product.federatedClusterId,
+            product.localModelAccuracy,
+            product.globalModelWeight,
+            product.personalizationFactor,
+            product.purchaseProbability,
+            product.recommendationRate
+        ].map(value => Number.isFinite(Number(value)) ? Number(value) : 0);
+    }
 
-        return values.map(value => Number.isFinite(value) ? value : 0);
+    #toUserPreferenceVector(user = {}, products = [], productVectors = new Map()) {
+        const preferredVectors = (user.purchases || [])
+            .map(purchase => productVectors.get(String(purchase.id)))
+            .filter(Boolean);
+        const vectors = preferredVectors.length
+            ? preferredVectors
+            : products.map(product => this.#toProductVector(product));
+        const vectorLength = 8;
+
+        return Array.from({ length: vectorLength }, (_, index) => {
+            const total = vectors.reduce((sum, vector) => sum + vector[index], 0);
+            return total / (vectors.length || 1);
+        });
     }
 }

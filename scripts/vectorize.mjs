@@ -134,19 +134,30 @@ function toNumericVector(product) {
   return values.map(value => Number.isFinite(value) ? value : 0);
 }
 
-function toUserVector(user) {
-  const values = [
-    Number(user.age || 0),
-    Number(user.Session_Duration_Min || 0),
-    Number(user.Pages_Viewed || 0),
-    Number(user.Previous_Purchases || 0),
-    Number(user.User_Rating || 0),
-    Number(user.purchases?.length || 0),
-    Number(user.Session_Duration_Min || 0) + Number(user.Pages_Viewed || 0),
-    Number(user.User_Rating || 0) + Number(user.purchases?.length || 0)
-  ];
+function toProductVector(product) {
+  return [
+    product.price,
+    product.graphSimilarityScore,
+    product.federatedClusterId,
+    product.localModelAccuracy,
+    product.globalModelWeight,
+    product.personalizationFactor,
+    product.purchaseProbability,
+    product.recommendationRate
+  ].map(value => Number.isFinite(Number(value)) ? Number(value) : 0);
+}
 
-  return values.map(value => Number.isFinite(value) ? value : 0);
+function toUserVector(user, productsById, products) {
+  const preferredVectors = user.purchases
+    .map(productId => productsById.get(String(productId)))
+    .filter(Boolean)
+    .map(toProductVector);
+  const vectors = preferredVectors.length ? preferredVectors : products.map(toProductVector);
+
+  return Array.from({ length: 8 }, (_, index) => {
+    const total = vectors.reduce((sum, vector) => sum + vector[index], 0);
+    return total / (vectors.length || 1);
+  });
 }
 
 async function resetCollections(client) {
@@ -170,6 +181,7 @@ async function main() {
   }
 
   const { products, users } = normalizeDatasetRows(parsed.rows);
+  const productsById = new Map(products.map(product => [String(product.id), product]));
 
   const client = new ChromaClient();
   await resetCollections(client);
@@ -225,7 +237,7 @@ async function main() {
   }));
 
   const userIds = users.map(user => `user-${user.id}`);
-  const userEmbeddings = users.map(user => toUserVector(user));
+  const userEmbeddings = users.map(user => toUserVector(user, productsById, products));
   const userMetadatas = users.map(user => ({
     userId: String(user.id),
     gender: user.gender,
