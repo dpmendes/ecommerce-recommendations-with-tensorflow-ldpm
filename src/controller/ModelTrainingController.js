@@ -44,7 +44,7 @@ export class ModelController {
             this.#alreadyTrained = true;
             if (!this.#currentUser) return
             this.#modelView.enableRecommendButton();
-            this.dispatchRecommendation(this.#currentUser);
+            this.refreshAndDispatchRecommendation();
             if (metrics) console.log('Model test metrics:', metrics);
         })
 
@@ -79,6 +79,13 @@ export class ModelController {
     async handleRunRecommendation() {
         const currentUser = this.#currentUser;
         const updatedUser = await this.#userService.getUserById(currentUser.id);
+        this.#currentUser = updatedUser;
+        await this.dispatchRecommendation(updatedUser);
+    }
+
+    async refreshAndDispatchRecommendation() {
+        const updatedUser = await this.#userService.getUserById(this.#currentUser.id);
+        this.#currentUser = updatedUser;
         await this.dispatchRecommendation(updatedUser);
     }
 
