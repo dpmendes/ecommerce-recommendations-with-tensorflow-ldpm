@@ -63,7 +63,13 @@ export class ModelController {
 
 
     async handleTrainModel() {
-        const dataset = await this.#datasetService.getDataset();
+        let dataset;
+        try {
+            dataset = await this.#vectorService?.getTrainingDataset();
+        } catch (error) {
+            console.warn('Unable to load training interactions from Chroma; using CSV data.', error);
+        }
+        dataset ||= await this.#datasetService.getDataset();
         this.#events.dispatchTrainModel(dataset);
     }
 

@@ -1,20 +1,25 @@
 export class VectorService {
     #datasetService;
     #collectionName;
+    #interactionCollectionName;
     #baseUrl;
     #collectionId;
+    #interactionCollectionId;
     #initialized;
     #ready;
 
     constructor({
         datasetService,
         collectionName = 'ecommerce_product_vectors',
+        interactionCollectionName = 'ecommerce_interaction_vectors',
         baseUrl = 'http://localhost:8000'
     } = {}) {
         this.#datasetService = datasetService;
         this.#collectionName = collectionName;
+        this.#interactionCollectionName = interactionCollectionName;
         this.#baseUrl = baseUrl;
         this.#collectionId = null;
+        this.#interactionCollectionId = null;
         this.#initialized = false;
         this.#ready = false;
     }
@@ -34,8 +39,15 @@ export class VectorService {
 
             const collections = await response.json();
             const collection = collections.find(item => item.name === this.#collectionName);
+            const interactionCollection = collections.find(
+                item => item.name === this.#interactionCollectionName
+            );
             this.#collectionId = collection?.id || null;
-            this.#ready = Boolean(this.#collectionId && collection.dimension);
+            this.#interactionCollectionId = interactionCollection?.id || null;
+            this.#ready = Boolean(
+                this.#collectionId && collection.dimension &&
+                this.#interactionCollectionId && interactionCollection.dimension
+            );
         } catch (error) {
             console.warn('[VectorService] Chroma vector index is unavailable; falling back to the current recommendation flow.', error);
             this.#ready = false;
@@ -81,6 +93,31 @@ export class VectorService {
         return productIds
             .map(productId => productsById.get(String(productId)))
             .filter(product => product && !purchasedIds.has(String(product.id)));
+    }
+
+    async getTrainingDataset() {
+        await this.initialize();
+
+        if (!this.#ready || !this.#interactionCollectionId || !this.#datasetService) {
+            return null;
+        }
+
+        const response = await fetch(
+            `${this.#baseUrl}/api/v2/tenants/default_tenant/databases/default_database/collections/${this.#interactionCollectionId}/get`,
+            {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ include: ['documents'] })
+            }
+        );
+        if (!response.ok) throw new Error(`Chroma interaction read returned ${response.status}`);
+
+        const result = await response.json();
+        const interactions = (result.documents || []).map(document => JSON.parse(document));
+        if (!interactions.length) return null;
+
+        const dataset = await this.#datasetService.getDataset();
+        return { ...dataset, interactions };
     }
 
     #toUserVector(user = {}) {

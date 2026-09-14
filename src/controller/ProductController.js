@@ -3,13 +3,16 @@ export class ProductController {
     #currentUser = null;
     #events;
     #productService;
+    #vectorService;
     constructor({
         productView,
         events,
-        productService
+        productService,
+        vectorService
     }) {
         this.#productView = productView;
         this.#productService = productService;
+        this.#vectorService = vectorService;
         this.#events = events;
         this.init().catch(error => {
             console.error('Unable to render CSV products:', error);
@@ -30,11 +33,17 @@ export class ProductController {
 
     setupEventListeners() {
 
-        this.#events.onUserSelected((user) => {
+        this.#events.onUserSelected(async (user) => {
             this.#currentUser = user;
             this.#productView.onUserSelected(user);
-            this.#events.dispatchRecommend(user)
-        })
+            let candidateProducts = null;
+            try {
+                candidateProducts = await this.#vectorService?.getCandidateProductsForUser(user);
+            } catch (error) {
+                console.warn('Unable to retrieve Chroma recommendation candidates; using the full catalog.', error);
+            }
+            this.#events.dispatchRecommend({ user, candidateProducts });
+        });
 
         this.#events.onRecommendationsReady(({ recommendations }) => {
             this.#productView.render(recommendations, false);

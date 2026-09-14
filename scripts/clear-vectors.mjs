@@ -2,7 +2,11 @@ import { ChromaClient } from 'chromadb';
 
 const client = new ChromaClient();
 
-const collections = ['ecommerce_product_vectors', 'ecommerce_user_vectors'];
+const collections = [
+  'ecommerce_product_vectors',
+  'ecommerce_user_vectors',
+  'ecommerce_interaction_vectors'
+];
 
 for (const name of collections) {
   try {

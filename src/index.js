@@ -59,6 +59,7 @@ ProductController.init({
     productView,
     userService,
     productService,
+    vectorService,
     events: Events,
 });
 

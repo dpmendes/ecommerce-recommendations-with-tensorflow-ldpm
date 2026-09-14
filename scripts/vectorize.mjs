@@ -10,6 +10,7 @@ const projectRoot = path.resolve(__dirname, '..');
 const csvPath = path.join(projectRoot, 'data', 'Ecommerce_Personalized_Recommendation_Dataset.csv');
 const productCollectionName = 'ecommerce_product_vectors';
 const userCollectionName = 'ecommerce_user_vectors';
+const interactionCollectionName = 'ecommerce_interaction_vectors';
 const explicitEmbeddingFunction = {
   generate: async documents => documents.map(() => Array(8).fill(0))
 };
@@ -149,7 +150,7 @@ function toUserVector(user) {
 }
 
 async function resetCollections(client) {
-  for (const name of [productCollectionName, userCollectionName]) {
+  for (const name of [productCollectionName, userCollectionName, interactionCollectionName]) {
     try {
       await client.deleteCollection({ name });
       console.log(`Deleted stale Chroma collection: ${name}`);
@@ -242,10 +243,37 @@ async function main() {
     });
   }
 
+  const interactionCollection = await client.getOrCreateCollection({
+    name: interactionCollectionName,
+    metadata: { source: 'csv-normalized-data', kind: 'interaction' },
+    embeddingFunction: {
+      generate: async documents => documents.map(() => Array(NUMERIC_FIELDS.length).fill(0))
+    }
+  });
+  const interactionIds = products.length
+    ? parsed.rows.map((row, index) => `interaction-${index + 1}`)
+    : [];
+  const interactions = normalizeDatasetRows(parsed.rows).interactions;
+
+  if (interactionIds.length) {
+    await interactionCollection.add({
+      ids: interactionIds,
+      embeddings: interactions.map(row => NUMERIC_FIELDS.map(field => row[field])),
+      metadatas: interactions.map(row => ({
+        userId: String(row.User_ID),
+        productId: String(row.Product_ID),
+        recommended: row.Recommended
+      })),
+      documents: interactions.map(row => JSON.stringify(row))
+    });
+  }
+
   const productCount = await productCollection.count();
   const userCount = await userCollection.count();
+  const interactionCount = await interactionCollection.count();
   console.log(`Chroma populated: ${productCount} product vectors in '${productCollectionName}'`);
   console.log(`Chroma populated: ${userCount} user vectors in '${userCollectionName}'`);
+  console.log(`Chroma populated: ${interactionCount} interaction vectors in '${interactionCollectionName}'`);
   console.log(`Products: ${products.length}, users: ${users.length}`);
 }
 
