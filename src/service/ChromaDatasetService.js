@@ -29,7 +29,7 @@ export class ChromaDatasetService {
     #datasetPromise;
 
     constructor({
-        baseUrl = 'http://localhost:8000',
+        baseUrl = '/chroma',
         interactionCollectionName = 'ecommerce_interaction_vectors'
     } = {}) {
         this.#baseUrl = baseUrl;

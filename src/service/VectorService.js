@@ -12,7 +12,7 @@ export class VectorService {
         datasetService,
         collectionName = 'ecommerce_product_vectors',
         interactionCollectionName = 'ecommerce_interaction_vectors',
-        baseUrl = 'http://localhost:8000'
+        baseUrl = '/chroma'
     } = {}) {
         this.#datasetService = datasetService;
         this.#collectionName = collectionName;

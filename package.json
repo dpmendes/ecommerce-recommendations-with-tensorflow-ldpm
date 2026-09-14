@@ -5,7 +5,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "browser-sync -w . --server --files 'index.html, data/*.csv, src/**/*.js, src/**/*.html, style.css' --port 3000",
+        "start": "node scripts/dev-server.mjs",
         "test": "echo \"Error: no test specified\" && exit 1",
         "vectorize": "node scripts/vectorize.mjs",
         "clear-vectors": "node scripts/clear-vectors.mjs"
@@ -22,6 +22,7 @@
         "browser-sync": "^3.0.4"
     },
     "dependencies": {
-        "chromadb": "^3.5.0"
+        "chromadb": "^3.5.0",
+        "http-proxy": "^1.18.1"
     }
 }
