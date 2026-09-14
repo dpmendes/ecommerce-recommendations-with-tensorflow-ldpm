@@ -10,11 +10,11 @@ import { ProductView } from './view/ProductView.js';
 import { ModelView } from './view/ModelTrainingView.js';
 import Events from './events/events.js';
 import { WorkerController } from './controller/WorkerController.js';
-import { DatasetService } from './service/DatasetService.js';
+import { ChromaDatasetService } from './service/ChromaDatasetService.js';
 import { VectorService } from './service/VectorService.js';
 
 // Create shared services
-const datasetService = new DatasetService();
+const datasetService = new ChromaDatasetService();
 const vectorService = new VectorService({ datasetService });
 const userService = new UserService({ datasetService });
 const productService = new ProductService({ datasetService });
@@ -26,7 +26,8 @@ const dataset = await datasetService.getDataset().catch(error => {
 try {
     await vectorService.initialize();
 } catch (error) {
-    console.warn('Vector index initialization failed; continuing with the existing recommendation flow.', error);
+    console.error('Unable to initialize Chroma vector index.', error);
+    throw error;
 }
 
 // Create views
@@ -76,8 +77,4 @@ userController.renderUsers().catch(error => {
     console.error('Unable to render CSV users:', error);
 });
 
-const trainingDataset = await vectorService.getTrainingDataset().catch(error => {
-    console.warn('Unable to load startup training interactions from Chroma; using CSV data.', error);
-    return null;
-});
-w.triggerTrain(trainingDataset || dataset);
+w.triggerTrain(dataset);
