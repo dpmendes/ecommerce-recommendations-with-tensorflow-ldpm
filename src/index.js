@@ -75,4 +75,9 @@ const userController = UserController.init({
 userController.renderUsers().catch(error => {
     console.error('Unable to render CSV users:', error);
 });
-w.triggerTrain(dataset);
+
+const trainingDataset = await vectorService.getTrainingDataset().catch(error => {
+    console.warn('Unable to load startup training interactions from Chroma; using CSV data.', error);
+    return null;
+});
+w.triggerTrain(trainingDataset || dataset);

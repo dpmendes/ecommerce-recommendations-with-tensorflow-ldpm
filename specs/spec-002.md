@@ -223,7 +223,7 @@ Chroma should reduce candidate count; it should not change the user-visible resu
 5. Recommendation requests use Chroma for candidate retrieval before TensorFlow scoring when available.
 6. The TensorFlow.js model still reaches 100% progress and emits finite loss and accuracy values.
 7. Recommendations remain nonempty, sorted by descending score, and contain stable IDs and display metadata.
-8. The fallback path still works when Chroma is unavailable or the collection is empty.
+8. No fallback path - produce error if can't access ChromaDB.
 9. Buying and removing products continues to work without UI change and continues to persist under the existing session-storage schema.
 10. Reloading the application still does not reintroduce stale JSON users or products.
 
@@ -235,7 +235,7 @@ Chroma should reduce candidate count; it should not change the user-visible resu
 4. Select a user with positive interactions and another without positive interactions and verify that the recommendation experience remains unchanged.
 5. Train the model from the existing UI and confirm worker completion, progress, and TensorFlow.js logs remain valid.
 6. Confirm recommendations remain nonempty and sorted correctly with the same metadata contract.
-7. Disable or empty the vector collection temporarily to confirm the fallback path still produces recommendations without UI breakage.
+7. Check that an error is produced if ChromaDB cannot be reached. Try to rebuild Chroma data first.
 8. Buy and remove an item, retrain, reload, and verify the same session-storage schema and behavior remain intact.
 
 ## Implementation Notes
